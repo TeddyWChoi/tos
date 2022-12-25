@@ -1,0 +1,235 @@
+.rank_div{
+width:280px;
+float:left;
+border: 1px solid #ebebeb;
+min-height: 380px;
+border-radius: 10px;
+margin: 10px 10px;
+background:#ffffff;
+background-image: url(./img/bg_tree.png);
+background-size: 100%;
+background-position: 0 80px;
+background-repeat: no-repeat;
+}
+body {
+    background: #F8F8F8;
+}
+.section_inner{
+    width:1200px;
+}
+.section_inner>h1 {
+    padding-top: 84px;
+}
+#rankup_box_wrap {
+    margin-bottom: 50px;
+    /* height: 690px; */
+    /* background: #fff; */
+}
+.rank_title {
+    /* display: none; */
+    background:#ebebeb;
+    border-radius: 10px 10px 0 0;
+}
+
+.rank_box_2 .rank_title {
+    display: block;
+}
+.rank_box {
+    position: relative;
+    /* background: #ffffff; */
+    width: 100%;
+    overflow: hidden;
+    /* box-shadow: 2px 2px 3px 0 rgba(50, 50, 50, .2); */
+    border-radius: 2px;
+    /* margin: 20px 0; */
+    padding-bottom: 20px;
+}
+.rank_box_1 {
+    /* padding: 30px 40px; */
+}
+.rank_title a {
+    color: #545454;
+    font-size: 20px;
+    line-height: 58px;
+    text-align: center;
+}
+.rank_title a:hover {
+    color: #1AB9C9;
+}
+.class_choice {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* width: 944px; */
+    /* margin: auto; */
+    margin-top: 10px;
+}
+.rank_box_1 .class_choice a {
+    /* max-width: 100px; */
+    color: #545454;
+    font-size: 14px;
+    text-align: center;
+    /* margin: 4px 44px; */
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+    height:70px;
+    word-break: break-word;
+}
+.rank_box_1 .class_choice img {
+    transition: all .4s ease;
+    width: 50px;
+}
+.rank_box_1 .class_choice a:hover img {
+    transform: translateY(-5px);
+}
+.rank_box_1 .class_choice a:hover {
+    color: #1AB9C9;
+}
+.class_choice_title p {
+    position: absolute;
+}
+.title_back {
+    background: #454545;
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    left: -75px;
+    top: -75px;
+}
+.title_p {
+    /* color: #fff; */
+    left: 11px;
+    top: 13px;
+    text-align: left;
+}
+.rankup_skill {
+    /* display: none; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background: #fff; */
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+.rankup_skill p {
+    /* position: relative; */
+    margin: 5px 15px;
+    cursor: pointer;
+}
+.rankup_skill p img {
+    width: 50px;
+}
+.rankup_skill p:hover .skill_des {
+    display: block;
+}
+.skill_des {
+    display: none;
+    position: absolute;
+    /* left: 25px;
+    top: 45px; */
+    left: 0;
+    top: 211px;
+    width: 100%;
+    background: rgba(0, 42, 58, .8);
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 2px;
+}
+.skill_des b {
+    font-size: 16px;
+    font-weight: 400;
+}
+.rank_box_2 {
+    height: 58px;
+    /* background: #fff; */
+}
+.rank_box_2 .class_choice {
+    display: none;
+}
+.rank_box_3 {
+    height: 168px;
+    /* background: #fff; */
+    /* padding-top: 4px; */
+}
+.rank_box_3 a:not(.active) {
+    /* display: none; */
+    background:#1AB9C9;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+}
+.rank_box_3 a.active {
+    width: 100%;
+    /* margin: 6px 0 0 20px; */
+
+    margin: 0 auto;
+    max-width: 100px;
+    color: #545454;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+
+
+}
+.rank_box_3 a.active p:after {
+    /* font-family: FontAwesome;
+    content: "\f057";
+    margin-left: 10px;
+    line-height: 50px; */
+}
+.rank_box_3 a.active img {
+    /* width: 50px;
+    float: left; */
+    width: 70px;
+}
+.rank_box_3 a.active p {
+    
+    font-size: 18px;
+   
+    color: #8a8a8a;
+    cursor: pointer;
+    color: #545454;
+    font-size: 14px;
+    text-align: center;
+}
+.rank_box_3 .class_choice_title {
+    top: 10px;
+}
+@media screen and (max-width:1200px) {
+    /* .class_choice {
+    width: 100%;
+    justify-content: center;
+    }
+    .rank_box_3 .class_choice {
+    margin-left: 100px;
+    }
+    .rank_box_1 .class_choice a {
+    margin: 4px 6.666169154228856%;
+    } */
+    .section_inner{
+        width:100%;
+    }
+    #rankup_box_wrap{
+        width:600px;
+        margin:0 auto;
+    }
+
+}
+@media screen and (max-width:910px) {
+   
+}@media screen and (max-width:830px) {
+   
+}@media screen and (max-width:640px) {
+    
+   
+    #rankup_box_wrap{
+        width:300px;
+        margin:0 auto;
+    }
+
+}@media screen and (max-width:570px) {
+   
+}
