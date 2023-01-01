@@ -1,3 +1,98 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap";
+
+@font-face {
+font-family:'HeirofLightOTFBold';
+src:url(https://static.papayaplay.com/static/assets/libs/font/heiroflight/HeirofLightOTFBold.woff) format("woff");
+font-style:normal
+}
+
+@font-face {
+font-family:'HeirofLightOTFRegular';
+src:url(https://static.papayaplay.com/static/assets/libs/font/heiroflight/HeirofLightOTFRegular.woff) format("woff");
+font-style:normal
+}
+
+#tos_simulator {
+position:relative;
+width:100%
+}
+
+#tos_simulator .top-btn-wrapper {
+position:fixed;
+right:20px;
+bottom:80px;
+width:80px;
+z-index:200
+}
+
+#tos_simulator .top-btn-wrapper .top-btn-img {
+width:100%;
+transition:all .3s ease
+}
+
+#tos_simulator .top-btn-wrapper:hover .top-btn-img {
+transform:scale(0.9)
+}
+
+#tos_simulator #sec-01 {
+position:relative;
+padding-top:110px;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items:center;
+background-position:center top;
+background-repeat:no-repeat;
+background-size:cover
+}
+
+#tos_simulator #sec-01 .title-wrapper {
+position:relative;
+width:100%;
+/* max-width:330px; */
+height:104px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center
+}
+
+#tos_simulator #sec-01 .title-wrapper .title-bg {
+object-fit:contain
+}
+
+#tos_simulator #sec-01 .title-wrapper span {
+    color: #A0A0A0;
+    margin-top: -60px;
+    letter-spacing: 0.5em;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+#tos_simulator #sec-01 .title-wrapper .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Roboto";
+    font-size: 44px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+}
+
+#tos_simulator #wrap{
+    margin:-40px 0 50px 0;
+}
 .rank_div{
 width:280px;
 float:left;
@@ -6,7 +101,7 @@ min-height: 380px;
 border-radius: 10px;
 margin: 10px 10px;
 background:#ffffff;
-background-image: url(./img/bg_tree.png);
+background-image: url(../../images/tos/portal//bg_tree.png);
 background-size: 100%;
 background-position: 0 80px;
 background-repeat: no-repeat;
@@ -48,6 +143,7 @@ body {
     /* padding: 30px 40px; */
 }
 .rank_title a {
+    display: block;
     color: #545454;
     font-size: 20px;
     line-height: 58px;
@@ -127,8 +223,8 @@ body {
     position: absolute;
     /* left: 25px;
     top: 45px; */
-    left: 0;
-    top: 211px;
+    /* left: 0;
+    top: 211px; */
     width: 100%;
     background: rgba(0, 42, 58, .8);
     z-index: 1;
@@ -137,6 +233,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     border-radius: 2px;
+    z-index: 999;
 }
 .skill_des b {
     font-size: 16px;
@@ -161,9 +258,9 @@ body {
     border-radius: 10px 10px 0 0;
 }
 .rank_box_3 a.active {
+    display: block;
     width: 100%;
     /* margin: 6px 0 0 20px; */
-
     margin: 0 auto;
     max-width: 100px;
     color: #545454;
@@ -216,20 +313,33 @@ body {
         width:600px;
         margin:0 auto;
     }
+    #tos_simulator #wrap{
+        margin:0px 0 50px 0;
+    }
 
 }
-@media screen and (max-width:910px) {
+@media screen and (max-width:991px) {
+    #tos_simulator #sec-01 {
+    padding-top:30px;
+    }
    
 }@media screen and (max-width:830px) {
+    .skill_des {
+       
+        left: 0;
+        top: 211px;
+    }
    
 }@media screen and (max-width:640px) {
     
-   
     #rankup_box_wrap{
         width:300px;
         margin:0 auto;
     }
 
 }@media screen and (max-width:570px) {
-   
+    #tos_simulator #sec-01 .title-wrapper .title
+    {
+        font-size:40px;
+    }
 }

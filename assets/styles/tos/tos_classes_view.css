@@ -1,0 +1,187 @@
+body{
+    background:#ffffff
+}
+section {
+background:#ffffff
+}
+
+.section_inner>h1 {
+padding-top:84px
+}
+
+#classes_article_wrap {
+margin-top:30px;
+color:#666666
+}
+#classImage{
+    padding: 40px;
+    width: 50%;
+    background: #ffffff;
+}
+#classImage img{width:auto;}
+#sub_img,#sub_title {
+width:50%;
+/* margin-bottom:60px; */
+padding:30px;
+background: #F0F0F0;
+}
+
+#sub_title_h1>img {
+float:left
+}
+
+#sub_title_h1>div {
+float:left;
+margin:10px 0 0 10px
+}
+
+#sub_title_h1 h1 {
+margin-top:16px;
+font-weight:500;
+font-size:30px
+}
+
+#sub_title_h1 h3 {
+font-weight:400;
+font-size:20px;
+margin-top:10px
+}
+
+#sub_title_h3 {
+clear:both
+}
+
+#sub_title_h3 h3 {
+font-weight:500;
+margin-bottom:10px;
+font-size:16px
+}
+
+#sub_title_h3 p {
+font-weight:400;
+margin-top:20px
+}
+
+#sub_img {
+text-align:center;
+padding-top:20px
+}
+
+#sub_img img {
+margin:0 60px;
+}
+
+#sub {
+display:inline-block;
+border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: #F0F0F0;
+}
+
+.skill_attri_h3 {
+font-size:24px;
+font-weight:500;
+margin-bottom:30px;
+margin-top:40px;
+border-bottom: 2px solid #A3A3A3;
+line-height: 40px;
+}
+
+.skill_attri {
+width:100%;
+font-weight:400
+}
+
+.skill_attri h3 {
+font-weight:500;
+float:left;
+width:70%;
+}
+
+.skill_attri li {
+float:none;
+width:578px;
+width:49%;
+/* width:30.6%;
+margin-right:2%; */
+margin-bottom:50px;
+/* margin-right:30px; */
+min-width:200px;
+display:inline-block;
+vertical-align:top
+}
+
+    
+    #sub_img img {
+    margin:0 30px
+    }
+
+.skill_attri img {
+width:76px;
+float:left;
+margin:0 20px 10px 0
+}
+
+.skill_attri p {
+font-size:14px;
+float: left;
+width: 70%;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.skill_attri span {
+font-size:14px;
+/* display:block; */
+margin-top:4px;
+margin-left:5px;
+color:#999999;
+}
+
+@media screen and (max-width:1200px) {
+/* .skill_attri li {
+margin-right:2%;
+width:30.6%
+} */
+
+#sub_img img {
+margin:0 30px
+}
+
+#classImage img{width:49%;}
+}
+
+@media screen and (max-width:910px) {
+.skill_attri li {
+width:100%
+}
+#classImage{
+    padding: 0px;
+    width: 100%;
+}
+#classImage img{width:49%;}
+
+.skill_attri li:nth-child(2n) {
+margin-right:0
+}
+#sub_img, #sub_title{width:100%;}
+}
+
+@media screen and (max-width:650px) {
+.skill_attri h3 {
+font-size:14px
+}
+
+.skill_attri img {
+width:60px
+}
+
+#sub_img,#sub_title {
+width:100%
+}
+
+#sub_img {
+float:none
+}
+}
+
