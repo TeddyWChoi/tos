@@ -1321,11 +1321,14 @@ opacity:0
         }
         
         #tos_home #sec-05 .content-container .sec-05-logo {
-        max-width:264px
+        max-width:300px
         }
         
         #tos_home #sec-05 .content-container .btn-download-btm {
         max-width:310px
+        }
+        .seemore-btn{
+            padding:0 15px;
         }
         }
         
