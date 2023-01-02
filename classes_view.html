@@ -1,26 +1,1970 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8"> 
+	<title>Tree of Savior</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="robots" content="index,follow" />
+	<meta name="description" content="Seven classes of Soulkeeper, ready to fight back against the Shadow.">
+	<meta name="keywords" content="Echo of Soul, EOS, Free to play, papayaplay, vertigo">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Echo of Soul">
+	<meta property="og:url" content="https://eos.papayaplay.com/eos.do">
+	<meta property="og:description" content="Seven classes of Soulkeeper, ready to fight back against the Shadow.">
+	<meta property="og:image" content="https://static.papayaplay.com/static/assets/images/eos/portal/eos_logo.png">
+	<meta property="fb:app_id" content="601567683367843">
+	<!-- facebook-domain-verification  -->
+  <meta name="facebook-domain-verification" content="nt05bmyn0mj0mlheahv7j69l118def" />
+	<link rel="shortcut icon" href="https://d1ebd7lpcz1ubh.cloudfront.net/static/assets/images/portal/common/favicon.png">
 
-<!DOCTYPE html><html><head><noscript><meta http-equiv="refresh" content="0; url=http://www.enable-javascript.com/"></noscript>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" /><meta name="theme-color" content="#002a3a"><meta property="fb:app_id" content="967291286627896" />
-    <title>Tree of Savior</title>
-  
-    <link rel="stylesheet" type="text/css" href="https://treeofsavior.com/css/common.min.css?202102091"/>
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/bootstrap/3.3.7/bootstrap.min.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/font-awesome/4.7.0/font-awesome.min.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/fancybox/2.1.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/slick/1.8.1/slick.min.css" />
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/slick/1.8.1/slick-theme.min.css"/>
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/animate-css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/aos/2.3.1/aos.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/chartist.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/toastr/toastr.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/common.css">
+	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/portal.css">
+	<link rel="stylesheet" href="./assets/styles/tos/tos_social.css">
 
-    <link rel="stylesheet" type="text/css" href="./class.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    
+	<script src="https://static.papayaplay.com/static/assets/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/jquery-cookie/1.4.1/jquery-cookie.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/fancybox/2.1.7/jquery.fancybox.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/bootstrap/3.3.7/bootstrap.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/slick/1.8.1/slick.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/toastr/toastr.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/moment/2.29.1/moment.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/countdown/2.6.0/countdown.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/aos/2.3.1/aos.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/carousel.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/modernizr.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/scripts/main.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/numeral.min.js"></script>
+	<!--<script src="https://unpkg.com/vue"></script>-->
+	<!-- Vuejs production -->
+	
+  <!---테스트후 복구-->
+  <script src="https://static.papayaplay.com/static/assets/libs/vue/2.6.12/vue.min.js"></script>
 
-    </head><body class="body" >
+
+	<script src="https://static.papayaplay.com/static/assets/libs/vue-resource/1.3.5/vue-resource.js"></script>
+	<!-- Vue carousel 3D -->
+	<script src="https://static.papayaplay.com/static/assets/libs/vue-carousel-3d.min.js"></script>
+	<!-- TweenMax -->
+	<script src="https://static.papayaplay.com/static/assets/libs/gsap/tweenmax/2.0.2/TweenMax.min.js"></script>
+	<!-- scroll magic -->
+	<script src="https://static.papayaplay.com/static/assets/libs/scrollMagic/2.0.3/ScrollMagic.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/scrollMagic/2.0.6/debug.addIndicators.min.js"></script>
+	<script src="https://static.papayaplay.com/static/assets/libs/scrollMagic/2.0.6/animation.gsap.js"></script>
+	
+  <script type="text/javascript">
    
+   		
+   	var bsRootPath = "https://www.papayaplay.com";
+   	var ioRootPath = "https://io.papayaplay.com";
+   	var s3RootPath = "https://cdn.papayaplay.com";
+    var staticRootPath = "https://static.papayaplay.com/static/assets";
+    var lang = $.cookie("vga_language") || "en";
+       	
+    var PT_LOC_COMMON_PATH='https://static.papayaplay.com/static/assets/locale/common/common_'+ lang +'.json';
+		// var EOS_LOC_LOCAL_PATH='https://static.papayaplay.com/static/assets/locale/eos/eos_'+ lang +'.json';
+  </script>
+<!-- Google tag 파파야 공통 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7RRMGCSB1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F7RRMGCSB1');
+</script>
+
+		<!-- googleTagManager 2022.11.09 [ITDEV-598] -->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GMSPD8');</script>
+<!-- End Google Tag Manager -->
+  
+  <!-- Meta Pixel Code (Echo of Soul Download Page)-->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1012837352729648');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1012837352729648&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+</head>
+
+  <body id="echoofsoul" style="overflow-x:hidden;">
+				<!-- googleTagManager 2022.11.09 [ITDEV-598] -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GMSPD8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <!--[if lte IE 8]> 
+		    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		    <div class="chromeframe_ori">For a better experience on Papayaplay, <a href=https://www.papayaplay.com/portal.do?tp=unsupportedBrowser target="_blank">update your browser.</a></div>
+		<![endif]-->   
+      	<div class="chromeframe">For a better experience on Papayaplay, <a href="https://www.papayaplay.com/portal.do?tp=unsupportedBrowser" target="_blank">update your browser.</a></div>
+		<!--  Portal Header GNB Menu: Start -->
+
+	<!--  TOS Header Social Media Navigation: Start -->
+			
+
+  <div class="social-media-nav hidden-xs hidden-sm">
+    <ul>
+      <li><a href="https://www.facebook.com/4StoryOfficial/" target="blank"><span class="icon-facebook"></span></a></li>
+      <li><a href="https://www.youtube.com/channel/UCKJOSn_AzxmWD4MJPfkX0aA" target="blank"><span class="icon-youtube"></span></a></li>
+      <li><a href="https://discord.gg/4storyofficial" target="blank"><span class="icon-discord"></span></a></li>
+    </ul>
+  </div>
+
+      <!--  TOS Header Social Media Navigation: End -->
+		
+		<!--  Portal GNB Menu: Start -->
+		
+
+
+
+<!-- layer popup -->
+<!-- <div id="top__warning" style="z-index:90000;font-size:18px;padding:2px 20px;color:#29b06d;left:50%;transform:translate(-50%);">This is QA1(AWS) Site</div> -->
+<div id="top__warning"></div>
+<!-- gnb starts -->
+<div class="gnb" id="pt_gnb">
+  <!-- <div class="xmas--wrap-top" style="background-image:url('https://static.papayaplay.com/static/assets/images/portal/xmas-theme/xmas_bar.png')"></div> -->
+  <!-- <div class="xmas--wrap-bottom" style="background-image:url('https://static.papayaplay.com/static/assets/images/portal/xmas-theme/gnb_snow.png')"></div> -->
+  <div class="mobile-gnb hidden-md hidden-lg">
+    <button type="button" id="mobile-game-menu-open">
+      <i class="icon-bars"></i>
+    </button>
+    <!-- start mobile game menu -->
+    <div id="mobile-game-menu">
+      <button type="button" id="mobile-game-menu-close">
+        <i class="icon-close"></i>
+      </button>
+      <div id="blackshot-menu" class="pad-top-30">
+        <a href="https://blackshot.papayaplay.com/bsglb.do">
+          <img class="center-block" src="https://static.papayaplay.com/static/assets/images/portal/common/glb-logo.svg" />
+        </a>
+        <ul>
+          <li class="">
+            <!-- <a href="https://blackshot.papayaplay.com/bsglb.do?tp=game" class="text-uppercase" v-html="locale_com.common_nav_game"></a> -->
+            <label for="bsglb_gnb_m_game" class="bsglb-show text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="bsglb_gnb_m_game" />
+            <ul class="bsglb-sub-menu--ul">
+              <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=game" class="text-uppercase">ABOUT</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=competitive" class="text-uppercase">COMPETITIVE</a>
+              </li>
+              <!-- <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=blackshot" class="text-uppercase">BLACKSHOT</a>
+              </li> -->
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://blackshot.papayaplay.com/bsglb.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://blackshot.papayaplay.com/bsglb.do?tp=update" class="text-uppercase" v-html="locale_com.common_nav_update"></a>
+          </li>
+          <li class="">
+            <a href="https://blackshot.papayaplay.com/bsglb.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li class="">
+            <!-- <a href="https://blackshot.papayaplay.com/bsglb.do?tp=ranking" class="text-uppercase" v-html="locale_com.common_nav_ranking"></a> -->
+            <label for="bsglb_gnb_m_ranking" class="bsglb-show text-uppercase">{{locale_com.common_nav_ranking}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="bsglb_gnb_m_ranking" />
+            <ul class="bsglb-sub-menu--ul">
+              <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=ranking_tdm" class="text-uppercase">PANIC SPACE</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=ranking_ctm" class="text-uppercase">CHALLENGE THE MAP</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://blackshot.papayaplay.com/bsglb.do?tp=halloffame" class="text-uppercase">HALL OF FAME</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="http://forum.papayaplay.com/categories/blackshot" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li>
+            <a href="https://blackshot.papayaplay.com/bsglb.do?tp=download" class="uw-play-btn" v-html="locale_com.Common_Term_Play_Free_Now"></a>
+          </li>
+          <li>
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="dekaron-menu" class="pad-top-30">
+        <a href="https://dekaron.papayaplay.com/dekaron.do">
+          <img src="https://static.papayaplay.com/static/assets/images/dekaron/common/dekaron-wordmark.png" class="center-block">
+        </a>
+        <ul class="pad-top-30">
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=game" class="text-uppercase" v-html="locale_com.common_nav_game"></a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="http://wiki.papayaplay.com/dekaron" class="text-uppercase">Wiki</a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=shop" class="text-uppercase" v-html="locale_com.common_nav_shop"></a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=about_krystals" class="text-uppercase">About Krystals</a>
+            <span class="new-tag" v-html="locale_com.common_news_new"></span>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=krystal.game" class="text-uppercase">Krystals</a>
+            <span class="new-tag" v-html="locale_com.common_news_new"></span>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="http://forum.papayaplay.com/categories/dekaron" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <a href="https://dekaron.papayaplay.com/dekaron.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="warrock-menu" class="pad-top-30">
+        <a href="https://warrock.papayaplay.com/warrock.do">
+          <img src="https://static.papayaplay.com/static/assets/images/warrock/announcement/white-logo.png" class="center-block">
+        </a>
+        <ul class="pad-top-30">
+          <a href="https://warrock.papayaplay.com/warrock.do?tp=game" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10" v-html="locale_com.common_nav_game"></li>
+          </a>
+          <a href="https://warrock.papayaplay.com/warrock.do?tp=news" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10" v-html="locale_com.common_nav_news"></li>
+          </a>
+          <a href="https://warrock.papayaplay.com/warrock.do?tp=update" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10" v-html="locale_com.common_nav_update"></li>
+          </a>
+          <a href="http://forum.papayaplay.com/categories/war-rock" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10" v-html="locale_com.common_nav_forum"></li>
+          </a>
+          <a href="https://warrock.papayaplay.com/warrock.do?tp=shop" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10" v-html="locale_com.common_nav_shop"></li>
+          </a>
+          <a href="https://warrock.papayaplay.com/warrock.do?tp=gacha" class="text-uppercase">
+            <li class="text-center pad-top-10 pad-bot-10">Gacha</li>
+          </a>
+          <li class="text-center pad-top-10 pad-bot-10">
+            <div class="la-play-btn text-uppercase" onclick="location.href='https://warrock.papayaplay.com/warrock.do?tp=download'">download</div>
+          </li>
+          <li>
+            <a href="https://www.papayaplay.com" class="text-uppercase">
+              <div class="la-papaya-small-logo">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="latale-menu">
+        <div class="menu-container">
+          <div class="menu-top-wrapper">
+            <a href="https://latale.papayaplay.com/latale.do?tp=home">
+              <img class="logo-img" src="https://static.papayaplay.com/static/assets/images/portal/gnb/lt_logo.png" />
+            </a>
+            <button type="button" id="latale-mobile-game-menu-close">
+              <i class="icon-close"></i>
+            </button>
+          </div>
+          <div class="menu-list">
+            <ul>
+              <a class="latale-about" href="https://latale.papayaplay.com/latale.do?tp=about">
+                <li v-html="locale_com.common_nav_about"></li>
+                <span class="underline"></span>
+              </a>
+              <a class="latale-news" href="https://latale.papayaplay.com/latale.do?tp=news.view">
+                <li v-html="locale_com.common_nav_news"></li>
+                <span class="underline"></span>
+              </a>
+              <a class="latale-update" href="https://latale.papayaplay.com/latale.do?tp=update">
+                <li v-html="locale_com.common_nav_update"></li>
+                <span class="underline"></span>
+              </a>
+              <a class="latale-media" href="https://latale.papayaplay.com/latale.do?tp=media">
+                <li v-html="locale_com.common_nav_media"></li>
+                <span class="underline"></span>
+              </a>
+              <a class="latale-webtoon" href="https://latale.papayaplay.com/latale.do?tp=webtoon">
+                <li>Webtoon</li>
+                <span class="underline"></span>
+              </a>
+              <a href="https://forum.papayaplay.com/categories/la-tale">
+                <li v-html="locale_com.common_nav_forum"></li>
+              </a>
+              <a href="https://vertigogamesaid.freshdesk.com">
+                <li>Support</li>
+              </a>
+            </ul>
+            <a class="download-button" href="https://latale.papayaplay.com/latale.do?tp=download">
+              <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/tablet_download.png" />
+            </a>
+            <div class="sns-icon-container">
+              <a href="https://www.facebook.com/latalena/" title="Facebook" target="_blank" class="sns-icon fb-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_fb.png" class="fb-icon">
+              </a>
+              <a href="https://www.instagram.com/lataleofficial/" title="Instagram" target="_blank" class="sns-icon insta-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_insta.png" class="insta-icon">
+              </a>
+              <a href="https://www.youtube.com/user/lataletube" title="Youtube" target="_blank" class="sns-icon yt-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_yt.png" class="yt-icon">
+              </a>
+              <a href="https://www.twitter.com/papaya_latale" title="Twitter" target="_blank" class="sns-icon twitter-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_twitter.png" class="twitter-icon">
+              </a>
+              <a href="https://discord.com/invite/latalena" title="Discord" target="_blank" class="sns-icon discord-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_discord.png" class="discord-icon">
+              </a>
+              <a href="https://www.twitch.tv/lataleofficial" title="Twitch" target="_blank" class="sns-icon twitch-icon-wrapper">
+                <img src="https://static.papayaplay.com/static/assets/images/latale/renewal/common/icon_twitch.png" class="twitch-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="uwo-menu" class="pad-top-30">
+        <a href="https://uwo.papayaplay.com/uwo.do">
+          <img src="https://static.papayaplay.com/static/assets/images/uwo/official/uwo-snb-logo.png" class="center-block">
+        </a>
+        <ul>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=game" class="text-uppercase" v-html="locale_com.common_nav_about"></a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=guide" class="text-uppercase">GUIDE</a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=update" class="text-uppercase" v-html="locale_com.common_nav_update"></a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/treasurecove/main.do" class="text-uppercase">
+              COVE
+              <span class="new-tag" style="background-color: #F46300;" v-html="locale_com.common_news_new"></span>
+            </a>
+          </li>
+          <li class="">
+            <a href="https://uwo.papayaplay.com/uwoevent/luckywheel.do" class="text-uppercase">WHEEL</a>
+          </li>
+          <li class="disable" v-if="!shopStatus || maintenanceMode || (shopStatus && maintenanceMode)">
+            <a class="text-uppercase">
+              shop
+              <span class="new-tag" style="background-color: red;">coming soon</span>
+            </a>
+          </li>
+          <li class="" v-else>
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=shop" class="text-uppercase">
+              shop
+              <span class="new-tag" style="background-color: green;">open now</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="http://forum.papayaplay.com/index.php?p=/categories/uwo-general-discussion" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li>
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=download" class="uw-play-btn" v-html="locale_com.Common_Term_Play_Free_Now"></a>
+          </li>
+          <li>             
+            <a href="https://uwo.papayaplay.com/uwo.do?tp=news.view&postid=4226" class="uw-transfer-btn">Seven Wonders Chapter 3.3</a>
+          </li>
+          <li>
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="blackshotsea-menu" class="pad-top-30">
+        <a href="https://bs.sea.papayaplay.com/bssea.do">
+          <img src="https://static.papayaplay.com/static/assets/images/portal/common/sea-logo.svg" class="center-block">
+        </a>
+        <ul>
+          <li class="">
+            <!-- <a href="https://bs.sea.papayaplay.com/bssea.do?tp=game" class="text-uppercase" v-html="locale_com.common_nav_game"></a> -->
+            <label for="bssea_gnb_m_game" class="bssea-show text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="bssea_gnb_m_game" />
+            <ul class="bssea-sub-menu--ul">
+              <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=game" class="text-uppercase">ABOUT</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=competitive" class="text-uppercase">COMPETITIVE</a>
+              </li>
+              <!-- <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=blackshot" class="text-uppercase">BLACKSHOT</a>
+              </li> -->
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://bs.sea.papayaplay.com/bssea.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://bs.sea.papayaplay.com/bssea.do?tp=update" class="text-uppercase" v-html="locale_com.common_nav_update"></a>
+          </li>
+          <li class="">
+            <a href="https://bs.sea.papayaplay.com/bssea.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li class="">
+            <!-- <a href="https://bs.sea.papayaplay.com/bssea.do?tp=ranking" class="text-uppercase" v-html="locale_com.common_nav_ranking"></a> -->
+            <label for="bssea_gnb_m_ranking" class="bssea-show text-uppercase">{{locale_com.common_nav_ranking}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="bssea_gnb_m_ranking" />
+            <ul class="bssea-sub-menu--ul">
+              <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=ranking_tdm" class="text-uppercase">PANIC SPACE</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=ranking_ctm" class="text-uppercase">CHALLENGE THE MAP</a>
+              </li>
+              <li class="sub--li">
+                <a href="https://bs.sea.papayaplay.com/bssea.do?tp=halloffame" class="text-uppercase">HALL OF FAME</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="http://forum.papayaplay.com/index.php?p=/categories/blackshot-sea" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li>
+            <a href="https://bs.sea.papayaplay.com/bssea.do?tp=download" class="uw-play-btn" v-html="locale_com.Common_Term_Play_Free_Now"></a>
+          </li>
+          <li>
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="fstory-menu" class="pad-top-30">
+        <a href="https://4story.papayaplay.com/4story.do">
+          <img src="https://static.papayaplay.com/static/assets/images/portal/common/fstory-logo.png" class="center-block">
+        </a>
+        <ul>
+          <li>
+            <label for="fs_m_game" class="fs-show fs-m-btn-game text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="fs_m_game">
+            <ul class="fs-sub-menu">
+              <li class="sub-li">
+                <a href="https://4story.papayaplay.com/4story.do?tp=game">STORY</a>
+              </li>
+              <li class="sub-li">
+                <a href="http://wiki.papayaplay.com/4story/doku.php?id=start">WIKI</a>
+              </li>
+              <!-- <li class="sub-li"><a href="https://4story.papayaplay.com/4story.do?tp=database" style="color:#888;">DATABASE</a></li> -->
+              <li class="sub-li">
+                <a style="color: #888; cursor: default;">DATABASE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://4story.papayaplay.com/4story.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://4story.papayaplay.com/4story.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li>
+            <label for="fs_m_community" class="fs-show fs-m-btn-community text-uppercase">community<span class="more-sign">+</span></label>
+            <input type="checkbox" id="fs_m_community">
+            <ul class="fs-sub-menu">
+              <li class="sub-li">
+                <a href="https://forum.papayaplay.com/categories/4Story">Forum</a>
+              </li>
+              <!-- <li class="sub-li"><a href="https://4story.papayaplay.com/4story.do">Ranking</a></li> -->
+              <li class="sub-li">
+                <a style="color: #888; cursor: default;">Ranking</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://4story.papayaplay.com/4story.do?tp=shop" class="text-uppercase" v-html="locale_com.common_nav_shop"></a>
+          </li>
+          <!-- <li class=""><a class="text-uppercase" style="color: #888; cursor: default;" v-html="locale_com.common_nav_shop"></a></li> -->
+          <li>
+            <a href="https://4story.papayaplay.com/4story.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
+          </li>
+          <li class="papaya-logo">
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="lostsaga-menu" class="pad-top-30">
+        <a href="https://lostsaga.papayaplay.com/lostsaga.do">
+          <img src="https://static.papayaplay.com/static/assets/images/portal/common/losa_logo.png" class="center-block">
+        </a>
+        <ul>
+          <li>
+            <label for="ls_m_game" class="ls-show ls-m-btn-game text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="ls_m_game">
+            <ul class="fs-sub-menu">
+              <li class="sub-li">
+                <a href="https://lostsaga.papayaplay.com/lostsaga.do?tp=mercenary">MERCENARY</a>
+              </li>
+              <li class="sub-li">
+                <a style="color: #888; cursor: default;">WIKI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://lostsaga.papayaplay.com/lostsaga.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://lostsaga.papayaplay.com/lostsaga.do?tp=update" class="text-uppercase" v-html="locale_com.common_nav_update"></a>
+          </li>
+          <li class="">
+            <a style="color: #888; cursor: default;" class="text-uppercase" v-html="locale_com.common_nav_ranking"></a>
+          </li>
+          <li class="">
+            <a href="https://lostsaga.papayaplay.com/lostsaga.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
+          </li>
+          <li class="">
+            <a style="color: #888; cursor: default;" class="text-uppercase" v-html="locale_com.common_nav_shop"></a>
+          </li>
+          <li class="">
+            <a href="https://forum.papayaplay.com/categories/lost-saga" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li>
+            <a href="https://lostsaga.papayaplay.com/lostsaga.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
+          </li>
+          <li class="papaya-logo">
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="ninedragons-menu" class="pad-top-30">
+        <a href="https://9dragons.papayaplay.com/9dragons.do">
+          <img src="https://static.papayaplay.com/static/assets/images/portal/home/9d_logo.png" class="center-block">
+        </a>
+        <ul>
+          <li>
+            <label for="nd_m_game" class="nd-show nd-m-btn-game text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <input type="checkbox" id="nd_m_game">
+            <ul class="nd-sub-menu">
+              <li class="sub-li">
+                <a href="https://9dragons.papayaplay.com/9dragons.do?tp=about">ABOUT</a>
+              </li>
+              <li class="sub-li">
+                <a href="https://9dragons.papayaplay.com/9dragons.do?tp=clans">CLANS</a>
+              </li>
+              <li class="sub-li">
+                <a href="http://wiki.papayaplay.com/9dragons/doku.php?id=starting_the_game">WIKI</a>
+              </li>
+              <li class="sub-li">
+                <a href="https://9dragons.papayaplay.com/9dragons.do?tp=fineart">FINE ART</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://9dragons.papayaplay.com/9dragons.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://9dragons.papayaplay.com/9dragons.do?tp=ranking" class="text-uppercase" v-html="locale_com.common_nav_ranking"></a>
+            <!-- <a class="text-uppercase" style="color: #888;" v-html="locale_com.common_nav_ranking"></a> -->
+          </li>
+          <li class="">
+            <a href="https://forum.papayaplay.com/categories/nine-dragons" class="text-uppercase" v-html="locale_com.common_nav_forum"></a>
+          </li>
+          <li class="">
+            <a href="https://vertigogamesaid.freshdesk.com/support/solutions/66000284123" class="text-uppercase" v-html="locale_com.Common_Header_Support"></a>
+          </li>
+          <li>
+            <a href="https://9dragons.papayaplay.com/9dragons.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
+          </li>
+          <li class="papaya-logo">
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- test Start (Joonyoung) EOS mobile menu -->
+      <div id="eos-menu" class="pad-top-30">
+        <!-- mobile top game logo -->
+        <a href="https://eos.papayaplay.com/eos.do">
+          <img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/eos_logo.png" class="center-block">
+        </a>
+        <!-- mobile game menu content -->
+        <ul>
+          <li class="">
+            <a href="https://eos.papayaplay.com/eos.do?tp=classesall" class="text-uppercase">classes</a>
+          </li>
+          <li class="">
+            <a href="https://eos.papayaplay.com/guide/eos.do" target="_blank" class="text-uppercase">game guide</a>
+          </li>
+          <li class="">
+            <a href="https://eos.papayaplay.com/eos.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+          </li>
+          <li class="">
+            <a href="https://eos.papayaplay.com/eos.do?tp=media" class="text-uppercase">media</a>
+          </li>
+          <li class="">
+            <a href="https://vertigogamesaid.freshdesk.com/support/solutions/66000285368" class="text-uppercase" v-html="locale_com.Common_Header_Support"></a>
+          </li>
+          <li class="eos_download center-block">
+            <a href="https://eos.papayaplay.com/eos.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
+          </li>
+          <!-- <li class="papaya-logo">
+            <a href="https://www.papayaplay.com">
+              <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <!-- test End (Joonyoung) EOS mobile menu -->
+
+    </div>
+    <!-- end mobile game menu -->
+
+    <div class="flex-center" id="brand-logo">
+      <!-- <a href="https://www.papayaplay.com/portal.do"><img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg"></a> -->
+      <a href="https://www.papayaplay.com/portal.do">
+        <!-- <img v-if="flagTheme === 1" style="height: 47px; margin-top: 0px;" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/papaya-logo.svg">  
+        <img v-else-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg">
+        <img v-else src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg"> -->
+        <img v-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/papaya-logo.svg">
+        <img v-else :src="logoBrandMobile">
+      </a>
+    </div>
+
+    <a href="#" id="mobile-portal-logo">
+      <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-symbol.svg">
+    </a>
+    <!--  start mobile portal menu -->
+    <div id="mobile-portal-menu">
+      <button type="button" id="mobile-portal-menu-close">
+        <i class="icon-close"></i>
+      </button>
+      <div class="pad-top-10 pad-bot-10 logo-wrapper">
+        <a href="https://www.papayaplay.com/portal.do" class="papaya-logo">
+          <!-- <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" /> -->
+          <img v-if="flagTheme === 1" style="height: 48px;" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/papaya-logo.svg">  
+          <img v-else-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/papaya-logo.svg">
+          <img v-else src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg">
+        </a>
+      </div>
+      <ul class="general-menu-list">
+        <li @click="handleGamesMobile">
+          <div class="list-wrapper">
+            <span class="list-line" v-if="gamesMobile"></span>
+            <i class="chevron-left fa fa-chevron-left" v-if="gamesMobile"></i>
+            <img class="list-icon" :src="imgUrl + '/ico/ico_all.svg'" v-if="!gamesMobile" />
+            <h3 :class="['list-text', {textActive: gamesMobile}]">All Games</h3>
+          </div>
+          <div class="games-list-cont">
+            <div :class="['game-list-wrapper', { 'gamesMobileActive': gamesMobile }]" v-for="(game, index) in gameList" :key="index">
+              <div class="games-cont">
+                <a class="game-wrapper" v-for="(list, gIndex) in game.games" :href="list.link" :key="gIndex">
+                  <div class="thumbnail-wrapper">
+                    <span class="new-tag" v-if="list.new">N</span>
+                    <img class="game-thumbnail" :src="imgUrl + '/' + list.imgPath" />
+                  </div>
+                  <span class="game-title" v-html="list.title"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+
+      <ul class="general-menu-list">
+        <div class="div-line"></div>
+        <li>
+          <a href="https://www.papayaplay.com/shop/main.do" class="btn--menuList">
+            <i class="icon-papaya-shop"></i>
+            <p class="text-uppercase" v-html="locale_com.Common_Header_CashShop"></p>
+          </a>
+        </li>
+        <div class="div-line"></div>
+        <!-- <li><a href="https://vertigogamesaid.freshdesk.com/support/home" class="btn--menuList" target="_blank"><i class="icon-support"></i>
+						<p class="text-capitalize" v-html="locale_com.Common_Header_Support"></p></a></li> -->
+        
+          <li>
+            <a href="https://vertigogamesaid.freshdesk.com/support/home" class="btn--menuList" target="_blank">
+              <i class="icon-support"></i>
+              <p class="text-capitalize" v-html="locale_com.Common_Header_Support"></p>
+            </a>
+          </li>
+        
+        
+
+        <div class="div-line"></div>
+      </ul>
+
+      
+        <div class="before-login pad-top-20">
+          <div class="signIn-btn" @click="getReturnUrl()" class="text-uppercase" v-html="locale_com.Common_Header_SignIn"></div>
+        </div>
+        <div class="before-login pad-top-10 pad-bot-20">
+          <a class="signUp-btn" :href="'https://www.papayaplay.com/account/signup.do' + '?aid='+utmAid" id="papaya-gnb-signup" class="text-uppercase" v-html="locale_com.Portal_Common_Sign_Up"></a>
+        </div>
+      
+    </div>
+
+    <!-- end mobile portal menu -->
+  </div>
+  <!-- end mobile gnb -->
+  <!-- desktop gnb -->
+  <div class="n-desktop-gnb hidden-xs hidden-sm">
+    <!-- papayaHeader left & right -->
+    <!-- 
+    0 : normal
+    1 : halloween
+    2 : rememberance
+    3 : christmas 
+    -->
+    <!-- halloween -->
+    <div v-if="flagTheme === 1" class="theme-halloween">
+      <img class="leftImg-halloween" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/halloween_web_left.png" />
+      <img class="rightImg-halloween" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/halloween_web_right.png" />
+    </div>
+    <!-- rememberance -->
+    <div v-else-if="flagTheme === 2" class="theme-halloween">
+      <img style="margin-top: 7px; margin-left: 10px;" class="leftImg-halloween" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/rememberance_asset_left.png" alt="">
+      <img style="margin-top: 7px; margin-right: 10px;" class="rightImg-halloween" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/rememberance_asset_right.png" alt="">
+    </div>
+    <!-- christmas -->
+    <div v-else-if="flagTheme === 3" class="theme-christmas">
+      <img style="" class="centerImg-christmas" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaplay_christmas_theme/navi_snow.png" alt="">
+    </div>
+    <div v-else></div>
+    <div class="nav-cont">
+      <!-- left -->
+      <!-- 
+      flagTheme Definition (Joonyoung)
+      0 : normal
+      1 : halloween
+      2 : rememberance
+      3 : christmas
+    -->
+      <div class="nav-left-wrap">
+        <!-- papayaLogo -->
+        <!-- halloween -->
+        <div v-if="flagTheme === 1" class="n-logo-wrap halloween-logo">
+          <a href="https://www.papayaplay.com/portal.do">
+            <img src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/papaya-logo.svg" alt="">
+          </a>
+          <!-- <a href="https://www.papayaplay.com/portal.do"> <img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg" alt=""></a> -->
+        </div>
+        <!-- rememberance -->
+        <div v-else-if="flagTheme === 2" class="n-logo-wrap">
+          <a href="https://www.papayaplay.com/portal.do">
+            <img src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/papaya-logo.svg" alt="">
+          </a>
+          <!-- <a href="https://www.papayaplay.com/portal.do"> <img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg" alt=""></a> -->
+        </div>
+        <!-- christmas -->
+        <div v-else-if="flagTheme === 3" class="n-logo-wrap">
+          <a href="https://www.papayaplay.com/portal.do">
+            <img src="https://static.papayaplay.com/static/assets/images/portal/event/papayaplay_christmas_theme/papaya-logo.svg" alt="">
+          </a>
+          <!-- <a href="https://www.papayaplay.com/portal.do"> <img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg" alt=""></a> -->
+        </div>
+        <!-- normalThemePapayaLogo -->
+        <div v-else class="n-logo-wrap">
+          <a href="https://www.papayaplay.com/portal.do">
+            <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="">
+          </a>
+          <!-- <a href="https://www.papayaplay.com/portal.do"> <img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg" alt=""></a> -->
+        </div>
+
+        <!-- game -->
+        <div v-if="flagTheme === 1" class="n-games-wrap-halloween" id="game-list-open">
+          <div class="txt-game-halloween" v-html="locale_com.Common_Header_Games"></div>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <div v-else-if="flagTheme === 2" class="n-games-wrap" id="game-list-open">
+          <div class="txt-game" v-html="locale_com.Common_Header_Games"></div>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <div v-else class="n-games-wrap" id="game-list-open">
+          <div class="txt-game" v-html="locale_com.Common_Header_Games"></div>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <!-- charge -->
+        <div v-if="flagTheme === 1" class="n-charge-wrap-halloween">
+          <a href="https://www.papayaplay.com/shop/main.do">
+            <i class="icon-papaya-shop"></i>
+            <div class="txt-charge" v-html="locale_com.Common_Header_CashShop"></div>
+          </a>
+        </div>
+        <div v-else-if="flagTheme === 2" class="n-charge-wrap">
+          <a href="https://www.papayaplay.com/shop/main.do">
+            <i class="icon-papaya-shop"></i>
+            <div class="txt-charge" v-html="locale_com.Common_Header_CashShop"></div>
+          </a>
+        </div>
+        <div v-else class="n-charge-wrap">
+          <a href="https://www.papayaplay.com/shop/main.do">
+            <i class="icon-papaya-shop"></i>
+            <div class="txt-charge" v-html="locale_com.Common_Header_CashShop"></div>
+          </a>
+        </div>
+      </div>
+      <!-- end left -->
+      <!-- right -->
+      <div class="nav-right-wrap">
+        <!-- 
+        flagTheme Definition (Joonyoung)
+        0 : normal
+        1 : halloween
+        3 : christmas
+      -->
+        <div v-if="flagTheme === 1"  style="margin-right: 15px; margin-bottom:5px">
+          <img src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/halloween_pumpkin.png" />
+        </div>
+
+
+        <div class="n-create-wrap" id="btnAccount" style="display: none;">
+          
+          <a v-if="flagTheme === 1" :href="'https://www.papayaplay.com/account/signup.do' + '?aid='+utmAid" class="txt-create-halloween" v-html="locale_com.Portal_Common_Phrase_Create_Account"></a>
+          <a v-else :href="'https://www.papayaplay.com/account/signup.do' + '?aid='+utmAid" class="txt-create" v-html="locale_com.Portal_Common_Phrase_Create_Account"></a>
+        </div>
+        <!--sign up-->
+        <div class="n-sign-wrap" id="signup-text" style="display: none;">
+          <div v-if="flagTheme === 1" class="txt-sign-halloween" v-html="locale_com.Common_Header_SignIn"></div>
+          <div v-else class="txt-sign" v-html="locale_com.Common_Header_SignIn"></div>
+          <i class="fa fa-caret-down"></i>
+        </div>
+
+        <a v-if="flagTheme === 1" href="https://www.papayaplay.com/user/messages.do" id="message-icon" class="gnb-bell-halloween-icon" style="display: none;">
+          <i class="icon-bell2" id="bell-icon"></i>
+          <div id="red-dot" class="red-dot" style="display: none"></div>
+        </a>
+        <a v-else-if="flagTheme === 2" href="https://www.papayaplay.com/user/messages.do" id="message-icon" class="gnb-bell-halloween-icon" style="display: none;">
+          <i class="icon-bell2" id="bell-icon"></i>
+          <div id="red-dot" class="red-dot" style="display: none"></div>
+        </a>
+        <a v-else href="https://www.papayaplay.com/user/messages.do" id="message-icon" class="gnb-bell-icon" style="display: none;">
+          <i class="icon-bell2" id="bell-icon"></i>
+          <div id="red-dot" class="red-dot" style="display: none"></div>
+        </a>
+
+        <!--sign in-->
+        <div class="n-sign-wrap" id="signin-text" style="display: none;">
+          <div v-if="flagTheme === 1" class="txt-sign-halloween" id="textUserID"></div>
+          <div v-else class="txt-sign" id="textUserID"></div>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <div v-if="flagTheme === 1" class="n-support-halloween">
+          <!-- if user is not logged in open default customer portal -->
+          
+            <a href="https://vertigogamesaid.freshdesk.com/support/home" class="txt-support" v-html="locale_com.Common_Header_Support" target="_blank"></a>
+          
+          <!-- if User is logged in authenticate/open customer portal -->
+          
+        </div>
+        <div v-else class="n-support">
+          <!-- if user is not logged in open default customer portal -->
+          
+            <a href="https://vertigogamesaid.freshdesk.com/support/home" class="txt-support" v-html="locale_com.Common_Header_Support" target="_blank"></a>
+          
+          <!-- if User is logged in authenticate/open customer portal -->
+          
+        </div>
+
+        <div class="language-support-cont" :aria-expanded="[langList]" @mouseover="openLangDropdown" @mouseleave="closeLangDropdown">
+          <current-lang :lang-list="langList" aria-haspopup="true" aria-controls="PopupMenuUnder"></current-lang>
+          <language-dropdown ref="langDropdown" :aria-hidden="[!langList]" aria-label="menu under"></language-dropdown>
+        </div>
+      </div>
+      <!-- end right -->
+    </div>
+  </div>
+  <!-- end desktop gnb-->
+  <!-- n-game-list -->
+  <div class="n-game-list hidden-xs hidden-sm" id="game-list-box">
+    <!-- 
+      flagTheme Definition (Joonyoung)
+      0 : normal
+      1 : halloween
+      3 : christmas
+     -->
+     <!-- 헤더 게임 펼치기 드롭다운 -->
+     <!-- halloween -->
+    <div v-if="flagTheme === 1" class="theme">
+      <img class="leftBg" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/halloween_asset_left.png"/>
+      <img class="rightBg" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/halloween_asset_right.png"/>
+    </div>
+    <!-- christmas -->
+    <div v-if="flagTheme === 3" class="theme">
+      <img class="leftBg" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaplay_christmas_theme/xmas_asset_left.png"/>
+      <img class="rightBg" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaplay_christmas_theme/xmas_asset_right.png"/>
+    </div>
     
+
+    <div class="game-list-wrapper" v-for="(game, index) in gameList" :key="index">
+      <div class="game-category-wrapper">
+        <img class="category-icon" :src="imgUrl + '/ico/' + game.icon" />
+        <span class="category-name" v-html="game.category"></span>
+      </div>
+      <div class="games-cont">
+        <a class="game-wrapper" v-for="(list, gIndex) in game.games" :href="list.link" :key="gIndex">
+          <div class="thumbnail-wrapper">
+            <span class="new-tag" v-if="list.new">N</span>
+            <img class="game-thumbnail" :src="imgUrl + '/' + list.imgPath" />
+          </div>
+          <span class="game-title" v-html="list.title"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- end n-game-list -->
+  <!--sign popup -->
+  
+  <!--end sign popup -->
+  <!--sign in-->
+  <div class="nav-sign-in hidden-xs hidden-sm" id="signin-box">
+    <div class="cont--signImg">
+      <div class="signImg--left">
+        <a href="https://www.papayaplay.com/user/myaccount.do">
+          <div id="userProfileImg" class="left--cir">
+            <div class="cir--hover">
+              {{locale_com.common_nav_update}}<br>Photo
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="signImg--right">
+        <h1 class="right--title" id="textPopUid"></h1>
+        <p class="right--email" id="textPopEmail"></p>
+      </div>
+    </div>
+    <div class="div-line"></div>
+    <a href="https://www.papayaplay.com/user/myaccount.do" class="cont--iconText">
+      <i class="icon-username"></i>{{ locale_com.Common_Header_MyAccount }}
+    </a>
+    <div class="div-line"></div>
+    <a href="https://www.papayaplay.com/shop/history.do" class="cont--iconText">
+      <i class="icon-history"></i>{{ locale_com.Common_Header_TransactionHistory }}
+    </a>
+    <div class="div-line"></div>
+    <a href="https://www.papayaplay.com/user/messages.do" class="cont--iconText">
+      <i class="icon-bell1"></i>{{ locale_com.Common_Header_MyNotifications }}
+    </a>
+    <div class="div-line"></div>
+    <a href="https://www.papayaplay.com/account/signout.do" class="cont--iconText">
+      <i class="icon-signout"></i>{{ locale_com.Common_Header_SignOut }}
+    </a>
+  </div>
+  <!--end sign in -->
+  <div class="cont--emsg" v-if="isEmsgShow" v-html='emsgShowMsg'></div>
+  <!-- gnb ends -->
+  <script>
+    $(document).ready(function () {
+      $("#fs_m_game").on('click', function () {
+        if ($('#fs_m_game').prop('checked') == true) {
+          $('#fs_m_game').closest("li").css({
+            "padding-bottom" : "0"
+          });
+        } else {
+          $('#fs_m_game').closest("li").css({
+            "padding-bottom" : "14px"
+          });
+        }
+      });
+      $("#fs_m_community").on('click', function () {
+        if ($('#fs_m_community').prop('checked') == true) {
+          $('#fs_m_community').closest("li").css({
+            "padding-bottom" : "0"
+          });
+        } else {
+          $('#fs_m_community').closest("li").css({
+            "padding-bottom" : "14px"
+          });
+        }
+      });
+    });
+  </script>
+  <script>
+    /* var url = window.location.href;
+    if (url.indexOf('aid=')) {
+    	let ca=url.split('?');
+    	if(ca[1].substring(0,2)==="tp"){
+    		let sp=ca[1].split('&');
+    		console.log(sp);
+    		document.cookie = "vga_"+sp[1] + ";domain=papayaplay.com;path=/";
+    	}else{
+    		document.cookie = "vga_"+ca[1] + ";domain=papayaplay.com;path=/";
+    	}
+    }*/
+
+    //--------
+    //control to relocate for the emergency messages
+    //--------
+    var bodyId = $('body').attr('id');
+    var oriWid = $(window).width();
+    $(window).resize(function () {
+      oriWid = $(window).width();
+      //console.log(oriWid)
+      if (oriWid < 980) {
+        $('.cont--emsg').css({
+          'top' : '0'
+        })
+      } else {
+        chgEmgMsg()
+      }
+    })
+
+    if (oriWid < 980) {
+      $('.cont--emsg').css({
+        'top' : '0'
+      })
+    } else {
+      chgEmgMsg()
+    }
+    function chgEmgMsg() {
+      if (bodyId == 'blackshotsea') {
+        $('.cont--emsg').css({
+          'top' : '54px'
+        })
+      }
+      if (bodyId == 'blackshot') {
+        $('.cont--emsg').css({
+          'top' : '54px'
+        })
+      }
+      if (bodyId == 'uwo') {
+        $('.cont--emsg').css({
+          'top' : '86px'
+        })
+      }
+      if (bodyId == 'dekaron') {
+        $('.cont--emsg').css({
+          'top' : '125px'
+        })
+      }
+      if (bodyId == '4story') {
+        $('.cont--emsg').css({
+          'top' : '55px'
+        })
+			}
+      if (bodyId == '9dragons') {
+        $('.cont--emsg').css({
+          'top' : '61px'
+        })
+			}
+			// if (bodyId == 'lostsaga') {
+      //   $('.cont--emsg').css({
+      //     'top' : '60px'
+      //   })
+      // }
+
+      // test Start (Joonyoung) mobile Header flag function *EOS 
+      if (bodyId == 'echoofsoul') {
+        $('.cont--emsg').css({
+          'top' : '61px'
+        })
+			}
+      // test End (Joonyoung)
+    }
+    //-------
+    // end
+    //-------
+    var portalGnbImgUrl = "https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new";
+    var halloweenImgUrl = "https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween";
+    var homeUrl = 'https://www.papayaplay.com';
+    //var imgUrl = "../assets/images";
+    
+   
+  // 2021.06.17; hskim; nine-dragons russian support
+  // localStorage Information
+  //   langND_curr : String (Selected Language.)
+
+    Vue.component("current-lang", {
+      props: ["langList"],
+      template: `\<div class="current-lang-wrapper">
+          <img class="global-ico" :src="imgUrl + \'/ico/ico_global.svg\'" />
+          <h6 class="current-lang" v-html="setLang.lang"></h6>
+          <i v-if="!langList" class="fa fa-caret-down"></i>
+          <i v-if="langList" class="fa fa-caret-up"></i>
+        </div>`,
+      data: function () {
+        return {
+          imgUrl: portalGnbImgUrl,
+          currentLang: lang,
+        }
+      },
+      computed: {
+          setLang: function () {
+            //console.log('currentLang', lang, this.currentLang);
+            if (this.currentLang === "en") {
+              return { lang: "English" };
+            }
+            if (this.currentLang === "fr") {
+              return { lang: "Français" };
+            }
+            if (this.currentLang === "de") {
+              return { lang: "Deutsch" };
+            }
+            if (this.currentLang === "pt") {
+              return { lang: "Português" };
+            }
+            if (this.currentLang === "tr") {
+              return { lang: "Turkish" };
+            }
+            if (this.currentLang === "ms") {
+              return { lang: "Melayu" };
+            }
+            if (this.currentLang === "ru") {
+              return { lang: "Pусский" };
+            }
+          },
+        },
+        created: function() {
+          if(window.location.href.includes('9dragons')) {
+            var lsLangCurr = window.localStorage.getItem('langND_curr');
+            //console.log("localStorage langND_curr : ", lsLangCurr);
+            if( lsLangCurr == 'ru' ) {
+              this.currentLang = 'ru';
+            }
+          }
+        }
+    });
+    var languageDrodown = Vue.component("language-dropdown", {
+       template: `\<ul class="language-dropdown">
+        <li class="language-list" v-for="list in langList">
+          <span class="check-ico-wrapper"><img class="check-ico" v-show="localStorageCurrLang !== 'ru' && currentLang === list.lang" :src="imgUrl + \'/ico/ico_check.png\'"/></span>
+          <a class="lang-wrapper" :href="homeUrl + \'/set.do?lang=\' + list.lang" @click="setLocalStorageLang(list.lang)">
+            <h6 :class="[\'lang-text\', {\'lang-active\':currentLang === list.lang}]" v-html="list.language"></h6>
+          </a>
+        </li>
+        <li v-if="isLangRu" class="language-list">
+        <span class="check-ico-wrapper"><img class="check-ico" v-show="localStorageCurrLang === 'ru'" :src="imgUrl + \'/ico/ico_check.png\'"/></span>
+            <div class="lang-wrapper" @click="setLocalStorageLang(\'ru\')">
+              <h6 class="lang-text">Pусский</h6>
+            </div>
+        </li>
+      </ul>`,
+      data: function () {
+        return {
+          currentLang: lang,
+          imgUrl: portalGnbImgUrl,
+          homeUrl: homeUrl,
+          isLangRu: false,
+          localStorageCurrLang: '',
+          langList: [
+            { lang: "en", language: "English" },
+            { lang: "fr", language: "Français" },
+            { lang: "de", language: "Deutsch" },
+            { lang: "pt", language: "Português" },
+            { lang: "tr", language: "Türk" },
+            { lang: "ms", language: "Melayu" },
+          ],
+        };
+      },
+      created: function () {
+          //console.log(this.currentLang)
+          var vm=this;
+          //console.log('gnb read href', window.location.href);
+          if(window.location.href.includes('9dragons')) {
+              vm.isLangRu = true;
+              vm.localStorageCurrLang = window.localStorage.getItem("langND_curr");
+          }
+      },
+      methods: {
+        setLocalStorageLang: function(selectedLang) {
+          var vm=this;
+          window.localStorage.setItem('langND_curr', selectedLang);
+          if( selectedLang === 'ru' ) {
+            location.reload();
+          }
+        }
+      }
+    });
+    var isADTraffic = false;
+    var gnb = new Vue({
+      el : '#pt_gnb',
+      data : {
+        langList: false,
+        imgUrl: portalGnbImgUrl,
+        imgUrlHalloween: halloweenImgUrl,
+        flagTheme: 0,
+        logoBrandMobile: "https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg",
+        locale_lang : lang,
+        locale_com : '',
+        isEmsgShow : false,
+        emsgShowMsg : '',
+        UWOSERVICEID : 5,
+        shopStatus : false,
+        maintenanceMode : false,
+        utmAid : 0,
+        vegasVisible : true,
+        gameList: [
+            {
+              icon: "ico_fps.svg",
+              category: "FPS",
+              games: [
+                {
+                  new: false,
+                  imgPath: "bs_sea_sm.png",
+                  title: "BlackShot SEA",
+                  link: 'https://bs.sea.papayaplay.com/bssea.do',
+                },
+                {
+                  new: false,
+                  imgPath: "bs_glb_sm.png",
+                  title: "BlackShot GLB",
+                  link: 'https://blackshot.papayaplay.com/bsglb.do',
+                },
+                {
+                  new: false,
+                  imgPath: "wr_sm.png",
+                  title: "WarRock",
+                  link: 'https://warrock.papayaplay.com/warrock.do',
+                },
+              ],
+            },
+            {
+              icon: "ico_rpg.svg",
+              category: "RPG",
+              games: [
+                {
+                  new: true,
+                  imgPath: "eos_sm.png",
+                  title: "Echo Of Soul",
+                  link: 'https://eos.papayaplay.com/eos.do?tp=home',
+                },
+                {
+                  new: false,
+                  imgPath: "9d_sm.png",
+                  title: "Nine Dragons",
+                  link: 'https://9dragons.papayaplay.com/9dragons.do',
+                },
+                // {
+                //   new: false,
+                //   imgPath: "4s_sm.png",
+                //   title: "4Story",
+                //   link: 'https://4story.papayaplay.com/4story.do',
+                // },
+                {
+                  new: false,
+                  imgPath: "uwo_sm.png",
+                  title: "Uncharted Waters Online",
+                  link: 'https://uwo.papayaplay.com/uwo.do',
+                },
+                {
+                  new: false,
+                  imgPath: "lt_sm.png",
+                  title: "La Tale",
+                  link: 'https://latale.papayaplay.com/latale.do',
+                },
+                //{
+                //  new: false,
+                //  imgPath: "dk_sm.png",
+                //  title: "Dekaron",
+                //  link: 'https://dekaron.papayaplay.com/dekaron.do',
+                //},
+              ],
+            },
+          ],
+          gamesMobile: false,
+      },
+      methods : {
+        getServerTime: function () {
+            var vm = this;
+            var fromServerTime = '';
+            var strServerTime = '';
+            $.ajax({
+              url: ioRootPath + "/json.do?callback=?",
+              type: 'GET',
+              data: { cm: "Service.Board.GetServerTime" },
+              crossDomain: true,
+              dataType: 'json',
+            })
+            .done(function (res) {
+							console.log('serverTime!',res)
+              var code = res.ResultCode[0].Code;
+              // $(".n-logo-wrap img").css('opacity', 0);
+              
+
+              if (code === '10000') {
+                fromServerTime = res.ServerTime[0].ServerTime;
+                strServerTime = fromServerTime.slice(0, 16);
+
+                if( strServerTime >= '2022-10-26 00:00' && strServerTime < '2022-11-01 00:00' ) {
+                  console.log("HalloweenTheme!", strServerTime);
+                  vm.flagTheme = 1;
+                  if( $("body").attr("id") ==='portal' ) {
+                    vm.logoBrandMobile = 'https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/papaya-logo.svg';
+                  }
+                  if(vm.flagTheme === 1){
+                    console.log("제이쿼리")
+                    $(".fa-caret-down").addClass("halloween-caret-down");
+                    $(".current-lang-wrapper .current-lang").hover(function(event){
+                      $(this).css("color","#fe7e19");
+                    },function(){
+                      $(this).css("color","#6d6d6d");
+                    })
+                    $(".n-logo-wrap img").css("opacity", 0);
+                    setTimeout(function(){
+                      $(".n-logo-wrap.halloween-logo img").css("opacity", 1);
+                    },200)
+                  }
+                } else if(strServerTime >= '2022-11-30 13:00' && strServerTime <= '2022-12-30 13:00'){
+                  vm.flagTheme = 3;
+                } else {
+                  console.log("NormalTheme!", strServerTime);
+                  vm.flagTheme = 0;
+                }
+                console.log("themeNum", vm.flagTheme)
+              }
+            })
+            .fail(function () {
+              console.log("get server time error");
+            });
+          },
+        handleGamesMobile: function () {
+            this.gamesMobile = !this.gamesMobile;
+        },
+        openLangDropdown: function () {
+          this.langList = true;
+        },
+        closeLangDropdown: function () {
+          //console.log("click lang dropdown");
+          this.langList = false;
+        },
+        fetchJson : function (lang) {
+          var localeCommonUrl = PT_LOC_COMMON_PATH;
+          this.$http.get(localeCommonUrl).then(function (res) {
+            this.locale_com = res.body;
+          });
+        },
+        getReturnUrl : function () {
+          var vm = this;
+          var currUrl = location.href;
+
+          // add hskim 
+          if(currUrl.includes('/account/signin.do')) {
+            currUrl = 'https://www.papayaplay.com/portal.do';
+            url = 'https://www.papayaplay.com/account/signin.do?redirect_url=' + currUrl;
+          } else {
+            url = 'https://www.papayaplay.com/account/signin.do?redirect_url=' + currUrl;
+          }
+
+          console.log("result url : ", url);
+          window.location.href = url;
+          // return url;
+        },
+        getNotificationData : function (sid, pageNum) {
+          var vm = this;
+          vm.getNotifyData = [];
+          vm.isEmsgShow = false;
+          $.ajax({
+                url : ioRootPath + "/json.do?callback=?",
+                type : 'GET',
+                data : {
+                  cm : "Account.User.GetPublicNotificationList",
+                  serviceid : sid,
+                  pagenumber : pageNum,
+                  perpage : 10
+                },
+                crossDomain : true,
+                dataType : 'json'
+              })
+              .done(
+                  function (data) {
+                    // console
+                    console.log("dataTest!!!", data)
+
+                    var code = data.ResultCode[0].Code;
+                    if (code == "10000") {
+                      var resultData = data.NotificationList;
+                      for ( var i in resultData) {
+                        if (resultData[i].UrgentNotice === 'Y') {
+                          resultData[i].PostDate = moment(
+                              resultData[i].PostDate)
+                              .format("MMM Do, YYYY");
+                          if (resultData[i].ServiceID === 0) {
+                            resultData[i].ServiceTxt = 'PAPAYA';
+                            resultData[i].txtColor = 'txt-cl-sid0';
+                          }
+                          if (resultData[i].ServiceID === 1) {
+                            resultData[i].ServiceTxt = 'BS-GLB';
+                            resultData[i].txtColor = 'txt-cl-sid1';
+                          }
+                          if (resultData[i].ServiceID === 2) {
+                            resultData[i].ServiceTxt = 'DEKARON';
+                            resultData[i].txtColor = 'txt-cl-sid2';
+                          }
+                          if (resultData[i].ServiceID === 3) {
+                            resultData[i].ServiceTxt = 'WAR ROCK';
+                            resultData[i].txtColor = 'txt-cl-sid3';
+                          }
+                          if (resultData[i].ServiceID === 4) {
+                            resultData[i].ServiceTxt = 'LA TALE';
+                            resultData[i].txtColor = 'txt-cl-sid4';
+                          }
+                          if (resultData[i].ServiceID === 5) {
+                            resultData[i].ServiceTxt = 'UWO';
+                            resultData[i].txtColor = 'txt-cl-sid5';
+                          }
+                          if (resultData[i].ServiceID === 6) {
+                            resultData[i].ServiceTxt = 'BS-SEA';
+                            resultData[i].txtColor = 'txt-cl-sid6'
+                          }
+                          if (resultData[i].ServiceID === 9) {
+                            resultData[i].ServiceTxt = '4STORY';
+                            resultData[i].txtColor = 'txt-cl-sid9'
+                          }
+                          if (resultData[i].ServiceID === 7) {
+                            resultData[i].ServiceTxt = 'Vegas';
+                            resultData[i].txtColor = 'txt-cl-sid7'
+                          }
+                          if (resultData[i].ServiceID === 8) {
+                            resultData[i].ServiceTxt = 'LOST SAGA';
+                            resultData[i].txtColor = 'txt-cl-sid8'
+                          }
+                          if (resultData[i].ServiceID === 10) {
+                            resultData[i].ServiceTxt = 'NINE DRAGONS';
+                            resultData[i].txtColor = 'txt-cl-sid10'
+                          }
+                          // test (Joonyoung)
+                          if (resultData[i].ServiceID === 11) {
+                            resultData[i].ServiceTxt = 'EOS';
+                            resultData[i].txtColor = 'txt-cl-sid11'
+                          }
+                          // end (Joonyoung)
+                          vm.getNotifyData.push(resultData[i]);
+                        }
+                        if (vm.getNotifyData.length !== 0) {
+                          var getBodyId = $('body').attr('id');
+                          var currServiceId = 0;
+
+                          if (getBodyId === 'portal') {
+                            currServiceId = 0;
+                          } else if (getBodyId === 'blackshot') {
+                            currServiceId = 1;
+                          } else if (getBodyId === 'dekaron') {
+                            currServiceId = 2;
+                          } else if (getBodyId === 'warrock') {
+                            currServiceId = 3;
+                          } else if (getBodyId === 'latale') {
+                            currServiceId = 4;
+                          } else if (getBodyId === 'uwo') {
+                            currServiceId = 5;
+                          } else if (getBodyId === 'blackshotsea') {
+                            currServiceId = 6;
+                          } else if (getBodyId === '4story') {
+                            currServiceId = 9;
+                          } else if (getBodyId === 'lostsaga') {
+                            currServiceId = 8;
+                          } else if (getBodyId === '9dragons') {
+                            currServiceId = 10;
+                          } 
+                          // test (Joonyoung)
+                          else if (getBodyId === 'echoofsoul') {
+                            currServiceId = 11;
+                          }
+                          // end (Joonyoung)
+
+                          if (currServiceId === 0
+                              || vm.getNotifyData[0].ServiceID === currServiceId)
+                            vm.isEmsgShow = true;
+                          vm.emsgShowMsg = "<a href=https://www.papayaplay.com/portal.do?tp=messages&sid=-1&dataid="
+                              + vm.getNotifyData[0].NotificationID
+                              + "><p class=txt-emsg>"
+                              + "<span class='sp-emergency'>emergency</span>"
+                              + "<span class="+vm.getNotifyData[0].txtColor+">"
+                              + vm.getNotifyData[0].ServiceTxt
+                              + "</span>"
+                              + vm.getNotifyData[0].Title + "</p></a>"
+                        }
+                      }
+                    } else {
+                      alert("Error Code: " + code);
+                    }
+                  }).fail(function () {
+                console.log("error");
+              });
+        },
+        getShopStatus : function () {
+          var vm = this;
+          if (bodyId == 'uwo') {
+            $.ajax({
+              url : ioRootPath + "/json.do?callback=?",
+              type : "GET",
+              crossDomain : true,
+              data : {
+                cm : "Store.Market.GetItemList",
+                serviceid : vm.UWOSERVICEID,
+                categoryid : 0
+              },
+              dataType : "jsonp"
+            }).done(function (res) {
+              var code = res.ResultCode[0].Code;
+              // initialize when page starts
+              if (code === "10000") {
+
+                if (res.ItemList.length > 0) {
+                  vm.shopStatus = true;
+                } else {
+                  vm.shopStatus = false;
+                }
+                console.log(vm.shopStatus);
+              }
+            });
+          }
+        },
+        getWebshopConfig : function () {
+          var vm = this;
+          if (bodyId == 'uwo') {
+            $.ajax({
+              url : ioRootPath + "/json.do?callback=?",
+              //url: "http://test.papayaplay.com:8080/io/json.do?callback=?",
+              type : "GET",
+              crossDomain : true,
+              data : {
+                cm : "Store.Market.GetMaintenanceWebshop",
+                serviceid : vm.UWOSERVICEID,
+              },
+              dataType : "jsonp",
+              success : function (result) {
+                // Y : maintenance mode , N : standard mode
+                const mode = result.Webshop_Maintenance[0].Status;
+                console.log(result);
+                if (mode === "Y") {
+                  vm.maintenanceMode = true;
+                } else if (mode === "N") {
+                  vm.maintenanceMode = false;
+                }
+                //console.log('maintenance',vm.maintenanceMode);
+              },
+            });
+          }
+        },
+        getParameterByName : function (name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          let regex = new RegExp("[\#?&]" + name + "=([^&#]*)");
+          let results = regex.exec(location.href);
+          return results == null ? "" : decodeURIComponent(results[1]
+              .replace(/\+/g, " "));
+        },
+        getAidByUtmSource : function (name) {
+          vm = this;
+          let subStrUtmSrouce = "";
+          let strUtmSource = vm.getParameterByName(name);
+          if (strUtmSource.length > 3) {
+            subStrUtmSrouce = strUtmSource.substr(0, 3);
+          }
+          subStrUtmSrouce = subStrUtmSrouce.replace(/[^0-9]/g, ''); // get only number in sting
+          let nUtmTerm = parseInt(subStrUtmSrouce, 10);
+          return nUtmTerm;
+        },
+        getBaseAidFromService : function () {
+          let currUrl = location.href;
+          let result = 0;
+          if (currUrl.match("4story")) {
+            result = 900;
+          } else if (currUrl.match("bssea")) {
+            result = 600;
+          } else if (currUrl.match("bsglb")) {
+            result = 100;
+          } else if (currUrl.match("uwo")) {
+            result = 500;
+          } else if (currUrl.match("latale")) {
+            result = 400;
+          } else if (currUrl.match("warrock")) {
+            result = 300;
+          } else if (currUrl.match("dekaron")) {
+            result = 200;
+          } else if (currUrl.match("lostsaga")) {
+            result = 800;
+          } else if (currUrl.match("9dragons")) {
+            result = 1000;
+          }
+          // test (Joonyoung) 
+          else if (currUrl.match("eos")) {
+            result = 1100;
+          }
+          // end (Joonyoung)
+          else {
+            result = 0;
+          }
+          return result;
+        },
+        getUtmAid : function () {
+          var vm = this;
+          let targetAid = vm.getAidByUtmSource("utm_source");
+          let baseAid = vm.getBaseAidFromService();
+          if (isNaN(targetAid)) {
+            console.log("No utm_source");
+            vm.utmAid = baseAid;
+          } else {
+            vm.utmAid = baseAid + targetAid;
+          }
+          console.log("aid check: ", vm.utmAid, baseAid, targetAid);
+        },
+        // verify user IP
+        // verifyIP : function () {
+        //   var vm = this;
+        //   $.ajax({
+        //       url : "http://api.ipstack.com/check?access_key=8aa4be39b1dc5fa0c496c87da29ccd51",
+        //       type : "GET",
+        //       dataType : 'json'
+        //   })
+        //   .done(function (data) {
+        //     console.log('ip', data)
+        //     sessionStorage
+        //         .setItem('countryCode', data.country_code);
+        //     const enteredurl = document.location.toString()
+        //         .includes("plv.do");
+        //     const sessionCC = sessionStorage.getItem('countryCode');
+        //     if (sessionCC === 'CA') {
+        //       vm.vegasVisible = false;
+        //     }
+        //   })
+        // },
+      },
+      /* beforeMount: function () {
+        const enteredurl = document.location.toString().includes("plv.do");
+        const sessionCC = sessionStorage.getItem('countryCode');
+      // if user has countryCode sessionStorage value
+        if(sessionCC) {
+          console.log('countrycode is:', sessionCC);
+          if(sessionCC === 'CA') {
+            vm.vegasVisible = false;
+          }
+          if(sessionCC === 'CA' && enteredurl) {
+            console.log('redirect');
+            window.location.replace("https://www.papayaplay.com/portal.do");
+          }
+        } else {
+          this.verifyIP();
+        }
+      }, */
+      created : function () {
+        this.getServerTime();
+        // $(".fa-caret-down").addClass("halloween-caret-down");
+        this.fetchJson(lang);
+        this.getNotificationData('-1', '1');
+        this.getShopStatus();
+        this.getWebshopConfig();
+        this.getUtmAid();
+
+        if(window.location.href.includes('about')) {
+          $('.latale-about').addClass('active');
+        }
+        if(window.location.href.includes('news')) {
+          $('.latale-news').addClass('active');
+        }
+        if(window.location.href.includes('update')) {
+          $('.latale-update').addClass('active');
+        }
+        if(window.location.href.includes('media')) {
+          $('.latale-media').addClass('active');
+        }
+        if(window.location.href.includes('webtoon')) {
+          $('.latale-webtoon').addClass('active');
+        }
+      },
+      mounted(){
+      }
+    });
+  </script>
+</div>
+		<!--  Portal GNB Menu: End -->
+				
+	<!--  TOS Header: Start -->
+		
+<link rel="stylesheet" href="./assets/styles/tos/tos_header.css">
+
+<nav id="tos-gnb-wrap">
+	<div class="header hidden-xs hidden-sm" id="tos_nav">
+    <div class="menu_container pad-top-10">
+			<div class="left-side-wrapper">
+
+				<div class="mobile-menu-wrapper">
+          <input type="checkbox" id="menuicon">
+          <label for="menuicon" class="menubtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="sidebar">
+            <div class="m-menu-logo"><img src="./assets/images/tos/portal/logo.png" class="menu-logo-img"></div>
+            <div class="div-menu-line"></div>
+            <ul>
+              <li class="has-submenu ">
+                <label for="tos_m_game_h" class="tos-show m-btn-game text-uppercase">GAME<span class="more-sign">+</span></label>
+                <input type="checkbox" id="tos_m_game_h" name="tos_m_game_h">
+                <ul class="sub-menu">
+                  <li class="sub-li"><a href="./about.html">ABOUT</a></li>
+                  <li class="sub-li"><a href="./media.html">MEDIA</a></li>
+                  <li class="sub-li"><a href="#">GUIDE</a></li>
+                  
+                </ul>
+              </li>
+              <div class="div-menu-line game-line"></div>
+              <li class="has-submenu">
+                <label for="tos_m_classes_h" class="tos-show m-btn-classes text-uppercase">CLASSES<span class="more-sign">+</span></label>
+                <input type="checkbox" id="tos_m_classes_h" name="tos_m_classes_h">
+                <ul class="sub-menu">
+                  <li class="sub-li"><a href="./classes.html" target="_blank">CLASSES LIST</a></li>
+                  <li class="sub-li"><a href="./simulator.html" target="_blank">BUILD SIMULATOR</a></li>
+                  <li class="sub-li"><a style="color:#dddddd;cursor:default;">BUILD RANKING</a><span class="badge-soon" style="left:40px; background-color:red;">coming soon</span></li>
+                </ul>
+              </li>
+              <div class="div-menu-line classes-line"></div>
+              <li class=""><a href="./news.html" class=" text-uppercase" v-html="">NEWS</a></li>
+              <div class="div-menu-line"></div>
+              <li class=""><a href="#" class=" top-nav text-uppercase" v-html="">FORUM</a></li>
+              <div class="div-menu-line"></div>
+              <li class=""><a href="#" v-html="">SUPPORT</a></li>
+              <div class="div-menu-line"></div>
+              <li class="shop-menu " style="position: relative">
+								<a href="./lucky_shop.html" class=" text-uppercase" v-html="">LUCKY SHOP</a>
+								<!-- <a class=" text-uppercase" style="color:#888;cursor:default;">SHOP</a><span class="badge-soon" style="left:22px; background-color:red;">coming soon</span> -->
+							</li>
+              <div class="div-menu-line"></div>
+						</ul>
+						<a class="tos-download-m-btn text-uppercase" href="./download.html" v-html="">DOWNLOAD</a>
+          </div>
+        </div>
+
+				<div class="disabled menu-logo">
+          <a href="./main.html">
+            <img src="./assets/images/tos/portal/logo.png" class="menu-logo-img">
+          </a>
+        </div>
+				<ul>
+					<li class="disabled dropdown">
+						<a class="top-nav text-uppercase" v-html="">GAME</a>
+						<ul class="sub-menu game">
+							<li class="sub-li"><a href="./about.html">ABOUT</a></li>
+                            <li class="sub-li"><a href="./media.html">MEDIA</a></li>
+							<li class="sub-li"><a href="#">GUIDE</a></li>
+							
+						</ul>
+					</li>
+                    <li class="disabled dropdown nav-active">
+						<a class="top-nav text-uppercase" v-html="">CLASSES</a>
+						<ul class="sub-menu classes">
+							<li class="sub-li"><a href="./classes.html">CLASSES LIST</a></li>
+							<li class="sub-li"><a href="./simulator.html">BUILD SIMULATOR</a></li>
+                            <li class="sub-li">
+								<!-- <a href="#">BUILD RANKING</a> -->
+								<a style="color:#bebebe;cursor:default;">BUILD RANKING</a>
+								<span class="badge-soon" style="left:40px;top:-6px;background-color:red;">coming soon</span>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="./news.html" class=" top-nav text-uppercase" v-html="">NEWS</a>
+					</li>
+                    <li class="">
+						<a href="#" class=" top-nav text-uppercase" v-html="">FORUM</a>
+					</li>
+                    <li class="">
+						<a href="#" class=" top-nav text-uppercase" v-html="">SUPPORT</a>
+					</li>
+                    <li class="">
+						<a href="./lucky_shop.html" class=" top-nav text-uppercase" v-html="">LUCKY SHOP</a>
+					</li>
+					
+					</li>
+					
+				</ul>
+			</div>
+			<div class="right-side-wrapper">
+				<a href="./download.html" class="tos-download-btn">
+          <div class="gnb_download text-uppercase">DOWNLOAD</div>
+				</a>
+      </div>
+    </div>
+	</div>
+</nav>
+
+<script>
+var gnb = new Vue({
+	el: '#tos_nav',
+	data: {
+		locale_lang:lang,
+		locale_loc: '',
+		locale_com: ''
+	},
+	methods: {
+		fetchJson: function (lang) {
+			//console.log("fetchJson lang = ", lang);
+			var localeCommonUrl='https://static.papayaplay.com/static/assets/locale/common/common_'+ lang +'.json';
+			//var localeLocalUrl='https://static.papayaplay.com/static/assets/locale/dekaron/dekaron_'+ lang +'.json';
+			
+			this.$http.get(localeCommonUrl)
+			.then(function (res) {
+				this.locale_com = res.body;
+				//console.log(this.locale_com);
+			});
+		},
+		showEmgMsg: function() {
+			var vm=this;
+
+			if( document.getElementsByClassName('cont--emsg')[0] ) {
+				$('.cont--emsg').css({ 'top' : '0px' });
+				$('#tos-gnb-wrap').css({'top' : '102px' });
+				$('.mobile-menu-wrapper .sidebar').css({'top': '102px'});
+				clearInterval(vm.intvEmgMsg);
+			}
+		}
+	},
+	beforeMount: function () {
+		this.fetchJson(lang);
+	},
+	mounted: function() {
+		var vm=this;
+		const currentUrl = window.location.href;
+		if(currentUrl != 'https://4story.papayaplay.com/4story.do?tp=news.view&postid=4273'){
+		// 서비스 종료 공지글로 리다이렉트
+		// window.location.href = 'https://4story.papayaplay.com/4story.do?tp=news.view&postid=4273';
+		}
+		
+		
+		vm.intvEmgMsg = setInterval(function() {
+			vm.showEmgMsg();
+		}, 1000);
+	},
+	destroyed() {
+		var vm=this;
+		if( !document.getElementsByClassName('cont--emsg')[0] ) {
+			clearInterval(vm.intvEmgMsg);
+		}
+	}
+});
+</script>
+<script>
+	jQuery(document).ready(function($) {
+		$(window).scroll(function() {
+			let st = $(this).scrollTop();
+			if( st > 65 ) {
+        $('#tos_nav').css({
+          'position': 'fixed',
+          'width': '100%',
+          'top': 0,
+          'z-index': 999
+        });
+        $('.sidebar').css({
+          'top': 0
+        });
+      } else {
+        $('#tos_nav').css({
+          'position': '',
+          'width': '',
+          'top': '',
+          'z-index': ''
+        });
+		  if( document.getElementsByClassName('cont--emsg')[0] ) {
+			  $('.mobile-menu-wrapper .sidebar').css({
+				  'top': '102px'
+			  });
+		  } else {
+			$('.sidebar').css({
+				'top': '65px'
+			});
+		  }
+	  }
+    });
+    
+    $("#tos_m_game_h").on('click', function() {
+			if( $('#tos_m_game_h').prop('checked') == true ) {
+			$('.game-line').css({"display":"none"});
+			$('#tos_m_game_h').closest("li").css({"padding-bottom":"0"});
+		} else {
+			$('.game-line').css({"display":"block"});
+			//$('#tos_m_game_h').closest("li").css({"padding-bottom":"14px"});
+		}
+		});
+		$("#tos_m_classes_h").on('click', function() {
+			if( $('#tos_m_classes_h').prop('checked') == true ) {
+				$('.community-line').css({"display":"none"});
+				$('#tos_m_classes_h').closest("li").css({"padding-bottom":"0"});
+			} else {
+				$('.community-line').css({"display":"block"});
+				//$('#tos_m_classes_h').closest("li").css({"padding-bottom":"14px"});
+			}
+		});
+	});
+</script>
+
+
+		<!--  TOS Header: End -->
+
+		<!--  TOS Content: Start -->
+		
+
+
+
+
+
+<!-- <link rel="stylesheet" href="./assets/styles/tos/tos_classes.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_simulator.css"/> -->
+<!-- <link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_classes.css"/> -->
+
+<div id="tos_classes_view">
+  <a href="#tos_classes_view">
+		<div class="top-btn-wrapper" @click="gotoTop">
+			<img class="top-btn-img" :src="imgUrl + '/ico_top.png'"/>
+		</div>
+	</a>
+
+	<!-- <section id="sec-01" :style="{'background-image':'url('+imgUrl+'/bg_classes.jpg)'}">
+
+		<div class="title-wrapper">
+      <span>Tree of Savior</span>
+			<div class="title">CLASSES LIST</div>
+		</div>
+    
+</section> -->
+
+  <section id="sec-01">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_classes_view.css"/>
     <div id="wrap" class="">
 
         <section class=""> 
-            
-           
             <div id="" class="section_inner">
-                
+                <div class="class-back-icon" @click="gotoClasses"><img src="./assets/images/tos/portal/ico_back.svg" class="icon-back-img"></div>
                 <div id="classes_article_wrap" class="">
     
                     <div id="sub" class="">
@@ -42,7 +1986,7 @@
                             <img id="classImg2" src="https://treeofsavior.com/img/class2/class_character/highlander_m.gif">
                         </div>	
                     </div>
-                    
+                    <article class="skill_wrap">
                     <h3 class="skill_attri_h3">SKILLS</h3>
                         <div id="skill" class="skill_attri">
                             <ul id="classSkill">
@@ -148,179 +2092,622 @@
                                 </li>
                             </ul>
                     </div>
-                </div><!-- classes_article_wrap -->
-
-                <div id="classes_article_wrap" class="">
-
-                    <div id="sub" class="">
-                        <div id="sub_title" class="left">
-                            <div id="sub_title_h1" class="">
-                                <img id="classIcon" src="/img/class2/class_icon/Peltasta.png">
-                                <div>
-                                    <h1 id="className">
-    Peltasta								</h1>
-                                </div>
-                            </div>
-                            <div id="sub_title_h3" class="">
-                                <p id="classDesc">
-    Throughout the history of the Kingdom, the Peltasta has acted as the King's personal soldiers. To this day, they answer first and foremost to the King's orders while working as mercenaries who follow a special set of rules that are different from others.<br>The Peltasta are defensive warriors that specialize in shields to block the enemy's attack or taunt the enemy to lure them to their certain doom.							</p>
-                            </div>
-                        </div>
-                        <div id="classImage" class="left">
-                            <img id="classImg1" src="/img/class2/class_character/peltasta_f.gif">
-                            <img id="classImg2" src="/img/class2/class_character/peltasta_m.gif">
-                        </div>	
-                    </div>
-                    
-                    <h3 class="skill_attri_h3">SKILLS</h3>
-                        <div id="skill" class="skill_attri">
-                            <ul id="classSkill">
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_guradian.png">
-                                    <h3>Guardian<span>None</span></h3>
-                                    <p>Reduces the incoming Physical and Magic Damage and increases the AoE Defense Ratio of the caster.<br>Max. level that can be reached using items and skill effects is 7.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_hardshield.png">
-                                    <h3>Hard Shield<span>None</span></h3>
-                                    <p>Defense increases proportionally to the Defense rate of the Shield you currently equip. (Defense of the Shield with highest Defense among first slot or second slot will be applied)<br>Buff will be removed when there is no Shield when changing the weapon.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_HighGuard.png">
-                                    <h3>High Guard<span>None</span></h3>
-                                    <p>Switch into an active defense stance using the shield.&nbsp;During [High Guard] buff, Evasion is unavailable but Block and Critical Resistance increases.<br>Effect is removed when removing&nbsp;the shield equipped or re-using the skill while the buff is active.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_Langort.png">
-                                    <h3>Langort<span>Strike</span></h3>
-                                    <p>Use both Shield and Sword to pierce the enemy at once. Physical Defense of the Shield is added to the Physical Attack, blocks the enemy's melee attack while attacking, and applies Silence debuff to the enemy.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_rimblow.png">
-                                    <h3>Rim Blow<span>Strike</span></h3>
-                                    <p>Use your shield and edge to attack and push away the enemy. If the attack is accurate, shield's physical defense is added to the physical Attack proportionally.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_shieldlob.png">
-                                    <h3>Shield Lob<span>Strike</span></h3>
-                                    <p>Throw shield to attack enemies within the front range.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/skill_icon/warri_swashbuckling.png">
-                                    <h3>Swash Buckling<span>None</span></h3>
-                                    <p>Hit your shield to draw attention from nearby enemies. The Evasion Rate and Block Rate of the threatened enemy(character, monster) decrease when hit by the caster's attack during debuff duration. Damage received by the caster's Peltasta skill increases by 10%. Additional threat rate is applied to the monster when the caster attacks and the Movement Speed of the threatened monster become faster.<br>Becomes immune to Threat for a certain time after the Threat.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    <h3 class="skill_attri_h3">ATTRIBUTES</h3>
-                    <div id="attributes" class="skill_attri">
-                        <ul id="classAttribute">
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta3.png">
-                                    <h3>Rim Blow: Stun</h3>
-                                    <p>* Enemies hit by [Rim Blow] have a 5% chance per attribute level to become afflicted with [Stun] for 3 seconds<br>* Increases SP consumption by 30%</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta10.png">
-                                    <h3>Guard: Defense</h3>
-                                    <p>* Equip a shield and press C to activate [Guard]<br>* While active, [Guard] increases your physical defense by 10% per attribute level<br>* If you are attacked during a friendly duel or PvP, the effect is canceled and a 3-second cooldown applies</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta11.png">
-                                    <h3>Rim Blow: Enhance</h3>
-                                    <p>* Increases the skill factor of [Rim Blow] by 0.5% per attribute level<br>* +10% added increase at maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta13.png">
-                                    <h3>Guardian: Enhance</h3>
-                                    <p>* Increases [Guardian]'s physical and magic damage taken reducing effects by 0.5% per attribute level<br>* +10% added increase at maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta14.png">
-                                    <h3>Shield Lob: Enhance</h3>
-                                    <p>* Increases the skill factor of [Shield Lob] by 0.5% per attribute level<br>* +10% added increase at maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta27.png">
-                                    <h3>Langort: Enhance</h3>
-                                    <p>* Increases the skill factor of [Langort] by 0.5% per attribute level<br>* +10% added increase at maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta31.png">
-                                    <h3>Peltasta: Double Provocation</h3>
-                                    <p>* Increases threat levels by 2 times when attacking the enemy with Peltasta skills</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta32.png">
-                                    <h3>Swash Buckling: Maintain Threat</h3>
-                                    <p>* [Swash Buckling] duration increases by 1 second per attribute level<br>* Increases SP consumption by 10%</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta35.png">
-                                    <h3>Rim Blow: Remove Knockback</h3>
-                                    <p>* Removes [Rim Blow] knockback effects<br>* Increases SP consumption by 20%</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta36.png">
-                                    <h3>High Guard: Enhance</h3>
-                                    <p>* Increases [High Guard]'s block and Critical Resistance increasing effects by 0.5% per attribute level<br>* Increases additionally by 10% when mastering the maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta37.png">
-                                    <h3>Hard Shield: Enhance</h3>
-                                    <p>* Increases [Hard Shield]'s defense increasing effects by 0.5% per attribute level<br>* +10% added increase at maximum level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta38.png">
-                                    <h3>Peltasta: Shield Attack</h3>
-                                    <p>*Instead of nullifying the shield's defense, [Attribute level]*10% of Shield's physical defense is added to the Attack of [Rim Blow] / [Shield Lob] / [Langort]<br>* When using the second slot, applied perfectly only when equipping 2 shields. Only half applied when equipping one<br>* (Ex: When the proportion of the Attack added is 10%, [Defense of first slot shield] * 5% + [Defense of second slot shield] * 5%)</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta39.png">
-                                    <h3>[Arts] Guardian: Reflect Missile </h3>
-                                    <p>* Reflects damage of enemy's attack, in proportion to decrease rate of Guardian damage. (decrease damage effect does not apply)</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta41.png">
-                                    <h3>[Arts] Rim Blow: Enhanced Upgrade</h3>
-                                    <p>* Increases the Skill Factor of [Rim Blow] by 1.25% per attribute level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta42.png">
-                                    <h3>[Arts] Shield Lob: Enhanced Upgrade</h3>
-                                    <p>* Increases the Skill Factor of [Shield Robe] by 1.25% per attribute level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta43.png">
-                                    <h3>High Guard: Iron Defense</h3>
-                                    <p>* Your Shield and [Hard Shield] buff cannot be removed by enemies during High Guard. Your movement speed is reduced by -8, and your damage dealt is reduced by -20%, but increases your Damage Reduction by 10% when Block succeeds.</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta44.png">
-                                    <h3>Swash Buckling: Swear Word</h3>
-                                    <p>* Swash Buckling applies only to enemy characters<br>* Provoked enemy attacks the caster forcibly with basic attack for [(skill level x 0.2) + 1] seconds<br>* Increases Movement Speed of provoked enemy by 10<br>* [Anger Management] debuff applies to the provoked enemy for 60 seconds<br>- Doesn't provoke if [Anger Management] debuff exists<br>* Cooldown increases by 100 seconds</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta27.png">
-                                    <h3>[Arts] Langort: Enhanced Upgrade</h3>
-                                    <p>* Increases the skill factor of [Langort] by 1.25% per attribute level</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta5.png">
-                                    <h3>Shield Mastery: Block Specialty</h3>
-                                    <p>* Block increases by 0.75% per attribute level when equipping [Shield], and [Detect Loophole] buff is applied to yourself when succeeding in Block<br>* [Detect Loophole] : Accuracy and Block Penetration increases by 20% when attacking the enemy</p>
-                                </li>
-                                <li>
-                                    <img src="/img/class2/ability_icon/ability_Warrior_Peltasta6.png">
-                                    <h3>Shield Guard</h3>
-                                    <p>* Able to use Guard by pressing C after equipping a shield<br>* Disabled in friendly duels and PvP<br>Cooldown time 3 seconds</p>
-                                </li>
-                            </ul>
-                    </div>
+                  </article>
                 </div>
+                
              </div><!-- section inner -->
         </section>
-      
-        
     </div><!-- wrap -->
-    </body></html>
+
+  </section>
+  
+</div>
+
+<script type="text/javascript">
+  let tos_classes_view = new Vue({
+    el: "#tos_classes_view",
+    data: function() {
+      return {
+        //ioRootPath_net: "http://io.papayaplay.net",
+        locale_lang: lang,
+				locale_loc: '',
+				// imgUrl : "https://static.papayaplay.com/static/assets/images/eos/portal",
+        imgUrl : "./assets/images/tos/portal",
+				subPageTitle: "ALL",
+				subPageNum: 0,
+				currShowIndex: 0,
+				showLimit: 9,
+				items: [],
+				mediaSource : [
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622151.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622151.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622152.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622152.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622153.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622153.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622154.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622154.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974658.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974658.jpg",
+					},
+					{
+						numtype : 1,
+						type: "wallpaper",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974659.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974659.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot001.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot001.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot003.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot003.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot004.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot004.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot005.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot005.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot006.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot006.jpg",
+					},
+					{
+						numtype: 2,
+						type: "screenshot",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot007.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot007.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw004_illust_rogue.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw004_illust_rogue.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw006_illust_warrior2.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw006_illust_warrior2.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw007_illust_levina.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw007_illust_levina.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw008_illust_shopping.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw008_illust_shopping.jpg",
+					},
+					{
+						numtype: 3,
+						type: "artwork",
+						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw009_illust_ignea.jpg",
+						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw009_illust_ignea.jpg",
+					},
+					// {
+					// 	numtype: 4,
+					// 	type: "video",
+					// 	thumbnail: "https://static.papayaplay.com/static/assets/images/9dragons/video_thumbnail_large.png",
+					// 	link : "https://www.youtube.com/embed/owTLKdu4ToI",
+					// },
+					// {
+					// 	numtype: 4,
+					// 	type: "video",
+					// 	//thumbnail: "https://static.papayaplay.com/static/assets/images/9dragons/video_thumbnail_large.png",
+					// 	thumbnail: "https://i.ytimg.com/vi/6I0XaeUGtaE/hqdefault.jpg",
+					// 	link : "https://www.youtube.com/embed/6I0XaeUGtaE",
+					// },
+				],
+      };
+    },
+    methods: {
+      fetchJson: function (lang) {
+				var vm=this;
+        var localeCommonUrl='https://static.papayaplay.com/static/assets/locale/common/common_'+ lang +'.json';
+				// var localeLocalUrl=ND_LOC_LOCAL_PATH;
+
+				// if ( vm.localStorageCurrLang ) {
+				// 	localeLocalUrl = 'https://static.papayaplay.com/static/assets/locale/9dragons/9dragons_'+ vm.localStorageCurrLang +'.json';
+				// }
+        
+        this.$http.get(localeCommonUrl)
+        .then(function (res) {
+          this.locale_com = res.body;
+        });
+				// vm.$http.get(localeLocalUrl)
+				// .then(function(response) {
+				// 	vm.locale_loc = response.body;
+				// 	vm.getLocaleData();
+				// });
+			},
+			mediaGrid: function(index) {
+				var vm=this;
+				$("li").siblings().removeClass('selected');
+				$("li:nth-child("+(index+1)+")").addClass('selected');
+				vm.submenuList(index);
+			},
+			submenuList: function(index) {
+				var vm=this;
+				vm.itemTotalCnt = 9;
+				if( index === 0 ) {
+					// vm.currShowIndex = 0;
+					vm.subPageNum = 0
+					vm.subPageTitle = "ALL";
+					vm.items = [];
+					vm.items = vm.mediaSource;
+				} else if( index === 1 ) {
+					// vm.currShowIndex = 1;
+					vm.subPageNum = 1;
+					vm.subPageTitle = "WALLPAPER";
+					vm.items = [];
+					for( var i=0; i<vm.mediaSource.length; i++ ) {
+						if( vm.mediaSource[i].numtype === 1 ) {
+							vm.items.push(vm.mediaSource[i]);
+						}
+					}
+				} else if ( index === 2 ) {
+					// vm.currShowIndex = 2;
+					vm.subPageNum = 2;
+					vm.subPageTitle = "SCREENSHOTS";
+					vm.items = [];
+					for( var i=0; i<vm.mediaSource.length; i++ ) {
+						if( vm.mediaSource[i].numtype === 2 ) {
+							vm.items.push(vm.mediaSource[i]);
+						}
+					}
+				} else if ( index === 3 ) {
+					// vm.currShowIndex = 3;
+					vm.subPageNum = 3;
+					vm.subPageTitle = "ARTWORK";
+					vm.items = [];
+					for( var i=0; i<vm.mediaSource.length; i++ ) {
+						if( vm.mediaSource[i].numtype === 3 ) {
+							vm.items.push(vm.mediaSource[i]);
+						}
+					}
+				} else if ( index === 4 ) {
+					// vm.currShowIndex = 4;
+					vm.subPageNum = 4;
+					vm.subPageTitle = "VIDEO";
+					vm.items = [];
+					for( var i=0; i<vm.mediaSource.length; i++ ) {
+						if( vm.mediaSource[i].numtype === 4 ) {
+							vm.items.push(vm.mediaSource[i]);
+						}
+					}
+				} else {
+					vm.subPageNum = -1;
+					vm.subPageTitle = "";
+					vm.items = [];
+				}
+				vm.reqPage = 1;
+				vm.setDisplayItems();
+				//console.log("item :: ", vm.items, vm.currShowIndex);
+			},
+			submenuSelect: function(index) {
+				this.submenuList(index);
+				$(".select-list").hide();
+			},
+			showSubmenuSelect: function () {
+				$(".select-list").show();
+			},
+			hideSubmenuSelect: function() {
+				$(".select-list").hide();
+			},
+			setDisplayItems: function() {
+				var vm=this;
+				vm.currShowIndex = 0;
+				if( vm.items.length >= vm.showLimit) {
+					vm.currShowIndex = vm.showLimit;
+					$(".seemore-btn").show();
+				} else {
+					vm.currShowIndex = vm.items.length;
+					$(".seemore-btn").hide();
+				}				
+			},
+            gotoClasses: function() {
+				window.location.href="./classes.html";
+			},
+			mediaSeeMore: function() {
+				var vm=this;
+				for( var i=0; i<vm.showLimit; i++) {
+					if( vm.currShowIndex >= vm.items.length ) {
+						$(".seemore-btn").hide();
+						return;
+					}
+				}
+				vm.currShowIndex += vm.showLimit;
+			},
+			getLocaleData: function() {
+				var vm=this;
+				// for( var i=0; i<vm.mediaSource.length; i++ ) {
+				// 	if(vm.mediaSource[i].numtype === 1) {
+				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuArtwork || "artwork";
+				// 	} else if (vm.mediaSource[i].numtype === 2) {
+				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuWallpaper || "wallpaper";
+				// 	} else if (vm.mediaSource[i].numtype === 3) {
+				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuVideo || "video";
+				// 	}
+				// }
+			},
+      gotoTop: function() {
+				$('html, body').animate({scrollTop: 0}, 400);
+			},
+      seeClass: function() {
+				$('html, body').animate({scrollTop: $("#classes_box_wrap").offset().top-40}, 400);
+        
+			}
+    },
+    beforeMount: function () {
+		  this.fetchJson(lang);
+    },
+    created: function() {
+			var vm=this;
+			// vm.localStorageCurrLang = window.localStorage.getItem("langND_curr");
+			vm.items = [];
+			vm.items = vm.mediaSource;
+			vm.setDisplayItems();
+    },
+  });
+
+  $(document).ready(function() {
+		let moveScroll = false;
+		let moveInterval;
+		$(window).scroll(function (e) {
+			moveScroll = true;
+		});
+
+    $('.submenu--li').on('click', function() {
+      $(this).siblings().removeClass('selected');
+      $(this).addClass('selected');
+    });
+
+		$('.various').fancybox({
+			width: "90%",
+			height: "90%",
+			maxWidth: "800px",
+			maxHeight: "600px",
+			fitToView	: true,
+			autoScale   :true,
+			autoSize	: true,
+			scrolling		: "auto",
+			centerOnScroll: true,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+	});
+</script>
+<script type="text/JavaScript">
+ function openClass(evt,className, num){
+   $('#class_ul li').removeClass('active');
+  
+   var i,tabcontent,tablinks;tabcontent=document.getElementsByClassName("tabcontent");
+   for(i=0;i<tabcontent.length;i++){tabcontent[i].style.display="none"}
+   tablinks=document.getElementsByClassName("tablinks");
+   for(i=0;i<tablinks.length;i++){tablinks[i].className=tablinks[i].className.replace(" tabactive","")
+   }
+   document.getElementById(className).style.display="block";
+   if(evt.currentTarget != undefined)
+   {
+       evt.currentTarget.className+=" tabactive";
+      
+   }
+   $('#class_ul li').eq(num).addClass('active');
+   //console.log(evt.currentTarget.className);
+ }
+   document.getElementById("classes_tree_ul").children[0].click();
+ 
+ </script>
+ 
+
+		<!--  EOS Content: End -->	
+
+		<!--  TOS Footer: Start -->
+		
+
+
+<footer id="pt_footer">
+	<!-- <div class="xmas--wrap-footer" style="background-image:url('https://static.papayaplay.com/static/assets/images/portal/xmas-theme/footer_snow.png')"></div> -->
+	<div class="mobile hidden-md hidden-lg">
+		<div class="container">
+			<div class="row1 pad-top-20">
+				<a data-toggle="collapse" aria-controls="mobile-footer-language" data-target="#mobile-footer-language">
+					<span v-if="localStorage_langCurr.length > 0">
+						<span v-if="localStorage_langCurr === 'ru'" class="language-choice">Pусский</span><span class="language-arrow fa fa-caret-up"></span>
+					</span>
+					<span v-else>
+						<span><img src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_global.svg" /></span><span class="language-choice">English</span><span class="language-arrow fa fa-caret-down"></span>
+						
+						
+						
+						
+						
+					</span>
+				</a>
+		        <div class="collapse" id="mobile-footer-language">
+		        	<ul>
+								<li><a href="https://www.papayaplay.com/set.do?lang=en" data-lang="en" @click="setLocalStorageLang('en')"><span>English</span></a></li>
+								<li><a href="https://www.papayaplay.com/set.do?lang=fr" data-lang="fr" @click="setLocalStorageLang('fr')"><span>Français</span></a></li>
+						    <li><a href="https://www.papayaplay.com/set.do?lang=de" data-lang="de" @click="setLocalStorageLang('de')"><span>Deutsch</span></a></li>
+						    <li><a href="https://www.papayaplay.com/set.do?lang=pt" data-lang="pt" @click="setLocalStorageLang('pt')"><span>Português</span></a></li>
+						    <li><a href="https://www.papayaplay.com/set.do?lang=tr" data-lang="tr" @click="setLocalStorageLang('tr')"><span>Türk</span></a></li>
+						    <li><a href="https://www.papayaplay.com/set.do?lang=ms" data-lang="ms" @click="setLocalStorageLang('ms')"><span>Melayu</span></a></li>
+								<li v-if="localStorage_langList.length > 0" v-for="(item, index) in localStorage_langList">
+									<a @click="setLocalStorageLang('ru')"><span>Pусский</span></a>
+								</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row2 pad-top-20 pad-bot-10"><a href="https://www.papayaplay.com/portal.do"><img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="papaya logo"></a></div>
+			<div class="footer-vertigo-logo row2 pad-top-10 pad-bot-10"><a href="http://www.vertigogames.com" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/vertigo-logo.svg" alt="vertigo logo"></a></div>
+			
+      <div class="footer-dreamex-logo row2 pad-top-10 pad-bot-10"><a href="http://www.dreamexe.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/dreamex-logo.png" alt="dreamex logo"></a></div>
+			<div class="footer-actoz-logo row2 pad-top-10 pad-bot-10"><a href="https://www.actoz.com/english" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/actoz_logo.png" alt="actoz logo"></a></div>
+			<div class="footer-kt-logo row2 pad-top-10 pad-bot-10"><a href="https://www.koeitecmo.co.jp/e/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/kt-logo.png" alt="KOEI logo"></a></div>	
+			<div class="footer-zemiinc-logo row2 pad-top-10 pad-bot-10"><a href="http://www.zemiinc.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/home/zemi_logo.png" alt="Zemi Interactive" style="height:17px"></a></div>
+			
+			<div class="footer-joongwon-logo row2 pad-top-10 pad-bot-10"><a href="http://www.joongwongames.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/home/jw_logo.png" alt="JOONGWON" style="height:27px"></a></div>
+			<!-- test Start (Joonyoung) Mobile footer company list -->
+			<!-- <div class="footer-bluepotion-logo row2 pad-top-10 pad-bot-10"><a href="http://www.bluepotion.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="bluepotion" style="height:20px"></a></div> -->
+      <div class="footer-bluepotion-logo row2 pad-top-10 pad-bot-10"><a href="http://www.bluepotion.co.kr/" target="_blank"><img src="./assets/images/tos/portal/logo_imcgames.png" alt="IMC games" style="height:20px"></a></div>
+
+      <!-- test End (Joonyoung) -->
+			<div class="row3 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=1" v-html="locale_com.Portal_Common_Terms_Service"></a></div>
+			<div class="row4 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=2" v-html="locale_com.Portal_Common_Privacy_Policy"></a></div>
+			<div class="row4 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=3" v-html="locale_com.Portal_Common_EULA"></a></div>
+			<div class="row5 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=4">UGC</a></div>
+			<div class="row5 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=5">Game Operation Policy</a></div>
+			
+			<!-- <p class="gnb-dark-gray pad-top-10" style="color: #b1b1b1;">Vertigo Games, Inc.  CEO, Jung H. Kim, Jeil Vision Tower 12F, 12 Teheran-ro 26-gil Gangnam-gu, Seoul, Korea 06236<p>
+			<p class="gnb-dark-gray" style="color: #b1b1b1;">Tel: +82 2 2051 9575, Fax: +82 2 2051 9558, <a class="gnb-dark-gray" style="color: #b1b1b1;" href="mailto:info@vertigogames.com">e-mail:info@vertigogames.com</a><p>
+			<p class="gnb-dark-gray" style="color: #b1b1b1;">Company Registration: 220-87-22647, Online Business Registration: 2019-SEOULGANGNAM-01375</p> -->
+			<!-- <div class="gnb-dark-gray pad-top-10">{{locale_com.Common_Footer_Copyright_Text1}}<span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div> -->
+			<div class="gnb-dark-gray pad-top-10"><span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div>
+			
+			
+		</div>
+	</div>
+
+	<div class="desktop hidden-xs hidden-sm">
+		<div class="container">
+			<div class="row1">
+				<div class="col1 pull-left">
+					<a href="https://www.papayaplay.com/portal.do"><img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="papaya logo" style="width: 160px; height: 35px;"></a>
+					<a href="http://www.vertigogames.com" target="_blank" class="footer-vertigo-logo" style="padding-left: 15px;"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/vertigo-logo.svg" alt="vertigo logo" style="width: 160px; height: 31px;"></a>
+					
+                    <a href="http://www.dreamexe.co.kr/" target="_blank" class="footer-dreamex-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/dreamex-logo.png" alt="dreamex logo" style="width: 160px; height:auto;"></a>
+					<a href="https://www.actoz.com/english" target="_blank" class="footer-actoz-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/actoz_logo.png" alt="actoz logo" style="width: 120px;"></a>
+					<a href="https://www.koeitecmo.co.jp/e/" target="_blank" class="footer-kt-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/footer/kt-logo.png" alt="KOEI logo" style="width: 53px; margin-top: -5px;"></a>
+					<a href="http://www.zemiinc.co.kr/" target="_blank" class="footer-zemiinc-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/home/zemi_logo.png" alt="Zemi Interactive" style="width: 170px; margin-top: -5px;"></a>
+					
+					<a href="http://www.joongwongames.co.kr/" target="_blank" class="footer-joongwon-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/home/jw_logo.png" alt="JOONGWON" style="width: 120px; margin-top: -3px;"></a>
+					<!-- test Start (Joonyoung) Web footer company logo -->
+					<!-- <a href="http://www.bluepotion.co.kr/" target="_blank" class="footer-bluepotion-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="Blus potion" style="width: 120px; margin-top: -3px;"></a> -->
+					<!-- test End (Joonyoung) -->
+          <a href="#" target="_blank" class="footer-bluepotion-logo" style="padding-left: 15px; display: none;"><img src="./assets/images/tos/portal/logo_imcgames.png" alt="IMC games" style="width: 120px; margin-top: -3px;"></a>
+
+				</div>
+
+				<div class="col2 pull-right">
+					<a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms" v-html="locale_com.Portal_Common_Terms_Service"></a>
+					<span class="gnb-dark-gray bold" style="padding: 0 7px;">|</span>
+					<a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=privacy" v-html="locale_com.Portal_Common_Privacy_Policy"></a>
+					<span class="gnb-dark-gray bold" style="padding: 0 7px;">|</span>
+					<a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=3" v-html="locale_com.Portal_Common_EULA"></a>
+					<span class="gnb-dark-gray bold" style="padding: 0 7px;">|</span>
+					<a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=4">UGC</a>
+					<span class="gnb-dark-gray bold" style="padding: 0 7px;">|</span>
+					<a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=5">Game Operation Policy</a>
+					<span class="gnb-dark-gray bold" style="padding: 0 7px;">|</span>
+
+					<div class="dropdown dropup">
+						<a style="cursor: pointer;" class="dropdown-toggle" data-toggle="dropdown">
+						<div class="global-icon"><img src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_global.svg" /></div>
+						<span v-if="localStorage_langCurr.length > 0">
+							<span v-if="localStorage_langCurr === 'ru'" class="language-choice">Pусский</span><span class="language-arrow fa fa-caret-up"></span>
+						</span>
+						<span v-else>
+						<span class="language-choice">English</span><span class="language-arrow fa fa-caret-up"></span>
+						
+						
+						
+						
+						
+						</span>
+	                    </a>
+						<ul class="dropdown-menu language-dropdown">
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'en'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=en" data-lang="en" @click="setLocalStorageLang('en')"><span>English</span></a></li>
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'fr'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=fr" data-lang="fr" @click="setLocalStorageLang('fr')"><span>Français</span></a></li>
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'de'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=de" data-lang="de" @click="setLocalStorageLang('de')"><span>Deutsch</span></a></li>
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'pt'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=pt" data-lang="pt" @click="setLocalStorageLang('pt')"><span>Português</span></a></li>
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'tr'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=tr" data-lang="tr" @click="setLocalStorageLang('tr')"><span>Türk</span></a></li>
+						    <li><div class="check-ico-wrapper"><img v-if="localStorage_langCurr !== 'ru' && lang === 'ms'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a href="https://www.papayaplay.com/set.do?lang=ms" data-lang="ms" @click="setLocalStorageLang('ms')"><span>Melayu</span></a></li>
+							<li v-if="localStorage_langList.length > 0" v-for="(item, index) in localStorage_langList">
+								<div class="check-ico-wrapper"><img v-if="localStorage_langCurr === 'ru'" class="check-icon" src="https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new/ico/ico_check.png" /></div><a @click="setLocalStorageLang('ru')"><span>Pусский</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div style="display: flex; flex-direction: column;">
+				<div id="uwo-copyright" class="row2 text-left pad-top-20">
+					<div class="gnb-dark-gray">© 2021 KOEI TECMO GAMES CO., LTD All right reserved, </div>
+					<div class="gnb-dark-gray">Published by Vertigo Games.</div>
+				</div>
+				<!-- <div class="row3 row2 text-left pad-top-20">
+					<p class="gnb-dark-gray pad-top-10" style="color: #b1b1b1;">Vertigo Games, Inc.  CEO, Jung H. Kim, Jeil Vision Tower 12F, 12 Teheran-ro 26-gil Gangnam-gu, Seoul, Korea 06236<p>
+					<p class="gnb-dark-gray" style="color: #b1b1b1;">Tel: +82 2 2051 9575, Fax: +82 2 2051 9558, <a class="gnb-dark-gray" style="color: #b1b1b1;" href="mailto:info@vertigogames.com">e-mail:info@vertigogames.com</a><p>
+					<p class="gnb-dark-gray" style="color: #b1b1b1;">Company Registration: 220-87-22647, Online Business Registration: 2019-SEOULGANGNAM-01375</p>
+				</div> -->
+				<div id="ori-copyright" class="row2 text-left pad-top-20">
+					<!-- <div class="gnb-dark-gray">{{locale_com.Common_Footer_Copyright_Text1}} <span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div> -->
+					<!-- <div class="gnb-dark-gray"><span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div> -->
+          <div class="gnb-dark-gray"><span class="text-capitalize">© 2023 Vertigo Games International Pte. Ltd. All Rights Reserved</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <article class="cont--cookie animated fadeInUp" v-if="isCookieModal">
+		<div class="wrap--cbox">
+			<div class="left--section"></div>
+			<div class="right--section">
+				<p>We use cookies on our websites. You are free to manage this via your browser setting at any time. To learn more about how we use the cookies, please see our <span class="t--link" @click="gotoUrl('https://www.papayaplay.com/portal.do?tp=privacy')">Cookies policy</span>.
+					<br><br>You probably won’t be surprised to hear that we’ve updated our Privacy Notice. Please do take the time to read our new, more informative, easier to read and easier to understand, <span class="t--link" @click="gotoUrl('https://www.papayaplay.com/portal.do?tp=privacy')">Privacy Notice</span>.</p>
+				<div class="btn--gotit" @click="setGDPRCookie(90)">I understand</div>
+			</div>
+		</div>
+	</article> -->
+</footer>
+<script>
+	var gnb = new Vue({
+		el: '#pt_footer',
+		data: {
+			locale_lang:lang,
+			locale_com:'',
+			isCookieModal:true,
+			domainName:'',
+			localStorage_langList: [],
+			localStorage_langCurr: ''
+		},
+		methods: {
+			fetchJson: function (lang) {
+				var vm=this;
+				var localeCommonUrl=PT_LOC_COMMON_PATH;
+				this.$http.get(localeCommonUrl)
+				.then(function (res) {
+					//console.log(res.body)
+					this.locale_com = res.body;
+				});
+				
+				var cookieVal=$.cookie('_papaya_gdpr');
+				if(cookieVal=='allowed'){
+					vm.isCookieModal=false;
+				}else{
+					vm.isCookieModal=true;
+				}
+				
+			    var checkDomainValue=$(location).attr('hostname').split('.');		    
+			    
+			    if(checkDomainValue[2]=="net"){
+			    	vm.domainName="papayaplay.net"
+			    }else{
+			    	vm.domainName="papayaplay.com"
+			    }
+			    
+				//
+			},
+			gotoUrl:function(url){
+				var vm=this;
+				location.href=url;
+			},
+			setGDPRCookie:function(exp){
+				var vm=this;
+				var date = new Date();
+				date.setTime(date.getTime() + exp*24*60*60*1000);
+				$.cookie('_papaya_gdpr', 'allowed', {path:'/', domain:vm.domainName, expires:date});
+				vm.isCookieModal=false;
+			},
+			setLocalStorageLang: function(selectedLang) {
+				var vm=this;
+				window.localStorage.setItem('langND_curr', selectedLang);
+				if( selectedLang === 'ru' ) {
+					location.reload();
+				}
+			}
+		},
+		beforeMount: function () {
+			this.fetchJson(lang);
+		},
+		created: function() {
+			var vm=this;
+			if(window.location.href.includes('9dragons')) {
+				// Push all languages supported by this Service(Game) page to localStorage array.
+				this.localStorage_langList.push('ru');
+				var lsLangCurr = window.localStorage.getItem('langND_curr');
+				//console.log("localStorage footer langND_curr : ", lsLangCurr);
+				if( lsLangCurr == 'ru' ) {
+					this.localStorage_langCurr = 'ru';
+				}
+			}
+		}
+	});
+</script>
+		<!--  TOS Footer: End -->
+		
+		<!-- No InternetExplorer -->
+		<script>
+			if(navigator.userAgent.indexOf('Trident') > 0){
+				location.href = "microsoft-edge:" + location.href;
+			}
+		</script>
+
+		<!-- BugHerd: EOS Public Homepage -->
+		<!-- <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=r6sxg8skrmv4dak13hwv7a" async="true"></script> -->
+
+		<!-- Pingdom RUM -->
+		<!-- <script src="//rum-static.pingdom.net/pa-616f05639034fb0011000187.js" async></script> -->
+  </body>
+</html>
