@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -33,7 +28,7 @@
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/toastr/toastr.css">
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/common.css">
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/portal.css">
-	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/eos/eos_social.css">
+	<link rel="stylesheet" href="./assets/styles/tos/tos_social.css">
 
 	<script src="https://static.papayaplay.com/static/assets/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://static.papayaplay.com/static/assets/libs/jquery-cookie/1.4.1/jquery-cookie.min.js"></script>
@@ -131,20 +126,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       	<div class="chromeframe">For a better experience on Papayaplay, <a href="https://www.papayaplay.com/portal.do?tp=unsupportedBrowser" target="_blank">update your browser.</a></div>
 		<!--  Portal Header GNB Menu: Start -->
 
-		<!--  EOS Header Social Media Navigation: Start -->
+		<!--  TOS Header Social Media Navigation: Start -->
 			
 
+    <div class="social-media-nav hidden-xs hidden-sm">
+      <ul>
+        <li><a href="https://www.facebook.com/4StoryOfficial/" target="blank"><span class="icon-facebook"></span></a></li>
+        <li><a href="https://www.youtube.com/channel/UCKJOSn_AzxmWD4MJPfkX0aA" target="blank"><span class="icon-youtube"></span></a></li>
+        <li><a href="https://discord.gg/4storyofficial" target="blank"><span class="icon-discord"></span></a></li>
+      </ul>
+    </div>
 
-<div class="social-media-nav hidden-xs hidden-sm">
-	<ul>
-		<!-- <li><a href="https://www.facebook.com/NineDragonsOfficial/" target="blank"><span class="icon-facebook"></span></a></li> -->
-		<li><a id="eos-nav-fblink" href="https://www.facebook.com/EchoOfSoulPapayaPlay/" target="blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-		<li><a id="eos-nav-dclink" href="https://discord.gg/echoofsoul" target="blank"><span class="icon-discord"></span></a></li>
-		<!-- <li><a id="eos-nav-ytlink" href="https://www.youtube.com/channel/UCUNEtKWuXAzxbE6INk99rtw" target="blank"><span class="icon-youtube"></span></a></li> -->
-	</ul>
-</div>
-
-		<!--  EOS Header Social Media Navigation: End -->
+        <!--  TOS Header Social Media Navigation: End -->
 		
 		<!--  Portal GNB Menu: Start -->
 		
@@ -651,7 +644,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="">
             <a href="https://vertigogamesaid.freshdesk.com/support/solutions/66000285368" class="text-uppercase" v-html="locale_com.Common_Header_Support"></a>
           </li>
-          <li class="eos_download center-block">
+          <li class="tos_download center-block">
             <a href="https://eos.papayaplay.com/eos.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
           </li>
           <!-- <li class="papaya-logo">
@@ -1716,48 +1709,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 		<!--  Portal GNB Menu: End -->
 				
-		<!--  EOS Header: Start -->
+		<!--  TOS Header: Start -->
 		
+<link rel="stylesheet" href="./assets/styles/tos/tos_header.css">
 
-
-
-
-<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/eos/eos_header.css">
-
-<nav id="eos-gnb-wrap">
-	<div id="eos_nav" class="header hidden-xs hidden-sm">
-    <div class="menu_container">
+<nav id="tos-gnb-wrap">
+	<div class="header hidden-xs hidden-sm" id="tos_nav">
+    <div class="menu_container pad-top-10">
 			<div class="left-side-wrapper">
-				<div class="menu-logo">
-          <a class="eos-hd-menu" href="https://eos.papayaplay.com/eos.do">
-            <img :src="imgUrl + '/eos_logo_sm.png'" class="menu-logo-img">
+
+				<div class="mobile-menu-wrapper">
+          <input type="checkbox" id="menuicon">
+          <label for="menuicon" class="menubtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="sidebar">
+            <div class="m-menu-logo"><img src="./assets/images/tos/portal/logo.png" class="menu-logo-img"></div>
+            <div class="div-menu-line"></div>
+            <ul>
+              <li class="has-submenu ">
+                <label for="tos_m_game_h" class="tos-show m-btn-game text-uppercase">GAME<span class="more-sign">+</span></label>
+                <input type="checkbox" id="tos_m_game_h" name="tos_m_game_h">
+                <ul class="sub-menu">
+                  <li class="sub-li"><a href="./about.html">ABOUT</a></li>
+                  <li class="sub-li"><a href="./media.html">MEDIA</a></li>
+                  <li class="sub-li"><a href="#">GUIDE</a></li>
+                  
+                </ul>
+              </li>
+              <div class="div-menu-line game-line"></div>
+              <li class="has-submenu">
+                <label for="tos_m_classes_h" class="tos-show m-btn-classes text-uppercase">CLASSES<span class="more-sign">+</span></label>
+                <input type="checkbox" id="tos_m_classes_h" name="tos_m_classes_h">
+                <ul class="sub-menu">
+                  <li class="sub-li"><a href="./classes.html" target="_blank">CLASSES LIST</a></li>
+                  <li class="sub-li"><a href="./simulator.html" target="_blank">BUILD SIMULATOR</a></li>
+                  <li class="sub-li"><a style="color:#dddddd;cursor:default;">BUILD RANKING</a><span class="badge-soon" style="left:40px; background-color:red;">coming soon</span></li>
+                </ul>
+              </li>
+              <div class="div-menu-line classes-line"></div>
+              <li class=""><a href="./news.html" class=" text-uppercase" v-html="">NEWS</a></li>
+              <div class="div-menu-line"></div>
+              <li class=""><a href="#" class=" top-nav text-uppercase" v-html="">FORUM</a></li>
+              <div class="div-menu-line"></div>
+              <li class=""><a href="#" v-html="">SUPPORT</a></li>
+              <div class="div-menu-line"></div>
+              <li class="shop-menu " style="position: relative">
+								<a href="./lucky_shop.html" class=" text-uppercase" v-html="">LUCKY SHOP</a>
+								<!-- <a class=" text-uppercase" style="color:#888;cursor:default;">SHOP</a><span class="badge-soon" style="left:22px; background-color:red;">coming soon</span> -->
+							</li>
+              <div class="div-menu-line"></div>
+						</ul>
+						<a class="tos-download-m-btn text-uppercase" href="./download.html" v-html="">DOWNLOAD</a>
+          </div>
+        </div>
+
+				<div class="disabled menu-logo">
+          <a href="./main.html">
+            <img src="./assets/images/tos/portal/logo.png" class="menu-logo-img">
           </a>
         </div>
-				<ul class="topbar--ul">
-					<li class="topbar-li ">
-						<a href="https://eos.papayaplay.com/eos.do?tp=classesall" class="eos-hd-menu top-nav text-uppercase">CLASSES</a>
+				<ul>
+					<li class="disabled dropdown ">
+						<a class="top-nav text-uppercase" v-html="">GAME</a>
+						<ul class="sub-menu game">
+							<li class="sub-li"><a href="./about.html">ABOUT</a></li>
+                            <li class="sub-li"><a href="./media.html">MEDIA</a></li>
+							<li class="sub-li"><a href="#">GUIDE</a></li>
+							
+						</ul>
 					</li>
-					<li class="topbar-li ">
-						<a href="https://eos.papayaplay.com/guide/eos.do" target="_blank" class="eos-hd-menu top-nav text-uppercase" v-html="">GAME GUIDE</a>
-          </li>
-          <li class="topbar-li ">
-            <a href="https://eos.papayaplay.com/eos.do?tp=news" class="eos-hd-menu top-nav text-uppercase">NEWS</a>
+                    <li class="disabled dropdown ">
+						<a class="top-nav text-uppercase" v-html="">CLASSES</a>
+						<ul class="sub-menu classes">
+							<li class="sub-li"><a href="./classes.html">CLASSES LIST</a></li>
+							<li class="sub-li"><a href="./simulator.html">BUILD SIMULATOR</a></li>
+                            <li class="sub-li">
+								<!-- <a href="#">BUILD RANKING</a> -->
+								<a style="color:#bebebe;cursor:default;">BUILD RANKING</a>
+								<span class="badge-soon" style="left:40px;top:-6px;background-color:red;">coming soon</span>
+							</li>
+						</ul>
 					</li>
-					<li class="topbar-li ">
-            <a href="https://eos.papayaplay.com/eos.do?tp=media" class="eos-hd-menu top-nav text-uppercase">MEDIA</a>
+					<li class="nav-active">
+						<a href="./news.html" class=" top-nav text-uppercase" v-html="">NEWS</a>
 					</li>
-					<li class="topbar-li">
-						<a href="https://vertigogamesaid.freshdesk.com/support/solutions/66000285368" class="eos-hd-menu top-nav text-uppercase">SUPPORT</a>
-          </li>
+                    <li class="">
+						<a href="#" class=" top-nav text-uppercase" v-html="">FORUM</a>
+					</li>
+                    <li class="">
+						<a href="#" class=" top-nav text-uppercase" v-html="">SUPPORT</a>
+					</li>
+                    <li class="">
+						<a href="./lucky_shop.html" class=" top-nav text-uppercase" v-html="">LUCKY SHOP</a>
+					</li>
+					
+					</li>
+					
 				</ul>
 			</div>
 			<div class="right-side-wrapper">
-				<div class="hd-menu-discord-wrapper" @click="gotoDiscord">
-					<img class="hd-menu-discord-icon" :src="imgUrl + '/ico_discord.png'" alt="discord icon">
-					<div class="hd-menu-discord-text">DISCORD</div>
-				</div>
-				<a id="eos-hd-menu-btn-download" href="https://eos.papayaplay.com/eos.do?tp=download" class="menu-download-btn eos-hd-menu">
-          <img class="download-btn-image" :src="imgUrl + '/btn_download.png'" alt="eos download button">
+				<a href="./download.html" class="tos-download-btn">
+          <div class="gnb_download text-uppercase">DOWNLOAD</div>
 				</a>
       </div>
     </div>
@@ -1765,51 +1820,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 <script>
-var ndNav = new Vue({
-	el: '#eos_nav',
+var gnb = new Vue({
+	el: '#tos_nav',
 	data: {
 		locale_lang:lang,
 		locale_loc: '',
-    locale_com: '',
-    imgUrl: "https://static.papayaplay.com/static/assets/images/eos/portal",
-		linkDiscord: "https://discord.gg/echoofsoul",
-		intvEmgMsg: ''
+		locale_com: ''
 	},
 	methods: {
 		fetchJson: function (lang) {
-			var vm=this;
 			//console.log("fetchJson lang = ", lang);
 			var localeCommonUrl='https://static.papayaplay.com/static/assets/locale/common/common_'+ lang +'.json';
-			// var localeLocalUrl=ND_LOC_LOCAL_PATH;
-
-			// var localStorageCurrLang = window.localStorage.getItem("langND_curr");
-			// if ( localStorageCurrLang ) {
-			// 	localeLocalUrl = 'https://static.papayaplay.com/static/assets/locale/9dragons/9dragons_'+ localStorageCurrLang +'.json';
-			// }
+			//var localeLocalUrl='https://static.papayaplay.com/static/assets/locale/dekaron/dekaron_'+ lang +'.json';
 			
 			this.$http.get(localeCommonUrl)
 			.then(function (res) {
 				this.locale_com = res.body;
 				//console.log(this.locale_com);
 			});
-			// vm.$http.get(localeLocalUrl)
-			// .then(function(response) {
-			// 	vm.locale_loc = response.body;
-			// });
 		},
 		showEmgMsg: function() {
 			var vm=this;
 
 			if( document.getElementsByClassName('cont--emsg')[0] ) {
 				$('.cont--emsg').css({ 'top' : '0px' });
-				$('#eos-gnb-wrap').css({'top' : '102px' });
-				// $('.mobile-menu-wrapper .sidebar').css({'top': '102px'});
+				$('#tos-gnb-wrap').css({'top' : '102px' });
+				$('.mobile-menu-wrapper .sidebar').css({'top': '102px'});
 				clearInterval(vm.intvEmgMsg);
 			}
-		},
-		gotoDiscord: function() {
-			var vm=this;
-			window.open(vm.linkDiscord);
 		}
 	},
 	beforeMount: function () {
@@ -1817,6 +1855,13 @@ var ndNav = new Vue({
 	},
 	mounted: function() {
 		var vm=this;
+		const currentUrl = window.location.href;
+		if(currentUrl != 'https://4story.papayaplay.com/4story.do?tp=news.view&postid=4273'){
+		// 서비스 종료 공지글로 리다이렉트
+		// window.location.href = 'https://4story.papayaplay.com/4story.do?tp=news.view&postid=4273';
+		}
+		
+		
 		vm.intvEmgMsg = setInterval(function() {
 			vm.showEmgMsg();
 		}, 1000);
@@ -1834,84 +1879,61 @@ var ndNav = new Vue({
 		$(window).scroll(function() {
 			let st = $(this).scrollTop();
 			if( st > 65 ) {
-        $('#eos_nav').css({
+        $('#tos_nav').css({
           'position': 'fixed',
           'width': '100%',
           'top': 0,
           'z-index': 999
         });
-        // $('.sidebar').css({
-        //   'top': 0
-        // });
+        $('.sidebar').css({
+          'top': 0
+        });
       } else {
-        $('#eos_nav').css({
+        $('#tos_nav').css({
           'position': '',
           'width': '',
           'top': '',
           'z-index': ''
         });
-				if( document.getElementsByClassName('cont--emsg')[0] ) {
-					$('.mobile-menu-wrapper .sidebar').css({
-						'top': '102px'
-					});
-				} else {
-					// $('.sidebar').css({
-					// 	'top': '65px'
-					// });
-				}
-			}
+		  if( document.getElementsByClassName('cont--emsg')[0] ) {
+			  $('.mobile-menu-wrapper .sidebar').css({
+				  'top': '102px'
+			  });
+		  } else {
+			$('.sidebar').css({
+				'top': '65px'
+			});
+		  }
+	  }
     });
     
-    $("#nd_m_game_h").on('click', function() {
-			if( $('#nd_m_game_h').prop('checked') == true ) {
+    $("#tos_m_game_h").on('click', function() {
+			if( $('#tos_m_game_h').prop('checked') == true ) {
 			$('.game-line').css({"display":"none"});
-			$('#nd_m_game_h').closest("li").css({"padding-bottom":"0"});
+			$('#tos_m_game_h').closest("li").css({"padding-bottom":"0"});
 		} else {
 			$('.game-line').css({"display":"block"});
-			//$('#nd_m_game_h').closest("li").css({"padding-bottom":"14px"});
+			//$('#tos_m_game_h').closest("li").css({"padding-bottom":"14px"});
 		}
+		});
+		$("#tos_m_classes_h").on('click', function() {
+			if( $('#tos_m_classes_h').prop('checked') == true ) {
+				$('.community-line').css({"display":"none"});
+				$('#tos_m_classes_h').closest("li").css({"padding-bottom":"0"});
+			} else {
+				$('.community-line').css({"display":"block"});
+				//$('#tos_m_classes_h').closest("li").css({"padding-bottom":"14px"});
+			}
 		});
 	});
 </script>
 
-<!-- freshdesk 9Dragons widget start -->
-<!-- <script>
-	window.fwSettings={'widget_id':66000001055};
-	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
-	</script>
-	<script type='text/javascript' src='https://widget.freshworks.com/widgets/66000001055.js' async defer></script>
-	<script>
-		if(isLogin == 0) {
-			FreshworksWidget('hide');	
-		} else {
-			FreshworksWidget('identify', 'ticketForm', { 
-				name: userid,
-				email:email,
-				// 9dragon id
-				group_id: 66000429105
-			});
-			// hide lost saga 66000418359
-			FreshworksWidget('hideChoices', 'ticketForm', {
-	         'group_id': [66000418359]
-	 		});
-			FreshworksWidget('hide', 'ticketForm', ['name', 'custom_fields.cf_unid']);
-			FreshworksWidget('prefill', 'ticketForm', {	
-			  custom_fields: {
-				  cf_unid: unid,
-				  cf_username: userid
-			  }
-			});
-			FreshworksWidget('disable', 'ticketForm', ['email', 'name', 'custom_fields.cf_unid', 'custom_fields.cf_username'])	
-		}
-		
-	</script> -->
-<!-- freshdesk 9Dragons widget end -->
 
-		<!--  EOS Header: End -->
+		<!--  TOS Header: End -->
 
-		<!--  EOS Content: Start -->
+		<!--  TOS Content: Start -->
 		   
-<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/eos/eos_download.css">
+<link rel="stylesheet" href="./assets/styles/tos/tos_download.css">
 
 <!-- tweenMax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -1919,269 +1941,188 @@ var ndNav = new Vue({
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 
-<div id="eos_download">
+
+<div id="tos_download">
+  <a href="#tos_newsview">
+    <div class="top-btn-wrapper" @click="gotoTop">
+     <img class="top-btn-img" :src="imgUrl + '/ico_top.png'"/>
+   </div>
+  </a>
   <section
-    class="eos_download_main"
+    class="tos_download_main"
     :style="{'background-image':'url('+imgUrl+'/bg_download.jpg)'}"
   >
-    <div class="eos_download_main_content">
+  <div class="title-wrapper">
+    <span>Tree of Savior</span>
+    <div class="title">DOWNLOAD</div>
+  </div>
+    <div class="tos_download_main_content">
       <div
-        class="eos_download_main_content_logo"
-        :style="{'background-image':'url('+imgUrl+'/eos_logo.png)'}"
+        class="tos_download_main_content_logo"
+        :style="{'background-image':'url('+imgUrl+'/logo.png)'}"
       ></div>
-      <div class="eos_download_main_content_downloadBtn_wrapper">
-        <div class="eos_download_main_content_downloadBtn" @click="gotoDownloadFull">DOWNLOAD FULL GAME</div>
-        <div class="eos_download_main_content_downloadBtn" @click="gotoDownloadLauncher">DOWNLOAD LAUNCHER</div>
+      
+      <div class="tos_download_main_content_downloadBtn_wrapper">
+        <!-- <div class="tos_download_main_content_downloadBtn" @click="gotoDownloadFull">DOWNLOAD FULL GAME</div> -->
+        <div class="seemore-btn" @click="gotoDownloadLauncher">DOWNLOAD LAUNCHER</div>
       </div>
     </div>
   </section>
 
   <section
-    class="eos_download_system"
+    class="tos_download_system"
     :style="{'background-image':'url('+imgUrl+'/bg_download2.jpg)'}"
   >
     <div
-      class="eos_download_system_char01"
+      class="tos_download_system_char01"
       id="char01"
       :style="{'background-image':'url('+imgUrl+'/img_download_chr1.png)'}"
     ></div>
     <div
-      class="eos_download_system_char02"
+      class="tos_download_system_char02"
       id="char02"
       :style="{'background-image':'url('+imgUrl+'/img_download_chr2.png)'}"
     ></div>
-    <div class="eos_download_system_title">
-      BECOME A SOULKEEPER AND DEFEND A WORLD IN PERIL
+    <div class="tos_download_system_title">
+      SYSTEM REQUIREMENTS
     </div>
 
-    <div
-      class="eos_download_system_binder"
-      :style="{'background-image':'url('+imgUrl+'/ico_bar.png)'}"
-    ></div>
-
-    <div class="eos_download_system_content">
-      Darkness and Light hang in the balance.<br />
-      Choose your class, and experience the fantastic world of Echo of Soul.
+    <div class="tos_download_system_content">
+      - Installation requires a <b>minimum of 32GB</b> of free storage space.<br />
+- If you are experiencing problems running the TOS, please contact our "support". <br />
+We will happily help you as soon as possible.<br />
+* If you agree to collect and provide PC specification information, <br />
+the process can be resolved with accuracy.
     </div>
     <!-- Youtube Hide -->
     
-    <!-- <div class="eos_download_system_youtube">
+    <!-- <div class="tos_download_system_youtube">
       <div
-        class="eos_download_system_youtube_playBtn"
+        class="tos_download_system_youtube_playBtn"
         :style="{'background-image':'url('+imgUrl+'/btn_play.png)'}"
       ></div>
     </div>  -->
 
-    <div id="player" class="eos_download_system_youtube"></div>
-   
-    <!-- Youtube Hide -->
-    <div class="eos_download_system_classBtn" @click="gotoClassesAll">LEARN MORE - CLASSES</div>
-
-    <!-- <div class="eos_download_system_graph">
-      <div class="eos_download_system_graph_main">
-        <div class="eos_download_system_graph_main_title">
-          <div class="title01 eos_download_system_graph_main_title_content">
-            CATEGORY
-          </div>
-          <div class="title02 eos_download_system_graph_main_title_content">
-            OS & HARDWARE
-          </div>
-          <div class="title03 eos_download_system_graph_main_title_content">
-            MINIMUM
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            OS
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            WINDOWS XP / VISTA / 7/10
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            WINDOWS XP
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            CPU
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            INTEL QUAD CORE / AMD PHENOM X4 AND HIGHER
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            INTEL CORE2DUO (OR DUAL CORE)
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            DIRECTX
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            DIRECTX 9.0C
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            DIRECTX 9.0C
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            VIDEO CARD
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            GEFORCE GTS 250 OR HIGHER
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            GEFORCE 6600
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            RAM
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            AT LEAST 2GB
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            AT LEAST 1GB
-          </div>
-        </div>
-        <div class="eos_download_system_graph_main_content">
-          <div class="content01 eos_download_system_graph_main_content_content">
-            HARD DISK SPACE
-          </div>
-          <div class="content02 eos_download_system_graph_main_content_content">
-            10GB FREE SPACE
-          </div>
-          <div class="content03 eos_download_system_graph_main_content_content">
-            10GB FREE SPACE
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <!-- test code -->
     <div class="testWrapper">
-      <div class="eos_download_system_graph">
-        <div class="eos_download_system_graph_main">
-          <div class="eos_download_system_graph_main_title">
-            <div class="title01 eos_download_system_graph_main_title_content">
+      <div class="tos_download_system_graph">
+        <div class="tos_download_system_graph_main">
+          <div class="tos_download_system_graph_main_title">
+            <div class="title01 tos_download_system_graph_main_title_content">
               CATEGORY
             </div>
-            <div class="title02 eos_download_system_graph_main_title_content">
+            <div class="title02 tos_download_system_graph_main_title_content">
               RECOMMENDED
             </div>
-            <div class="title03 eos_download_system_graph_main_title_content">
+            <div class="title03 tos_download_system_graph_main_title_content">
               MINIMUM
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
+          <div class="tos_download_system_graph_main_content">
             <div
-              class="content01 eos_download_system_graph_main_content_content"
+              class="content01 tos_download_system_graph_main_content_content"
             >
               OS
             </div>
             <div
-              class="content02 eos_download_system_graph_main_content_content"
+              class="content02 tos_download_system_graph_main_content_content"
             >
-              WINDOWS XP / VISTA / 7/10
+            Windows 7 (64-bit) or later
             </div>
             <div
-              class="content03 eos_download_system_graph_main_content_content"
+              class="content03 tos_download_system_graph_main_content_content"
             >
-              WINDOWS XP
+            Windows 7 (64-bit)
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
+          <div class="tos_download_system_graph_main_content">
             <div
-              class="content01 eos_download_system_graph_main_content_content"
+              class="content01 tos_download_system_graph_main_content_content"
             >
               CPU
             </div>
             <div
-              class="content02 eos_download_system_graph_main_content_content"
+              class="content02 tos_download_system_graph_main_content_content"
             >
-              INTEL QUAD CORE / AMD PHENOM X4 AND HIGHER
+            Intel i5 or later
             </div>
             <div
-              class="content03 eos_download_system_graph_main_content_content"
+              class="content03 tos_download_system_graph_main_content_content"
             >
-              INTEL CORE2DUO (OR DUAL CORE)
+            Intel i3
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
+          <div class="tos_download_system_graph_main_content">
             <div
-              class="content01 eos_download_system_graph_main_content_content"
+              class="content01 tos_download_system_graph_main_content_content"
             >
               DIRECTX
             </div>
             <div
-              class="content02 eos_download_system_graph_main_content_content"
+              class="content02 tos_download_system_graph_main_content_content"
             >
               DIRECTX 9.0C
             </div>
             <div
-              class="content03 eos_download_system_graph_main_content_content"
+              class="content03 tos_download_system_graph_main_content_content"
             >
-              DIRECTX 9.0C
+              DIRECTX 9.0
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
+          <div class="tos_download_system_graph_main_content">
             <div
-              class="content01 eos_download_system_graph_main_content_content"
+              class="content01 tos_download_system_graph_main_content_content"
             >
               VIDEO CARD
             </div>
             <div
-              class="content02 eos_download_system_graph_main_content_content"
+              class="content02 tos_download_system_graph_main_content_content"
             >
-              GEFORCE GTS 250 OR HIGHER
+            NVIDIA GeForce GTX 860 or later
             </div>
             <div
-              class="content03 eos_download_system_graph_main_content_content"
+              class="content03 tos_download_system_graph_main_content_content"
             >
-              GEFORCE 6600
+            NVIDIA GeForce 200
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
+          <div class="tos_download_system_graph_main_content">
             <div
-              class="content01 eos_download_system_graph_main_content_content"
+              class="content01 tos_download_system_graph_main_content_content"
             >
               RAM
             </div>
             <div
-              class="content02 eos_download_system_graph_main_content_content"
+              class="content02 tos_download_system_graph_main_content_content"
             >
-              AT LEAST 2GB
+            8 GB
             </div>
             <div
-              class="content03 eos_download_system_graph_main_content_content"
+              class="content03 tos_download_system_graph_main_content_content"
             >
-              AT LEAST 1GB
+            4 GB
             </div>
           </div>
-          <div class="eos_download_system_graph_main_content">
-            <div
-              class="content01 eos_download_system_graph_main_content_content"
-            >
-              HARD DISK SPACE
-            </div>
-            <div
-              class="content02 eos_download_system_graph_main_content_content"
-            >
-              10GB FREE SPACE
-            </div>
-            <div
-              class="content03 eos_download_system_graph_main_content_content"
-            >
-              10GB FREE SPACE
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
     <!-- test code -->
+    <div class="tos_download_system_title">
+      The Adventure in TOS
+    </div>
 
-    <div class="eos_download_system_downloadBtn" @click="gotoDownloadFull">DOWNLOAD NOW</div>
+    <div class="tos_download_system_content">
+      The Tree of Savior is a casual MMORPG that tells the story of revelators who save the world by following the revelations of the goddesses. Become a savior who will save the world in the TOS where you can have fun building a unique, powerful character through the composition of various classes.
+    </div>
+
+    <div id="player" class="tos_download_system_youtube"></div>
+   
+    <!-- Youtube Hide -->
+    <div class="seemore-btn seemore-btn2" @click="gotoClassesAll">ABOUT GAME</div>
+
+    
+
   </section>
 </div>
 
@@ -2205,10 +2146,10 @@ var ndNav = new Vue({
               showinfo: 0,
               loop: 0,
               enablejsapi: 1,
-              playlist: 'VuHulKLYAr0'
+              playlist: '0FcrXGvlM60'
           },
           width: '100%',
-          videoId: 'VuHulKLYAr0',
+          videoId: '0FcrXGvlM60',
           events: {
               onReady: function (event) {
                   //event.target.mute();
@@ -2220,14 +2161,14 @@ var ndNav = new Vue({
   var youtube_api_init = 1;
 
   let eos_home = new Vue({
-    el: "#eos_download",
+    el: "#tos_download",
     data: function () {
       return {
         //ioRootPath_net: "http://io.papayaplay.net",
         locale_lang: lang,
         locale_loc: "",
-        imgUrl: "https://static.papayaplay.com/static/assets/images/eos/portal",
-        //imgUrl : "./assets",
+        //imgUrl: "https://static.papayaplay.com/static/assets/images/eos/portal",
+        imgUrl : "./assets/images/tos/portal",
         linkDownloadFull : "https://static.papayaplay.com/downloader/EOSOnlineGlobal_downloader.exe",
         linkDownloadLauncher : "https://static.papayaplay.com/downloader/EOSOnlineGlobal_Launcher_downloader.exe",
       };
@@ -2291,7 +2232,7 @@ var ndNav = new Vue({
       "#char01",
       0.5,
       { opacity: 0, left: "-250px", ease: Circ.easeOut },
-      { opacity: 1, left: "31px", ease: Circ.easeIn }
+      { opacity: 1, left: "0px", ease: Circ.easeIn }
     );
     tl01.add([subChar1]);
 
@@ -2306,7 +2247,7 @@ var ndNav = new Vue({
       "#char02",
       0.5,
       { opacity: 0, right: "-250px", ease: Circ.easeOut },
-      { opacity: 1, right: "39px", ease: Circ.easeIn }
+      { opacity: 1, right: "0px", ease: Circ.easeIn }
     );
     tl02.add([subChar2]);
 
@@ -2318,15 +2259,15 @@ var ndNav = new Vue({
   });
 </script>
 <!-- Bugherd : 9Dragons Public -->
-<script
+<!-- <script
   type="text/javascript"
   src="https://www.bugherd.com/sidebarv2.js?apikey=yx6171fkw9xnb6gnbcfxva"
   async="true"
-></script>
+></script> -->
 
-		<!--  EOS Content: End -->	
+		<!--  TOS Content: End -->	
 
-		<!--  EOS Footer: Start -->
+				<!--  TOS Footer: Start -->
 		
 
 
@@ -2372,8 +2313,10 @@ var ndNav = new Vue({
 			
 			<div class="footer-joongwon-logo row2 pad-top-10 pad-bot-10"><a href="http://www.joongwongames.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/portal/home/jw_logo.png" alt="JOONGWON" style="height:27px"></a></div>
 			<!-- test Start (Joonyoung) Mobile footer company list -->
-			<div class="footer-bluepotion-logo row2 pad-top-10 pad-bot-10"><a href="http://www.bluepotion.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="bluepotion" style="height:20px"></a></div>
-			<!-- test End (Joonyoung) -->
+			<!-- <div class="footer-bluepotion-logo row2 pad-top-10 pad-bot-10"><a href="http://www.bluepotion.co.kr/" target="_blank"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="bluepotion" style="height:20px"></a></div> -->
+      <div class="footer-bluepotion-logo row2 pad-top-10 pad-bot-10"><a href="http://www.bluepotion.co.kr/" target="_blank"><img src="./assets/images/tos/portal/logo_imcgames.png" alt="IMC games" style="height:20px"></a></div>
+
+      <!-- test End (Joonyoung) -->
 			<div class="row3 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=1" v-html="locale_com.Portal_Common_Terms_Service"></a></div>
 			<div class="row4 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=2" v-html="locale_com.Portal_Common_Privacy_Policy"></a></div>
 			<div class="row4 pad-top-10 pad-bot-10"><a class="text-capitalize" href="https://www.papayaplay.com/portal.do?tp=terms&tab=3" v-html="locale_com.Portal_Common_EULA"></a></div>
@@ -2404,8 +2347,10 @@ var ndNav = new Vue({
 					
 					<a href="http://www.joongwongames.co.kr/" target="_blank" class="footer-joongwon-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/portal/home/jw_logo.png" alt="JOONGWON" style="width: 120px; margin-top: -3px;"></a>
 					<!-- test Start (Joonyoung) Web footer company logo -->
-					<a href="http://www.bluepotion.co.kr/" target="_blank" class="footer-bluepotion-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="JOONGWON" style="width: 120px; margin-top: -3px;"></a>
+					<!-- <a href="http://www.bluepotion.co.kr/" target="_blank" class="footer-bluepotion-logo" style="padding-left: 15px; display: none;"><img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/logo_bluepotion.png" alt="Blus potion" style="width: 120px; margin-top: -3px;"></a> -->
 					<!-- test End (Joonyoung) -->
+          <a href="#" target="_blank" class="footer-bluepotion-logo" style="padding-left: 15px; display: none;"><img src="./assets/images/tos/portal/logo_imcgames.png" alt="IMC games" style="width: 120px; margin-top: -3px;"></a>
+
 				</div>
 
 				<div class="col2 pull-right">
@@ -2462,12 +2407,13 @@ var ndNav = new Vue({
 				</div> -->
 				<div id="ori-copyright" class="row2 text-left pad-top-20">
 					<!-- <div class="gnb-dark-gray">{{locale_com.Common_Footer_Copyright_Text1}} <span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div> -->
-					<div class="gnb-dark-gray"><span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div>
+					<!-- <div class="gnb-dark-gray"><span class="text-capitalize">{{locale_com.Common_Footer_Copyright_Text2}}</span></div> -->
+          <div class="gnb-dark-gray"><span class="text-capitalize">© 2023 Vertigo Games International Pte. Ltd. All Rights Reserved</span></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<article class="cont--cookie animated fadeInUp" v-if="isCookieModal">
+	<!-- <article class="cont--cookie animated fadeInUp" v-if="isCookieModal">
 		<div class="wrap--cbox">
 			<div class="left--section"></div>
 			<div class="right--section">
@@ -2476,7 +2422,7 @@ var ndNav = new Vue({
 				<div class="btn--gotit" @click="setGDPRCookie(90)">I understand</div>
 			</div>
 		</div>
-	</article>
+	</article> -->
 </footer>
 <script>
 	var gnb = new Vue({
@@ -2552,7 +2498,7 @@ var ndNav = new Vue({
 		}
 	});
 </script>
-		<!--  EOS Footer: End -->
+		<!--  TOS Footer: End -->
 		
 		<!-- No InternetExplorer -->
 		<script>
@@ -2562,7 +2508,7 @@ var ndNav = new Vue({
 		</script>
 
 		<!-- BugHerd: EOS Public Homepage -->
-		<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=r6sxg8skrmv4dak13hwv7a" async="true"></script>
+		<!-- <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=r6sxg8skrmv4dak13hwv7a" async="true"></script> -->
 
 		<!-- Pingdom RUM -->
 		<script src="//rum-static.pingdom.net/pa-616f05639034fb0011000187.js" async></script>
