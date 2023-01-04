@@ -45,7 +45,11 @@
 	<script src="https://static.papayaplay.com/static/assets/libs/numeral.min.js"></script>
 	<!--<script src="https://unpkg.com/vue"></script>-->
 	<!-- Vuejs production -->
-	<script src="https://static.papayaplay.com/static/assets/libs/vue/2.6.12/vue.min.js"></script>
+	
+  <!---테스트후 복구-->
+  <script src="https://static.papayaplay.com/static/assets/libs/vue/2.6.12/vue.min.js"></script>
+
+
 	<script src="https://static.papayaplay.com/static/assets/libs/vue-resource/1.3.5/vue-resource.js"></script>
 	<!-- Vue carousel 3D -->
 	<script src="https://static.papayaplay.com/static/assets/libs/vue-carousel-3d.min.js"></script>
@@ -57,11 +61,7 @@
 	<script src="https://static.papayaplay.com/static/assets/libs/scrollMagic/2.0.6/animation.gsap.js"></script>
 	
   <script type="text/javascript">
-    var unid = "5037051";
-  	var userid = "woonggu";
-  	var email = "teddy@vertigogames.com";
-  	var isLogin = "0";
-  	var hasProfilePhoto = "Y";
+   
    		
    	var bsRootPath = "https://www.papayaplay.com";
    	var ioRootPath = "https://io.papayaplay.com";
@@ -139,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!--  TOS Header Social Media Navigation: End -->
 		
-		<!--  Portal GNB Menu: Start -->
+<!--  Portal GNB Menu: Start -->
 		
 
 
@@ -1796,7 +1796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
         </div>
 				<ul>
-					<li class="disabled dropdown nav-active">
+					<li class="disabled dropdown">
 						<a class="top-nav text-uppercase" v-html="">GAME</a>
 						<ul class="sub-menu game">
 							<li class="sub-li"><a href="./about.html">ABOUT</a></li>
@@ -1805,7 +1805,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							
 						</ul>
 					</li>
-                    <li class="disabled dropdown ">
+                    <li class="disabled dropdown nav-active">
 						<a class="top-nav text-uppercase" v-html="">CLASSES</a>
 						<ul class="sub-menu classes">
 							<li class="sub-li"><a href="./classes.html">CLASSES LIST</a></li>
@@ -1955,431 +1955,303 @@ var gnb = new Vue({
 
 		<!--  TOS Header: End -->
 
-		<!--  EOS Content: Start -->
+				<!--  TOS Content: Start -->
 		
 
 
 
 
 
-<link rel="stylesheet" href="./assets/styles/tos/tos_media.css">
+<link rel="stylesheet" href="./assets/styles/tos/tos_about.css">
 
-<div id="tos_media">
-  <a href="#tos_media">
-		<div class="top-btn-wrapper" @click="gotoTop">
-			<img class="top-btn-img" :src="imgUrl + '/ico_top.png'"/>
+<div id="tos_about">
+  <!-- <a href="#tos_about">
+		<div class="top-btn" @click="gotoTop">
+			<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g id="4S_main" transform="translate(-1790.000000, -969.000000)">
+						<g id="Group-21" transform="translate(1790.000000, 969.000000)">
+							<rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="80" height="80"></rect>
+							<g id="Group-7" transform="translate(40.247126, 40.270115) scale(1, -1) translate(-40.247126, -40.270115) translate(25.747126, 20.770115)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.3">
+								<polyline id="Stroke-1" points="28.3649655 18.7996322 14.4808276 32.6837701 0.597609195 18.7996322"></polyline>
+								<path d="M14.4811034,32.6834023 L14.4811034,0.597885057" id="Stroke-3"></path>
+								<path d="M0.597333333,38.2984828 L28.3646897,38.2984828" id="Stroke-5"></path>
+							</g>
+						</g>
+					</g>
+				</g>
+			</svg>
 		</div>
-	</a>
-
-	<section id="sec-01" :style="{'background-image':'url('+imgUrl+'/bg_media.jpg)'}">
-
+	</a> -->
+  <a href="#tos_newsview">
+    <div class="top-btn-wrapper" @click="gotoTop">
+     <img class="top-btn-img" :src="imgUrl + '/ico_top.png'"/>
+   </div>
+ </a>
+	<section id="sec-01" :style="{'background-image':'url('+imgUrl+'/bg_about.jpg)'}">
 		<div class="title-wrapper">
       <span>Tree of Savior</span>
-			<div class="title">MEDIA</div>
+			<div class="title">ABOUT</div>
 		</div>
-
-		<article class="media-main-container">
-			<div class="grid-item media-01">
-				<a href="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg" target="_blank" @click="mediaGrid(1)"> <!-- class="various fancybox.iframe" -->
-					<img class="content" src="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg"/>
-					<div class="dark-img-bottom">
-						<div class="text-badge-media-type">WALLPAPER</div>
+  
+    <div class="sec-01-content-container">
+        <div class="about_wrap">
+          <div class="about_wrap_left">
+            <img :src="imgUrl + '/img_about.png'"/> 
           </div>
-          <!-- <div class="overlay-border"></div> -->
-				</a>
-			</div>
-			<div class="grid-item media-02">
-				<a href="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg" target="_blank" @click="mediaGrid(2)">
-					<img class="content" src="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg"/>
-					<div class="dark-img-bottom">
-						<div class="text-badge-media-type">SCREENSHOTS</div>
-          </div>
-          <div class="overlay-border"></div>
-				</a>
-			</div>
-			<div class="grid-item media-03">
-				<a href="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg" target="_blank" @click="mediaGrid(3)">
-					<img class="content" src="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg"/>
-					<div class="dark-img-bottom">
-						<div class="text-badge-media-type">ARTWORK</div>
-          </div>
-          <div class="overlay-border"></div>
-				</a>
-			</div>
-			<div class="grid-item media-04">
-				<a href="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg" target="_blank" @click="mediaGrid(3)">
-					<img class="content" src="https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg"/>
-					<div class="dark-img-bottom">
-						<div class="text-badge-media-type">ARTWORK</div>
-          </div>
-          <div class="overlay-border"></div>
-				</a>
-			</div>
-			<!-- <div class="grid-item media-04">
-				<a href="https://www.youtube.com/embed/" class="various fancybox.iframe" @click="mediaGrid(4)">
-					<img class="content" src="https://static.papayaplay.com/static/assets/images/"/>
-					<img class="play-btn" :src="imgUrl+'/btn_play.png'"/>
-					<div class="dark-img-bottom">
-						<div class="text-badge-media-type">VIDEOS</div>
-          </div>
-          //!-- <div class="overlay-border"></div> --//
-				</a>
-			</div> -->
-		</article>
-
-		<article class="submenu-list-container">
-			<ul class="submenu--ul">
-				<li id="submenu-list-0" class="submenu--li selected"><a @click="submenuList(0)">ALL</a></li>
-				<li id="submenu-list-1" class="submenu--li"><a @click="submenuList(1)">WALLPAPER</a></li>
-				<li id="submenu-list-2" class="submenu--li"><a @click="submenuList(2)">SCREENSHOTS</a></li>
-				<li id="submenu-list-3" class="submenu--li"><a @click="submenuList(3)">ARTWORK</a></li>
-				<!-- <li id="submenu-list-4" class="submenu--li"><a @click="submenuList(4)">VIDEOS</a></li> -->
-				<li class="slide"></li>
-			</ul>
-		</article>
-	</section>
-  <section id="sec-02">
-		<div class="submenu-select-box">
-			<div class="submenu-select-wrap" @mouseover="showSubmenuSelect" @mouseleave="hideSubmenuSelect">
-				<ul class="selected-option">
-					<li>
-						<div class="option all">{{ subPageTitle }}</div>
-					</li>
-				</ul>
-				<ul class="select-list" @mouseleave="hideSubmenuSelect">
-					<li><div class="option sel-all" @click="submenuSelect(0)">ALL</div></li>
-					<li><div class="option sel-event" @click="submenuSelect(1)">WALLPAPER</div></li>
-					<li><div class="option sel-update" @click="submenuSelect(2)">SCREENSHOTS</div></li>
-					<li><div class="option sel-update" @click="submenuSelect(3)">ARTWORK</div></li>
-					<!-- <li><div class="option sel-update" @click="submenuSelect(4)">VIDEOS</div></li> -->
-				</ul>
-			</div>
-		</div>
-
-		<article class="media-sub-page">
-			<div class="contents-container">
-				<div class="sub-page-title-wrapper" v-if="subPageNum !== 0">
-					<!-- <div class="sub-page-title">{{subPageTitle}}</div> -->
-				</div>
-				<ul>
-					<li v-for="(item, index) in items.slice(0, currShowIndex)" :key="index">
-						<div v-if="item.numtype === 4" class="content-video" :style="{'background-image':'url('+item.thumbnail+')'}">
-							<a :href="item.link" class="various fancybox.iframe">
-								<!-- <img :src="item.thumbnail" class="media-content-img"/> -->
-								<img class="play-btn" :src="imgUrl+'/btn_play.png'"/>
-								<div class="dark-img-bottom">
-									<div class="text-badge-media-type">{{ item.type }}</div>
+          <div class="about_wrap_right">
+            <ul>
+              <li :style="{'background-image':'url('+imgUrl+'/img_about_box.png)'}">
+                <div>
+                  <p>STYLE</p>
+                  <span>TOS added a pictorial feel to the 3D model to emphasize the fairytale- like visual. Also, background music that encompasses various genres shows the unique style of TOS.</span> 
                 </div>
-                <div class="overlay-border"></div>
-							</a>
-						</div>
-						<div v-else>
-							<img :src="item.thumbnail" class="media-content-img"/>
-							<div class="dark-img-bottom">
-								<div class="text-badge-media-type">{{ item.type }}</div>
-							</div>
-							<a class="overlay-img" :href="item.selectionlink" target="_blank">
-                <!-- <a :href="item.selectionlink" target="_blank"> -->
-									<img class="icon-zoom" :src="imgUrl + '/ico_zoom.png'"/>
-									<!-- <div class="img-size-desktop overlay-text">{{locale_loc.ndFineArtTxtView}}</div> -->
-								<!-- </a> -->
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="seemore-btn" @click="mediaSeeMore">
-				<div class="btn-inner-text">SEE MORE</div>
-				<img class="icon-seemore" :src="imgUrl + '/ico_seemore2.png'"/>
-			</div>
-		</article>
+                
+              </li>
+              <li :style="{'background-image':'url('+imgUrl+'/img_about_box.png)'}">
+                <div>
+                  <p>CHARACTER</p>
+                  <span>In TOS, you can customize your character's abilities in detail. Combine various classes to your taste.</span> 
+              </div>
+              </li>
+              <li :style="{'background-image':'url('+imgUrl+'/img_about_box.png)'}">
+                <div>
+                  <p>OPEN WORLD</p>
+                  <span>TOS is an open world MMORPG that valued freedom. You will find numbers of villages, wide fields, several instant dungeons and hidden spots.</span> 
+              </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
   </section>
+
+  <!-- <section id="sec-02" :style="{'background-image':'url('+imgUrl+'/bg_about2.jpg)'}">
+		<div class="sec-02-content-container">
+			<div class="text-area">
+				<div class="sec-title">{{locale_loc.ndAboutSec02Title}}</div>
+				<div class="sec-desc" v-html="locale_loc.ndAboutSec02Desc">
+					In the time of the Dragons, eight clans held dominance over the Land, each with its own school of kung fu. Each clan sought to gain power and influence, but held each other in check.<br/><br/>
+					Until a ninth clan arose.<br/><br/>
+					The arrival of the Thunder Emperor and his Black Dragon clan triggered a bloody war. All clans now fought openly, and eventually, the War of Nine Dragons threatened to consume everything.<br/><br/>
+					A mysterious wanderer, the Vagabond, then convinced or tricked all nine clan leaders into a single contest, to determine the outcome of the war. No one knows for sure just what happened that day, but the war did end, and none of the nine clan leaders have been seen since.<br/><br/>
+					The wounds of that war remain, even after ten years, and now six of the clans have again opened their gates...<br/>
+				</div>
+			</div>
+			<div class="image-area">
+				<img id="story-map-img" :src="imgUrl + '/about_map.png'"/>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="sec-03" :style="{'background-image':'url('+imgUrl+'/bg_story.jpg)'}">
+    <div class="title-wrapper">
+      <span>Tree of Savior</span>
+			<div class="title">STORY</div>
+		</div>
+		<div class="about-slide-prev">
+			<img id="about-slide-prev-img" :src="imgUrl + '/left_btn.png'"/>
+		
+		</div>
+		<div class="about-slide-next">
+			<img id="about-slide-next-img" :src="imgUrl + '/right_btn.png'"/>
+		
+		</div>
+		<div class="sec-03-content-container">
+			<div class="about-slide" v-for="(slide, sindex) in itemSlides" :key="sindex">
+				<img class="slide-img" :src="slide.charImg"/>
+				<div class="slide-content">
+					<div class="slide-title" v-html="slide.title"></div>
+					<!-- <div class="slide-clan">{{locale_loc.ndAboutSec03SubTitle}} : {{ slide.clan }}</div> -->
+					<div class="slide-desc" v-html="slide.desc"></div>
+					<a v-if="slide.isMoreInfo" class="btn-wrapper" :href="slide.moreInfo">
+						
+						
+						<p class="btn-inner-text">{{locale_loc.ndAboutBtnSec03MoreInfo}}</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-slide-thumbs">
+			<ul>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story1_sm.png'"/>
+					</div>
+				</li>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story2_sm.png'"/>
+					</div>
+				</li>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story3_sm.png'"/>
+					</div>
+				</li>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story4_sm.png'"/>
+					</div>
+				</li>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story5_sm.png'"/>
+					</div>
+				</li>
+				<li>
+					<div class="thumb--img">
+						<div class="layer"></div>
+						<img :src="imgUrl + '/img_story6_sm.png'"/>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+
+	</section>
 </div>
 
 <script type="text/javascript">
-  let tos_media = new Vue({
-    el: "#tos_media",
+  let tos_about = new Vue({
+    el: "#tos_about",
     data: function() {
       return {
         //ioRootPath_net: "http://io.papayaplay.net",
         locale_lang: lang,
 				locale_loc: '',
-				// imgUrl : "https://static.papayaplay.com/static/assets/images/eos/portal",
+				//imgUrl : "https://static.papayaplay.com/static/assets/images/9dragons",
         imgUrl : "./assets/images/tos/portal",
-				subPageTitle: "ALL",
-				subPageNum: 0,
-				currShowIndex: 0,
-				showLimit: 9,
-				items: [],
-				mediaSource : [
+				itemSlides: [
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622150.jpg",
+						charImg :  "./assets/images/tos/portal/img_story1.png",
+						title : "The goddess Laima blessed and bestowed prosperity on the capital city.",
+						clan : "Black Dragon",
+						desc : "under the reign of wise king, and with the grace of the goddesses, citizens had been happy without shortage of anything.",
+						isMoreInfo : false,
+						moreInfo : "#"
 					},
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622151.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622151.jpg",
+						charImg : "./assets/images/tos/portal/img_story2.png",
+						title : "Zemyna, the goddess of the earth, blessed the entire land for a good harvest every year.",
+						clan : "Shaolin",
+						desc : "Gabija, the goddess of fire, taught mankind how to use fire. Travelers found their paths by looking at the stars of Vakarine, the goddess of the evening star. Spirits could rest in peace under the lead of Ausrine, the goddess of the morning star.<br/><br/>such this, the goddesses were always present among the people.",
+						isMoreInfo : true,
+						moreInfo : "https://9dragons.papayaplay.com/9dragons.do?tp=clans#tc-shaolin"
 					},
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622152.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622152.jpg",
+						charImg : "./assets/images/tos/portal/img_story3.png",
+						title : "From some point on, the goddesses gradually stopped responding to prayers.",
+						clan : "Wu-Tang",
+						desc : "People did not care much, believing the goddesses would be back soon. without knowing that it was an omen.",
+						isMoreInfo : true,
+						moreInfo : "https://9dragons.papayaplay.com/9dragons.do?tp=clans#tc-wutang"
 					},
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622153.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622153.jpg",
+						charImg : "./assets/images/tos/portal/img_story4.png",
+						title : "One day, the divine tree in the middle of the capital suddenly grew enormously and began to decimate everything around.",
+						clan : "Kaibang (The League of Beggers)",
+						desc : "The capital was destroyed expeditiously. Many wept over the loss of a loved one. <br/><br/>People fled out of the capital to escape the disaster they were facing. <br/><br/>But soon, they confronted with a terrifying reality.<br/>Beautiful trees that used to be thick and flowers that bloomed profusely turned into monsters and began to devour people. All lands have become nightmares. <br/><br/>The capital had been wiped out.<br/>Its aftereffects reached all the way to the small villages.",
+						isMoreInfo : true,
+						moreInfo : "https://9dragons.papayaplay.com/9dragons.do?tp=clans#tc-beggars"
 					},
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622154.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/622154.jpg",
+						charImg : "./assets/images/tos/portal/img_story5.png",
+						title : "Medzio Diena.<br/> 4 years have passed since then. None could get over the day.",
+						clan : "Heavenly Demon",
+						desc : "The monsters are still ferocious.<br/>There is no promise about when the cities could be restored. <br/>The goddesses never returned.<br/><br/>4 years... would never be enough time to heal the day's wounds. However, everyone was trying to regain the life they had before the day.",
+						isMoreInfo : true,
+						moreInfo : "https://9dragons.papayaplay.com/9dragons.do?tp=clans#tc-demon"
 					},
 					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974658.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974658.jpg",
-					},
-					{
-						numtype : 1,
-						type: "wallpaper",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974659.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_wallpaper/974659.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot001.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot001.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot002.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot003.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot003.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot004.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot004.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot005.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot005.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot006.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot006.jpg",
-					},
-					{
-						numtype: 2,
-						type: "screenshot",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot007.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_screenshots/screenshot007.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw001_illust_archer.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw003_illust_guardian2.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw004_illust_rogue.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw004_illust_rogue.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw006_illust_warrior2.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw006_illust_warrior2.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw007_illust_levina.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw007_illust_levina.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw008_illust_shopping.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw008_illust_shopping.jpg",
-					},
-					{
-						numtype: 3,
-						type: "artwork",
-						thumbnail: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw009_illust_ignea.jpg",
-						selectionlink: "https://static.papayaplay.com/static/assets/images/eos/portal/media/eos_artwork/aw009_illust_ignea.jpg",
-					},
-					// {
-					// 	numtype: 4,
-					// 	type: "video",
-					// 	thumbnail: "https://static.papayaplay.com/static/assets/images/9dragons/video_thumbnail_large.png",
-					// 	link : "https://www.youtube.com/embed/owTLKdu4ToI",
-					// },
-					// {
-					// 	numtype: 4,
-					// 	type: "video",
-					// 	//thumbnail: "https://static.papayaplay.com/static/assets/images/9dragons/video_thumbnail_large.png",
-					// 	thumbnail: "https://i.ytimg.com/vi/6I0XaeUGtaE/hqdefault.jpg",
-					// 	link : "https://www.youtube.com/embed/6I0XaeUGtaE",
-					// },
+						charImg : "./assets/images/tos/portal/img_story6.png",
+						title : "One day, when only despair was continuing",
+						clan : "Sacred Flower",
+						desc : "People flocked to the city, claiming to have seen the goddesses' revelation in their dreams. Is this a sign of the goddesses' return? or the beginning of another catastrophe?",
+						isMoreInfo : true,
+						moreInfo : "https://9dragons.papayaplay.com/9dragons.do?tp=clans#tc-flower"
+					}
+					
 				],
+				newsNotice: [],
+				newsEvent: [],
+				newsSales: [],
+				localStorageCurrLang: ''
       };
     },
     methods: {
       fetchJson: function (lang) {
 				var vm=this;
         var localeCommonUrl='https://static.papayaplay.com/static/assets/locale/common/common_'+ lang +'.json';
-				// var localeLocalUrl=ND_LOC_LOCAL_PATH;
+				var localeLocalUrl=ND_LOC_LOCAL_PATH;
 
-				// if ( vm.localStorageCurrLang ) {
-				// 	localeLocalUrl = 'https://static.papayaplay.com/static/assets/locale/9dragons/9dragons_'+ vm.localStorageCurrLang +'.json';
-				// }
+				if ( vm.localStorageCurrLang ) {
+					localeLocalUrl = 'https://static.papayaplay.com/static/assets/locale/9dragons/9dragons_'+ vm.localStorageCurrLang +'.json';
+				}
         
         this.$http.get(localeCommonUrl)
         .then(function (res) {
           this.locale_com = res.body;
         });
-				// vm.$http.get(localeLocalUrl)
-				// .then(function(response) {
-				// 	vm.locale_loc = response.body;
-				// 	vm.getLocaleData();
-				// });
+				vm.$http.get(localeLocalUrl)
+				.then(function(response) {
+					vm.locale_loc = response.body;
+					vm.getLocaleData();
+				});
 			},
-			mediaGrid: function(index) {
-				var vm=this;
-				$("li").siblings().removeClass('selected');
-				$("li:nth-child("+(index+1)+")").addClass('selected');
-				vm.submenuList(index);
-			},
-			submenuList: function(index) {
-				var vm=this;
-				vm.itemTotalCnt = 9;
-				if( index === 0 ) {
-					// vm.currShowIndex = 0;
-					vm.subPageNum = 0
-					vm.subPageTitle = "ALL";
-					vm.items = [];
-					vm.items = vm.mediaSource;
-				} else if( index === 1 ) {
-					// vm.currShowIndex = 1;
-					vm.subPageNum = 1;
-					vm.subPageTitle = "WALLPAPER";
-					vm.items = [];
-					for( var i=0; i<vm.mediaSource.length; i++ ) {
-						if( vm.mediaSource[i].numtype === 1 ) {
-							vm.items.push(vm.mediaSource[i]);
-						}
-					}
-				} else if ( index === 2 ) {
-					// vm.currShowIndex = 2;
-					vm.subPageNum = 2;
-					vm.subPageTitle = "SCREENSHOTS";
-					vm.items = [];
-					for( var i=0; i<vm.mediaSource.length; i++ ) {
-						if( vm.mediaSource[i].numtype === 2 ) {
-							vm.items.push(vm.mediaSource[i]);
-						}
-					}
-				} else if ( index === 3 ) {
-					// vm.currShowIndex = 3;
-					vm.subPageNum = 3;
-					vm.subPageTitle = "ARTWORK";
-					vm.items = [];
-					for( var i=0; i<vm.mediaSource.length; i++ ) {
-						if( vm.mediaSource[i].numtype === 3 ) {
-							vm.items.push(vm.mediaSource[i]);
-						}
-					}
-				} else if ( index === 4 ) {
-					// vm.currShowIndex = 4;
-					vm.subPageNum = 4;
-					vm.subPageTitle = "VIDEO";
-					vm.items = [];
-					for( var i=0; i<vm.mediaSource.length; i++ ) {
-						if( vm.mediaSource[i].numtype === 4 ) {
-							vm.items.push(vm.mediaSource[i]);
-						}
-					}
-				} else {
-					vm.subPageNum = -1;
-					vm.subPageTitle = "";
-					vm.items = [];
-				}
-				vm.reqPage = 1;
-				vm.setDisplayItems();
-				//console.log("item :: ", vm.items, vm.currShowIndex);
-			},
-			submenuSelect: function(index) {
-				this.submenuList(index);
-				$(".select-list").hide();
-			},
-			showSubmenuSelect: function () {
-				$(".select-list").show();
-			},
-			hideSubmenuSelect: function() {
-				$(".select-list").hide();
-			},
-			setDisplayItems: function() {
-				var vm=this;
-				vm.currShowIndex = 0;
-				if( vm.items.length >= vm.showLimit) {
-					vm.currShowIndex = vm.showLimit;
-					$(".seemore-btn").show();
-				} else {
-					vm.currShowIndex = vm.items.length;
-					$(".seemore-btn").hide();
-				}				
-			},
-			mediaSeeMore: function() {
-				var vm=this;
-				for( var i=0; i<vm.showLimit; i++) {
-					if( vm.currShowIndex >= vm.items.length ) {
-						$(".seemore-btn").hide();
-						return;
-					}
-				}
-				vm.currShowIndex += vm.showLimit;
-			},
+      initSlider: function (data) {
+        var vm = this;
+        //console.log("news slider : ", vm.itemSlides);
+        let slide_carousel = {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots:true,
+          arrows: true,
+          nextArrow: $('.about-slide-next'),
+          prevArrow: $('.about-slide-prev'),
+					speed: 1000,
+          centerMode: true,
+					focusOnSelect: true,
+					autoplay: true,
+					autoplaySpeed: 5000,
+					customPaging: function(slider, i) {
+						return (
+							'<div class="dots">' + $(".about-slide-thumbs li:nth-child(" + (i + 1) + ")").html() + '</div>'
+						);
+					},
+          responsive: [
+            {
+              breakpoint: 582,
+              settings: {
+								arrows: false,
+              }
+            }
+          ]
+        };
+        setTimeout(() => {
+          $(".sec-03-content-container").slick(slide_carousel);
+          //$(".news-slide-wrapper").slick("refresh");
+        }, 300);
+      },
 			getLocaleData: function() {
 				var vm=this;
-				// for( var i=0; i<vm.mediaSource.length; i++ ) {
-				// 	if(vm.mediaSource[i].numtype === 1) {
-				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuArtwork || "artwork";
-				// 	} else if (vm.mediaSource[i].numtype === 2) {
-				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuWallpaper || "wallpaper";
-				// 	} else if (vm.mediaSource[i].numtype === 3) {
-				// 		vm.mediaSource[i].type = vm.locale_loc.ndFineArtSubmenuVideo || "video";
-				// 	}
-				// }
+				for( var i=0; i<vm.itemSlides.length; i++ ) {
+					var strIdx = (i+1).toString();
+					if(strIdx.length < 2) {
+						strIdx = '0'+ strIdx;
+					}
+					//console.log("about clans data : ", strIdx);
+					
+					vm.itemSlides[i].title = vm.locale_loc["ndAboutSec03Char"+strIdx+"Title"];
+					vm.itemSlides[i].clan = vm.locale_loc["ndAboutSec03Char"+strIdx+"Clan"];
+					vm.itemSlides[i].desc = vm.locale_loc["ndAboutSec03Char"+strIdx+"Desc"];
+				}
 			},
       gotoTop: function() {
 				$('html, body').animate({scrollTop: 0}, 400);
@@ -2388,46 +2260,20 @@ var gnb = new Vue({
     beforeMount: function () {
 		  this.fetchJson(lang);
     },
+		mounted: function() {
+			var vm=this;
+			vm.initSlider(vm.sliderItems);
+		},
     created: function() {
 			var vm=this;
-			// vm.localStorageCurrLang = window.localStorage.getItem("langND_curr");
-			vm.items = [];
-			vm.items = vm.mediaSource;
-			vm.setDisplayItems();
+			vm.localStorageCurrLang = window.localStorage.getItem("langND_curr");
     },
   });
-
-  $(document).ready(function() {
-		let moveScroll = false;
-		let moveInterval;
-		$(window).scroll(function (e) {
-			moveScroll = true;
-		});
-
-    $('.submenu--li').on('click', function() {
-      $(this).siblings().removeClass('selected');
-      $(this).addClass('selected');
-    });
-
-		$('.various').fancybox({
-			width: "90%",
-			height: "90%",
-			maxWidth: "800px",
-			maxHeight: "600px",
-			fitToView	: true,
-			autoScale   :true,
-			autoSize	: true,
-			scrolling		: "auto",
-			centerOnScroll: true,
-			closeClick	: false,
-			openEffect	: 'none',
-			closeEffect	: 'none'
-		});
-	});
 </script>
 
 
-		<!--  EOS Content: End -->	
+		<!--  TOS Content: End -->	
+
 
 		<!--  TOS Footer: Start -->
 		
