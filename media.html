@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/aos/2.3.1/aos.css">
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/chartist.css">
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/libs/toastr/toastr.css">
-	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/common.css">
+	<link rel="stylesheet" href="./assets/styles/common.css">
 	<link rel="stylesheet" href="https://static.papayaplay.com/static/assets/styles/portal.css">
 	<link rel="stylesheet" href="./assets/styles/tos/tos_social.css">
 
@@ -481,7 +481,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </a>
         <ul>
           <li>
-            <label for="fs_m_game" class="fs-show fs-m-btn-game text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
+            <label for="fs_m_game" class="tos-show fs-m-btn-game text-uppercase">{{locale_com.common_nav_game}}<span class="more-sign">+</span></label>
             <input type="checkbox" id="fs_m_game">
             <ul class="fs-sub-menu">
               <li class="sub-li">
@@ -503,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="https://4story.papayaplay.com/4story.do?tp=media" class="text-uppercase" v-html="locale_com.common_nav_media"></a>
           </li>
           <li>
-            <label for="fs_m_community" class="fs-show fs-m-btn-community text-uppercase">community<span class="more-sign">+</span></label>
+            <label for="fs_m_community" class="tos-show fs-m-btn-community text-uppercase">community<span class="more-sign">+</span></label>
             <input type="checkbox" id="fs_m_community">
             <ul class="fs-sub-menu">
               <li class="sub-li">
@@ -621,55 +621,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
 
-      <!-- test Start (Joonyoung) EOS mobile menu -->
-      <div id="eos-menu" class="pad-top-30">
-        <!-- mobile top game logo -->
-        <a href="https://eos.papayaplay.com/eos.do">
-          <img src="https://static.papayaplay.com/static/assets/images/eos/event/preregister/eos_logo.png" class="center-block">
+      <!-- TOS mobile menu -->
+      <div id="tos-menu" class="pad-top-30">
+        <a href="./main.html">
+          <img src="./assets/images/tos/portal/logo.png" class="center-block">
         </a>
-        <!-- mobile game menu content -->
         <ul>
-          <li class="">
-            <a href="https://eos.papayaplay.com/eos.do?tp=classesall" class="text-uppercase">classes</a>
+          <li>
+            <label for="tos_m_game" class="tos-show nd-m-btn-game text-uppercase">GAME<span class="more-sign">+</span></label>
+            <input type="checkbox" id="tos_m_game">
+            <ul class="tos-sub-menu">
+              <li class="sub-li">
+                <a href="./about.html">ABOUT</a>
+              </li>
+              <li class="sub-li">
+                <a href="./media.html">MEDIA</a>
+              </li>
+              <li class="sub-li">
+                <a href="#">GUIDE</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <label for="tos_m_classes" class="tos-show nd-m-btn-game text-uppercase">CLASSES<span class="more-sign">+</span></label>
+            <input type="checkbox" id="tos_m_classes">
+            <ul class="tos-sub-menu">
+              <li class="sub-li">
+                <a href="./classes.html">CLASSES LIST</a>
+              </li>
+              <li class="sub-li">
+                <a href="./simulator.html">BUILD SIMULATOR</a>
+              </li>
+            </ul>
           </li>
           <li class="">
-            <a href="https://eos.papayaplay.com/guide/eos.do" target="_blank" class="text-uppercase">game guide</a>
+            <a href="#" class="text-uppercase">FORUM</a>
           </li>
           <li class="">
-            <a href="https://eos.papayaplay.com/eos.do?tp=news" class="text-uppercase" v-html="locale_com.common_nav_news"></a>
+            <a href="#" class="text-uppercase">SUPPORT</a>
+            <!-- <a class="text-uppercase" style="color: #888;" v-html="locale_com.common_nav_ranking"></a> -->
           </li>
           <li class="">
-            <a href="https://eos.papayaplay.com/eos.do?tp=media" class="text-uppercase">media</a>
+            <a href="lucky_shop.html" class="text-uppercase">LUCKY SHOP</a>
           </li>
           <li class="">
-            <a href="https://vertigogamesaid.freshdesk.com/support/solutions/66000285368" class="text-uppercase" v-html="locale_com.Common_Header_Support"></a>
+            <a href="download.html" class="text-uppercase">DOWNLOAD</a>
           </li>
-          <li class="eos_download center-block">
-            <a href="https://eos.papayaplay.com/eos.do?tp=download" class="text-uppercase" v-html="locale_com.common_nav_download"></a>
-          </li>
-          <!-- <li class="papaya-logo">
+          <li class="papaya-logo">
             <a href="https://www.papayaplay.com">
-              <img src="https://static.papayaplay.com/static/assets/images/latale/portal/papaya-logo-white-mobile.svg" alt="">
+              <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg" alt="">
             </a>
-          </li> -->
+          </li>
         </ul>
       </div>
-      <!-- test End (Joonyoung) EOS mobile menu -->
+      <!-- TOS mobile menu -->
+      
 
     </div>
     <!-- end mobile game menu -->
-
-    <div class="flex-center" id="brand-logo">
+    <div class="flex-center">
+    <!-- <div class="flex-center" id="brand-logo"> -->
       <!-- <a href="https://www.papayaplay.com/portal.do"><img src="https://static.papayaplay.com/static/assets/images/portal/xmas-theme/papaya_logo_xmas_new.svg"></a> -->
-      <a href="https://www.papayaplay.com/portal.do">
+      <a href="./main.html">
         <!-- <img v-if="flagTheme === 1" style="height: 47px; margin-top: 0px;" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween/papaya-logo.svg">  
         <img v-else-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg">
         <img v-else src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-logo.svg"> -->
-        <img v-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/papaya-logo.svg">
+        <!-- <img v-if="flagTheme === 2" src="https://static.papayaplay.com/static/assets/images/portal/event/papayaRememberance/papaya-logo.svg">
         <img v-else :src="logoBrandMobile">
+        -->
+        <img v-if src="./assets/images/tos/portal/logo.png" style="width:auto;height:55px;">
       </a>
+     
     </div>
-
+  
     <a href="#" id="mobile-portal-logo">
       <img src="https://static.papayaplay.com/static/assets/images/portal/common/papaya-symbol.svg">
     </a>
@@ -1108,7 +1132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var portalGnbImgUrl = "https://static.papayaplay.com/static/assets/images/portal/gnb/2021_new";
     var halloweenImgUrl = "https://static.papayaplay.com/static/assets/images/portal/event/papayaHalloween";
     var homeUrl = 'https://www.papayaplay.com';
-    //var imgUrl = "../assets/images";
+    // var imgUrl = "./assets/images/tos/portal";
     
    
   // 2021.06.17; hskim; nine-dragons russian support
