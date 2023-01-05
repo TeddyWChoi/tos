@@ -137,15 +137,15 @@ transform:scale(0.9)
 margin:0 auto;
 background-color:#1d1818;
 width:100%;
-height:1440px;
+height:1160px;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
-align-items:center
+align-items:center;
+position: relative;
 }
 
 #tos_home #sec-01 #sec-01-video-wrapper {
-position:relative;
 z-index:0;
 width:100%;
 display: flex;
@@ -156,7 +156,7 @@ justify-content: center;
 #tos_home #sec-01 #sec-01-video-wrapper #sec-01-video {
 position:absolute;
 width:100%;
-height:1440px;
+height:1160px;
 object-fit:cover;
 object-position:top;
 top:0;
@@ -339,101 +339,6 @@ transform:translateY(-20px)
 #tos_home #sec-02 .seemore-btn {
     margin:40px auto;
 }
-
-/* #tos_home #sec-02 .seemore-btn {
-position:relative;
-display:flex;
-flex-direction:row;
-justify-content:center;
-align-items:center;
-width:100%;
-max-width: 192px;
-height:60px;
-margin:50px auto;
-z-index:1;
-background: linear-gradient(180deg, #1AB9C9 0%, #11666F 100%);
-box-shadow: inset 0px 1px 3px rgb(255 255 255 / 50%);
-transition:all .3s ease;
-cursor:pointer
-}
-
-#tos_home #sec-02 .seemore-btn .btn-inner-text {
-margin-right:7px;
-color:#fff;
-font-family:"Roboto Condensed";
-font-size:22px;
-font-weight:700;
-line-height:26px;
-text-align:center
-}
-
-#tos_home #sec-02 .seemore-btn:hover {
-    transform:scale(0.95); 
-    filter: saturate(50%);
-} */
-
-
-/* #tos_home #sec-03 {
-position:relative;
-margin:0 auto;
-width:100%;
-height:570px;
-display:flex;
-justify-content:flex-start;
-align-items:flex-start;
-background-repeat:no-repeat;
-background-position:center top;
-background-size:2560px
-}
-
-#tos_home #sec-03 .container-wrapper {
-position:relative;
-margin-top:345px;
-margin-left:50.7%;
-display:flex;
-flex-direction:column;
-justify-content:flex-start;
-align-items:flex-start
-}
-.left-content{width:50%;}
-.right-content{width:50%;}
-
-#tos_home #sec-03 .container-wrapper .title-bg {
-position:absolute;
-margin-top:-210px;
-left:0;
-top:0;
-width:105px;
-height:105px;
-object-fit:contain
-}
-
-#tos_home #sec-03 .container-wrapper .btn-more-arrow {
-background-color:#427dce;
-width:188px;
-height:50px;
-display:flex;
-flex-direction:row;
-justify-content:center;
-align-items:center;
-font-family:"Roboto";
-font-weight:500;
-font-size:16px;
-color:#fff;
-cursor:pointer;
-transition:all .3s ease
-}
-
-#tos_home #sec-03 .container-wrapper .btn-more-arrow .arrow-image {
-width:60px;
-margin-left:10px
-}
-
-#tos_home #sec-03 .container-wrapper .btn-more-arrow:hover {
-transform:translateX(20px);
-filter:hue-rotate(30deg);
-opacity:.8
-} */
 
 
 
@@ -760,7 +665,7 @@ opacity:0
 .tos_home_btn_wrapper
 {
     position: absolute;
-    margin-top: 880px;
+    bottom: 150px;
 }
 .tos_home_classBtn {
     display:inline-block;
@@ -1084,7 +989,9 @@ opacity:0
         max-width:1920px;
         height:890px;
         }
-        
+        .tos_home_btn_wrapper {
+            bottom: 100px;
+        }
         #tos_home #sec-01 #sec-01-video-wrapper #sec-01-video {
         height:890px
         }
@@ -1183,7 +1090,7 @@ opacity:0
             margin-top:260px;
         }
         .tos_home_btn_wrapper {
-            margin-top: 540px;
+           bottom:10px;
         }
         #tos_home #sec-01 {
         height:548px
