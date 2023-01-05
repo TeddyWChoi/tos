@@ -2102,7 +2102,7 @@ Find out information about the world, lore, skills, and more.
       :controls-next-html="'<div class=\'slick-next-btn\'><img src=\'https://static.papayaplay.com/static/assets/images/eos/portal/btn_right.png\'/></div>'"
     >
       <slide :index="i" v-for="(slide, i) in slideMediaData" :key="i">
-        <a href="./media.html"><img class="slide-item-image" :src="slide.imgUrl" /></a>
+        <img  @click="gotoMedia" class="slide-item-image" :src="slide.imgUrl" />
       </slide>
     </carousel-3d>
 
@@ -2122,7 +2122,7 @@ Find out information about the world, lore, skills, and more.
       :controls-next-html="'<div class=\'slick-next-btn\'><img src=\'https://static.papayaplay.com/static/assets/images/eos/portal/btn_right.png\'/></div>'"
     >
       <slide :index="i" v-for="(slide, i) in slideMediaData" :key="i">
-        <img class="slide-item-image" :src="slide.imgUrl" />
+        <img  @click="gotoMedia" class="slide-item-image" :src="slide.imgUrl" />
       </slide>
     </carousel-3d>
 
@@ -2142,7 +2142,7 @@ Find out information about the world, lore, skills, and more.
       :controls-next-html="'<div class=\'slick-next-btn\'><img src=\'https://static.papayaplay.com/static/assets/images/eos/portal/btn_right.png\'/></div>'"
     >
       <slide :index="i" v-for="(slide, i) in slideMediaData" :key="i">
-        <img class="slide-item-image" :src="slide.imgUrl" />
+        <img  @click="gotoMedia" class="slide-item-image" :src="slide.imgUrl" />
       </slide>
     </carousel-3d>
   </section>
@@ -2559,6 +2559,9 @@ Find out information about the world, lore, skills, and more.
       },
       gotoNews: function () {
         window.location.href = "./news.html";
+      },
+      gotoMedia: function () {
+        window.location.href = "./media.html";
       },
       gotoGuide: function () {
         window.open("https://eos.papayaplay.com/guide/eos.do");
