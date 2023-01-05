@@ -470,3 +470,13 @@ padding:2px 8px
 .icon-close{
     color:#898989
 }
+@media screen and (max-width:600px) {
+  
+    .top-btn-wrapper {
+       
+        bottom: 30px!important;
+        width: 50px!important;
+      
+    }
+
+}
