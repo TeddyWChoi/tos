@@ -2102,7 +2102,7 @@ Find out information about the world, lore, skills, and more.
       :controls-next-html="'<div class=\'slick-next-btn\'><img src=\'https://static.papayaplay.com/static/assets/images/eos/portal/btn_right.png\'/></div>'"
     >
       <slide :index="i" v-for="(slide, i) in slideMediaData" :key="i">
-        <img class="slide-item-image" :src="slide.imgUrl" />
+        <a href="./media.html"><img class="slide-item-image" :src="slide.imgUrl" /></a>
       </slide>
     </carousel-3d>
 
