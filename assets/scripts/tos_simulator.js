@@ -27,9 +27,11 @@ function addSkill(rank, sID) {
 }
 function onClickJob(e) {
     if ($(e.currentTarget).hasClass("active")) {
+       
         $(e.currentTarget).removeClass("active");
         initRank(e);
     } else {
+       
         var curRank = $(e.currentTarget).parent().attr("data-rank");
         var nextRank = (parseInt(curRank) + 1).toString();
         var classID = $(e.currentTarget).attr("data-id");
@@ -57,17 +59,20 @@ function clearRank(rank) {
     $("#jobWrap").append($("#rank" + rank + "_selector").children("a"));
 }
 function clearSkill(rank) {
-    $("#rank" + rank + "_skill").css("");
+    console.log("!!!")
+   // $("#rank" + rank + "_skill").css("");
     $("#skillWrap").append($("#rank" + rank + "_skill").children("p"));
 }
 function initRank(e) {
     var rank = $(e.currentTarget).parent().attr("data-rank");
     var classID = $(e.currentTarget).attr("data-id");
     var type = classID.substr(0, 1);
+   
     for (var i = MAX_RANK - 1; i >= rank; i--) {
         clearRank(i);
         clearSkill(i);
     }
+    
     $("#rank_" + rank)
         .removeClass("rank_box_2")
         .addClass("rank_box_1");
