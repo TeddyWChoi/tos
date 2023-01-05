@@ -48,7 +48,8 @@ justify-content:flex-start;
 align-items:center;
 background-position:center top;
 background-repeat:no-repeat;
-background-size:cover
+background-size:cover;
+min-height: 1100px;
 }
 
 #tos_simulator #sec-01 .title-wrapper {
