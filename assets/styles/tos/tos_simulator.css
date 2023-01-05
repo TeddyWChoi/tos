@@ -273,10 +273,12 @@ body {
 
 }
 .rank_box_3 a.active p:after {
-    /* font-family: FontAwesome;
+    font-family: FontAwesome;
     content: "\f057";
-    margin-left: 10px;
-    line-height: 50px; */
+    position: absolute;
+    bottom: 60px;
+    font-size: 24px;
+    left: 170px;
 }
 .rank_box_3 a.active img {
     /* width: 50px;
