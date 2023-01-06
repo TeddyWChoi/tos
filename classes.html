@@ -1959,12 +1959,10 @@ var gnb = new Vue({
 		
 
 
-
-
-
 <!-- <link rel="stylesheet" href="./assets/styles/tos/tos_classes.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_simulator.css"/> -->
 <link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_classes.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/styles/tos/tos_classes_view.css"/>
 
 <div id="tos_classes">
   <a href="#tos_classes">
@@ -1972,7 +1970,150 @@ var gnb = new Vue({
 			<img class="top-btn-img" :src="imgUrl + '/ico_top.png'"/>
 		</div>
 	</a>
+  <div @click="modal = false"   class="black-bg" v-if="modal == true">
+    <div class="white-bg">
+      <div id="wrap" class="">
 
+        <section class=""> 
+            <div id="" class="section_inner">
+                <!-- <div class="class-back-icon"><img src="./assets/images/tos/portal/ico_back.svg" class="icon-back-img"></div> -->
+                <div id="classes_article_wrap" class="">
+    
+                    <div id="sub" class="">
+                        <div id="sub_title" class="left">
+                            <div id="sub_title_h1" class="">
+                                <img id="classIcon" src="https://treeofsavior.com/img/class2/class_icon/Highlander.png">
+                             
+                                
+                                <div>
+                                    <h1 id="className">
+                                      Highlander							</h1>
+                                </div>
+                            </div>
+                            <div id="sub_title_h3" class="">
+                                <p id="classDesc">
+    Since their part in King Zachariel's war, Highlanders have been acting as Royal Guards for the aristocrats, protecting the palace and major cities of the Kingdom. To this day they act as the Special Forces of the Royal Military and have suffered a huge loss in the Fallen City during Medzio Diena.<br/>Highlanders are fearsome warriors famous for their swordsmanship that pushes enemies into each other and other objects on the field of battle.							</p>
+                            </div>
+                        </div>
+                        <div id="classImage" class="left">
+                            <img id="classImg1" src="./assets/images/tos/portal/class_character/highlander_f.gif">
+                            <img id="classImg2" src="./assets/images/tos/portal/class_character/highlander_m.gif">
+                        </div>	
+                    </div>
+                    <article class="skill_wrap">
+                    <h3 class="skill_attri_h3">SKILLS</h3>
+                        <div id="skill" class="skill_attri">
+                            <ul id="classSkill">
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_crosscut.png">
+                                    <h3>Crosscut<span>Slash</span></h3>
+                                    <p>Charge towards an enemy and cut a cross on their body, inflicting [Bleeding].</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_crossguard.png">
+                                    <h3>Cross Guard<span>Pierce</span></h3>
+                                    <p>Hold a defensive stance that can block with a one or two-handed sword. You can not evade while holding the stance and block chance increases. When blocking the enemy's attack, [Detect Weakness] buff is applied for 5 seconds, and the Cooldown of Cross Guard is applied for #{CaptionTime}# seconds.<br/>During the [Detect Weakness] buff, final damage increases when the enemy attacks.</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_defiance.png">
+                                    <h3>Defiance<span>None</span></h3>
+                                    <p><font color="#005060">Constantly applied after learning the skill</font><br/>Increases damage when attacking the boss.</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_circularcut.png">
+                                    <h3>Moulinet<span>Slash</span></h3>
+                                    <p>Inflict damage on enemies by swinging your sword around to create continuous attacks.</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_skyline.png">
+                                    <h3>Skyliner<span>Slash</span></h3>
+                                    <p>Slash the enemy sideways for 2.5 seconds per 0.5 seconds.</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/skill_icon/warri_wagonwheel.png">
+                                    <h3>Wagon Wheel<span>Slash</span></h3>
+                                    <p>Perform an upward swing with your weapon, launching an enemy up.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    <h3 class="skill_attri_h3">ATTRIBUTES</h3>
+                    <div id="attributes" class="skill_attri">
+                        <ul id="classAttribute">
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander13.png">
+                                    <h3>Wagon Wheel: Enhance</h3>
+                                    <p>* Increases the skill factor of [Wagon Wheel] by 0.5% per attribute level<br/>* +10% added increase at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander14.png">
+                                    <h3>Moulinet: Enhance</h3>
+                                    <p>* Increases the skill factor of [Moulinet] by 0.5% per attribute level<br/>* +10% added increase at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander8.png">
+                                    <h3>Cross Guard: Enhance</h3>
+                                    <p>* Increases [Cross Guard]'s block increasing effects by 0.5% per attribute level<br/>* 10% increases additionally at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander29.png">
+                                    <h3>Skyliner: Enhance</h3>
+                                    <p>* Increases the skill factor of [Skyliner] by 0.5% per attribute level<br/>* +10% added increase at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander30.png">
+                                    <h3>Crosscut: Enhance</h3>
+                                    <p>* Increases the skill factor of [Crosscut] by 0.5% per attribute level<br/>* +10% added increase at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander34.png">
+                                    <h3>Crosscut: Bleeding Duration</h3>
+                                    <p>* Increases the duration of [Crosscut]'s Bleeding by 1 second per attribute level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander37.png">
+                                    <h3>[Arts] Wagon Wheel: Enhanced Upgrade</h3>
+                                    <p>* Increases the Skill Factor of [Wagon Wheel] by 1.25% per attribute level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander40.png">
+                                    <h3>[Arts] Moulinet: Enhanced Upgrade</h3>
+                                    <p>* Increases the Skill Factor of [Moulinet] by 1.25% per attribute level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander41.png">
+                                    <h3>[Arts] Skyliner: Enhanced Upgrade</h3>
+                                    <p>* Increases the Skill Factor of [Skyliner] by 1.25% per attribute level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander42.png">
+                                    <h3>[Arts] Crosscut: Enhanced Upgrade</h3>
+                                    <p>* Increases the Skill Factor of [Crosscut] by 1.25% per attribute level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander43.png">
+                                    <h3>[Arts] Skyliner: Fury</h3>
+                                    <p>* Targets: AoE Attack Ratio + 4<br/>* Increases range by 3 times<br/>* Decreases skill damage by 25%</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_Highlander45.png">
+                                    <h3>Defiance: Enhance</h3>
+                                    <p>* Increases [Defiance]'s damage increasing effects against boss monsters by 0.5% per attribute level<br/>* +10% added increase at maximum level</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/tos/portal/ability_icon/ability_Warrior_THSword.png">
+                                    <h3>Use Two-handed Swords</h3>
+                                    <p>* Can equip [Two-handed Sword] type weapons<br/>* Increase AoE by 3 when equipped with a [Two-handed Sword]<br/>* (Value is applied both to the first and second slot)</p>
+                                </li>
+                            </ul>
+                    </div>
+                  </article>
+                </div>
+                
+             </div><!-- section inner -->
+        </section>
+    </div><!-- wrap -->
+    </div>
+  </div>
 	<section id="sec-01" :style="{'background-image':'url('+imgUrl+'/bg_classes.jpg)'}">
 
 		<div class="title-wrapper">
@@ -2340,6 +2481,7 @@ var gnb = new Vue({
   </div>
   <!-- partial -->
   <!-- particle -->
+
   <section id="sec-02">
     <div id="wrap" class="">
 
@@ -2363,1401 +2505,588 @@ var gnb = new Vue({
                   <div id="classes_box_wrap" class="">
                   
                   <div id="section_Swordsman" class="classes_inbox tabcontent">
-                          <!-- <div class="Swordsman">
-                              <a href="/page/class/view.php?c=Swordsman">
-                                  <img src="https://treeofsavior.com/img/class2/class_character/swordsman_f.gif">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/1001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Swordsman</p>
-                                          
-                                      </dd>
-                                  </dl>
-                                 
-                              </a>
-                          </div> -->
+                         
                           <ul>
                                 <li>
-                                  <a href="./classes_view.html">
+                                  <a @click="modal = true">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1001.png" alt="">
-                                      <dl>
-                                          <dt>
-                                            <img class="tab_on" src="./assets/images/tos/portal/job_icon/1001.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Swordsman</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Swordsman</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1002.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1002.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Highlander</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Highlander</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1003.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1003.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Peltasta</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Peltasta</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1004.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1004.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Hoplite</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Hoplite</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1006.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1006.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Barbarian</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Barbarian</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1007.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1007.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Cataphract</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Cataphract</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1009.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1009.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Doppelsoeldner</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Doppelsoeldner</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1010.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1010.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Rodelero</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Rodelero</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1012.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1012.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Murmillo</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Murmillo</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1014.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1014.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Fencer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Fencer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1015.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1015.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Dragoon</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Dragoon</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1016.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1016.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Templar</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Templar</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1017.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1017.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Lancer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Lancer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1018.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1018.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Matador</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Matador</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1019.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1019.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>NakMuay</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>NakMuay</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1020.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1020.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Retiarii</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Retiarii</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1021.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1021.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Hackapell</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Hackapell</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1022.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1022.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>BlossomBlader</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>BlossomBlader</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/1023.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/1023.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Luchador</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Luchador</p>
                                   </a>
                               </li>
                           </ul>
                       </div>
   
                   <div id="section_Wizard" class="classes_inbox tabcontent">
-                          <!-- <div class="Wizard">
-                              <a href="/page/class/view.php?c=Wizard">
-                                  <img src="https://treeofsavior.com/img/class2/class_character/wizard_m.gif">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/2001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Wizard</p>
-                                         
-                                      </dd>
-                                  </dl>
-                                  
-                              </a>
-                          </div> -->
+                          
                           <ul>
                             <li>
                               <a href="./classes_view.html">
                                   <img class="tab_on" src="./assets/images/tos/portal/job_list/2001.png" alt="">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/2001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Wizard</p>
-                                          
-                                      </dd>
-                                  </dl>
+                                  <p>Wizard</p>
                               </a>
                           </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2002.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2002.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>FireMage</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>FireMage</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2003.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2003.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>FrostMage</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>FrostMage</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2004.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2004.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Psychokino</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Psychokino</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2005.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2005.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Alchemist</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Alchemist</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2006.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2006.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Sorcerer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Sorcerer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2008.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2008.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Chronomancer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Chronomancer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2009.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2009.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Necromancer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Necromancer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2011.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2011.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Elementalist</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Elementalist</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2014.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2014.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Sage</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Sage</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2015.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2015.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Warlock</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Warlock</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2016.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2016.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Featherfoot</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Featherfoot</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2017.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2017.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>RuneCaster</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>RuneCaster</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2019.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2019.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Shadowmancer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Shadowmancer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2020.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2020.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Onmyoji</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Onmyoji</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2021.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2021.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Daoshi</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Daoshi</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2022.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2022.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Bokor</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Bokor</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2023.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2023.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>TerraMancer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>TerraMancer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/2024.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/2024.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Keraunos</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Keraunos</p>
                                   </a>
                               </li>
                           </ul>
                       </div>
   
                   <div id="section_Archer" class="classes_inbox tabcontent">
-                          <!-- <div class="Archer">
-                              <a href="/page/class/view.php?c=Archer">
-                                  <img src="https://treeofsavior.com/img/class2/class_character/archer_f.gif">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/3001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Archer</p>
-                                          
-                                      </dd>
-                                  </dl>
-                                 
-                              </a>
-                          </div> -->
+                         
                           <ul>
                             <li>
                               <a href="./classes_view.html">
                                   <img class="tab_on" src="./assets/images/tos/portal/job_list/3001.png" alt="">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/3001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Archer</p>
-                                          
-                                      </dd>
-                                  </dl>
+                                  <p>Archer</p>
                               </a>
                           </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3002.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3002.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Hunter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Hunter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3003.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3003.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>QuarrelShooter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>QuarrelShooter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3004.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3004.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Ranger</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Ranger</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3005.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3005.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Sapper</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Sapper</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3006.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3006.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Wugushi</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Wugushi</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3011.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3011.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Fletcher</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Fletcher</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3012.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3012.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>PiedPiper</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>PiedPiper</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3013.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3013.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Appraiser</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Appraiser</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3014.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3014.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Falconer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Falconer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3015.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3015.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Cannoneer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Cannoneer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3016.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3016.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Musketeer</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Musketeer</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3017.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3017.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Mergen</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Mergen</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3101.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3101.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Matross</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Matross</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3102.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3102.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>TigerHunter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>TigerHunter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3103.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3103.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Arbalester</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Arbalester</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3104.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3104.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Arquebusier</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Arquebusier</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/3105.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/3105.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Hwarang</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Hwarang</p>
                                   </a>
                               </li>
                           </ul>
                       </div>
   
                   <div id="section_Cleric" class="classes_inbox tabcontent">
-                          <!-- <div class="Cleric">
-                              <a href="/page/class/view.php?c=Cleric">
-                                  <img src="https://treeofsavior.com/img/class2/class_character/cleric_f.gif">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/5002.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Cleric</p>
-                                         
-                                      </dd>
-                                  </dl>
-                                  
-                              </a>
-                          </div> -->
+                         
                           <ul>
                             <li>
                               <a href="./classes_view.html">
                                   <img class="tab_on" src="./assets/images/tos/portal/job_list/4001.png" alt="">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/4001.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Cleric</p>
-                                          
-                                      </dd>
-                                  </dl>
+                                  <p>Cleric</p>
                               </a>
                           </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4002.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4002.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Priest</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Priest</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4003.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4003.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Kriwi</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Kriwi</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4005.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4005.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Druid</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Druid</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4006.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4006.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Sadhu</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Sadhu</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4007.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4007.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Dievdirbys</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Dievdirbys</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4008.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4008.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Oracle</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Oracle</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4009.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4009.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Monk</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Monk</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4010.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4010.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Pardoner</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Pardoner</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4011.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4011.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Paladin</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Paladin</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4012.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4012.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Chaplain</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Chaplain</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4014.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4014.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>PlagueDoctor</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>PlagueDoctor</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4015.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4015.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Kabbalist</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Kabbalist</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4016.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4016.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Inquisitor</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Inquisitor</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4018.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4018.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Miko</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Miko</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4019.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4019.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Zealot</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Zealot</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4020.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4020.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Exorcist</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Exorcist</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4021.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4021.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Crusader</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Crusader</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/4022.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/4022.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Lama</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Lama</p>
                                   </a>
                               </li>
                           </ul>
                       </div>
   
                   <div id="section_Scout" class="classes_inbox tabcontent">
-                          <!-- <div class="Scout">
-                              <a href="/page/class/view.php?c=Scout">
-                                  <img src="https://treeofsavior.com/img/class2/class_character/scout_f.gif">
-                                  <dl>
-                                      <dt>
-                                          <img class="tab_on" src="./assets/images/tos/portal/job_icon/5002.png" alt="클래스 마크">
-                                      </dt>
-                                      <dd>
-                                          <p>Scout</p>
-                                          
-                                      </dd>
-                                  </dl>
-                              </a>
-                          </div> -->
+                          
                           <ul>
                                 <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5001.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5001.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Scout</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Scout</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5002.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5002.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Assassin</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Assassin</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5003.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5003.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Outlaw</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Outlaw</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5004.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5004.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Squire</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Squire</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5005.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5005.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Corsair</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Corsair</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5006.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5006.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Shinobi</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Shinobi</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5007.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5007.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Thaumaturge</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Thaumaturge</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5008.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5008.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Enchanter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Enchanter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5009.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5009.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Linker</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Linker</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5010.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5010.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Rogue</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Rogue</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5011.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5011.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Schwarzereiter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Schwarzereiter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5012.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5012.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Bulletmarker</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Bulletmarker</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5013.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5013.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Arditi</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Arditi</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5014.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5014.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Sheriff</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Sheriff</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5015.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5015.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Rangda</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Rangda</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5016.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5016.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Clown</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Clown</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5017.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5017.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Hakkapeliter</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Hakkapeliter</p>
                                   </a>
                               </li>
                               <li>
                                   <a href="./classes_view.html">
                                       <img class="tab_on" src="./assets/images/tos/portal/job_list/5018.png" alt="">
-                                      <dl>
-                                          <dt>
-                                              <img class="tab_on" src="./assets/images/tos/portal/job_icon/5018.png" alt="클래스 마크">
-                                          </dt>
-                                          <dd>
-                                              <p>Jaguar</p>
-                                              
-                                          </dd>
-                                      </dl>
+                                      <p>Jaguar</p>
                                   </a>
                               </li>
                           </ul>
@@ -3772,11 +3101,15 @@ var gnb = new Vue({
   
 </div>
 
+
+
 <script type="text/javascript">
   let tos_classes = new Vue({
     el: "#tos_classes",
     data: function() {
       return {
+        
+        modal : false,
         //ioRootPath_net: "http://io.papayaplay.net",
         locale_lang: lang,
 				locale_loc: '',
